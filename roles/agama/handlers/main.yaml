@@ -1,0 +1,10 @@
+
+- name: Install Flask_1
+  shell: python3 -m venv venv
+  args:
+    chdir: /opt/agama/
+
+- name: Install Flask_2
+  shell: . venv/bin/activate
+  args:
+    chdir: /opt/agama/

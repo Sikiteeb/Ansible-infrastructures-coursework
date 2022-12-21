@@ -5,20 +5,16 @@
   gather_facts: true
   roles:
     - init
-    
-- name: Default
-  hosts: all
-  become: true
-  gather_facts: false
-  roles: 
-    - users
-  
   
 - name: Web server
   hosts: web_servers
   become: true
   gather_facts: false
   roles:
+    - agama
+    - uwsgi
     - nginx
+    
+    
   tags: web
   

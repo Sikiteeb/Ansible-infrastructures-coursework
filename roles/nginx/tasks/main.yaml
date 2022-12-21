@@ -1,16 +1,20 @@
-
 - name: Install Nginx
   apt:
     name: nginx
-    
-- name: Change Nginx Index page
+
+- name: Place index.html
   copy:
-    src: index
+    src: index.html
     dest: /var/www/html/index.html
+
+- name: Copy default.j2
+  copy:
+    src: default
+    dest: /etc/nginx/sites-enabled/default
   notify:
     - Restart Nginx
 
-- name: Start & enable Nginx
+- name: Enable Nginx
   service:
     name: nginx
     state: started

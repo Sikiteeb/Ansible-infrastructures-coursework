@@ -1,0 +1,29 @@
+
+- name: Install Uwsgi packages
+  apt:
+    name:
+      - uwsgi
+      - uwsgi-core
+      - uwsgi-plugin-python3
+      - python3-pymysql
+    install-recommends: true
+
+- name: Create a directory
+  file:
+    path: /etc/uwsgi/apps-enabled
+    state: directory
+
+- name: Template agama.ini
+  template:
+    src: agama.ini
+    dest: /etc/uwsgi/apps-enabled/agama.ini
+    owner: agama
+    mode: '774'
+  notify:
+    - Restart Uwsgi
+
+- name: Start Uwsgi
+  service:
+    name: uwsgi
+    state: started
+    enabled: true
