@@ -1,0 +1,17 @@
+
+- name: Install Nginx
+  apt:
+    name: nginx
+    
+- name: Change Nginx Index page
+  copy:
+    src: index
+    dest: /var/www/html/index.html
+  notify:
+    - Restart Nginx
+
+- name: Start & enable Nginx
+  service:
+    name: nginx
+    state: started
+    enabled: true

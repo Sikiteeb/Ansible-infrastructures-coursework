@@ -1,5 +1,24 @@
 ---
-- name: Ansible connection test
+- name: Set up
   hosts: all
+  become: true
+  gather_facts: true
   roles:
-    - test_connection
+    - init
+    
+- name: Default
+  hosts: all
+  become: true
+  gather_facts: false
+  roles: 
+    - users
+  
+  
+- name: Web server
+  hosts: web_servers
+  become: true
+  gather_facts: false
+  roles:
+    - nginx
+  tags: web
+  
