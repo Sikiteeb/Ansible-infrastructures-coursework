@@ -5,6 +5,16 @@
   gather_facts: true
   roles:
     - init
+      
+- name: Database server
+  hosts: db_servers
+  become: true
+  gather_facts: false
+  roles:
+    - mysql
+  tags:
+    - db
+  
   
 - name: Web server
   hosts: web_servers
@@ -14,7 +24,9 @@
     - agama
     - uwsgi
     - nginx
-    
-    
-  tags: web
+  tags: 
+    - web
+
+
+
   

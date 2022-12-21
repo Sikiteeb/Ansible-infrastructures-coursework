@@ -10,4 +10,4 @@ mysql_password: !vault |
   3531626133623761620a326665396534636539366665666365666431646536666239316535643531
   3866
 mysql_database: agama
-mysql_host: sikiteeb-1  
+mysql_host: sikiteeb-2 
