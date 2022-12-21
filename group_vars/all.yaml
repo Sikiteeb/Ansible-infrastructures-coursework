@@ -11,3 +11,13 @@ mysql_password: !vault |
   3866
 mysql_database: agama
 mysql_host: sikiteeb-2 
+
+# DNS
+domain: maledet.ta
+local_network: 192.168.42.0/23
+localhost: 127.0.0.0/8
+forwarders:
+  - 1.1.1.1
+  - 8.8.8.8
+  - 9.9.9.9
+  - 9.9.9.10

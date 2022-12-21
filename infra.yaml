@@ -5,6 +5,16 @@
   gather_facts: true
   roles:
     - init
+ 
+- name: DNS
+  hosts: dns_servers
+  become: true
+  gather_facts: false
+  roles:
+    - bind
+  tags:
+    - dns  
+  
       
 - name: Database server
   hosts: db_servers
