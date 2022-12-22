@@ -3,11 +3,5 @@
     name: bind9
     state: restarted
 
-- name: Reload Rndc
+- name: Reload rndc
   command: rndc reload
-  
-- name: Stop Resolved
-  systemd:
-    name: systemd-resolved
-    enabled: false
-    state: stopped

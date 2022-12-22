@@ -1,49 +1,48 @@
-
-- name: Install bind9
+- name: Install Bind9 
   apt:
     name:
       - bind9
-      - python3-dnspython
+      - bind9utils
+      - bind9-doc 
+      - dnsutils
       
-- name: Options configuration file
+- name: Options conf
   template:
     src: named.conf.options
     dest: /etc/bind/named.conf.options
-  no_log: false
   notify:
     - Restart Bind9
-    - Reload Rndc
-  register: dns_config  
-  
-- name: Local
-  template:
+    - Reload rndc
+    
+- name: Local conf
+  template: 
     src: named.conf.local
     dest: /etc/bind/named.conf.local
   notify:
     - Restart Bind9
-    - Reload Rndc
-  register: dns_config  
-  
-- name: DNS Master Zone
+    - Reload rndc    
+    
+- name: Forward lookup zone file
   template:
-    src: db.maledet
-    dest: /var/cache/bind/db.maledet
-    force: no
+    src: forward.maledetta.local
+    dest: /etc/bind/
   notify:
     - Restart Bind9
-    - Reload Rndc
-  when: inventory_hostname in groups ['dns_primary']
-  register: dns_config  
-  
-- name: Resolv file
-  template: 
-    src: resolv.conf
-    dest: /etc/resolv.conf
+    - Reload rndc  
+    
+- name: Reverse lookup zone file
+  template:
+    src: reverse.maledetta.local
+    dest: /etc/bind/reverse.maledetta.local
   notify:
-    - Stop Resolved
-        
+    - Restart Bind9
+    - Reload rndc  
+       
 - name: Enable bind9
   service:
     name: bind9
     state: started
-    enabled: yes        
+    enabled: true
+      
+      
+        

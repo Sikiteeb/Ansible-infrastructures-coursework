@@ -1,12 +1,16 @@
-acl corpnets { {{ local_network }}; {{ localhost }}; };
+acl internal-network {
+192.168.43.175;
+};
 options {
         directory "/var/cache/bind";
-        forwarders {
-           {% for f in forwarders %}
-           {{ f -}};
-           {% endfor %}
-        };
         allow-query { localhost; };
-        dnssec-validation no;
-        listen-on-v6 { none;};
+        allow-transfer { localhost; };
+        forwarders {
+           {% for n in forwarders %}
+           {{ n -}};
+           {% endfor %}
+                    };
+        recursion yes;
+        dnssec-validation auto;
+        listen-on-v6 { any; };
 };

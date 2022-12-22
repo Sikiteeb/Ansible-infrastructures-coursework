@@ -1,11 +1,10 @@
-zone "{{ domain }}" {
-{% if inventory_hostname in groups ['dns_primary'] %}
-    type master;
-    allow-update {key nsupdate.key;};
-    allow-transfer {127.0.0.1; key transfer.key;};
-{% else %}
-    type slave;
-    masters { {{ hostvars[groups['dns_primary'][0]]['ansible_default_ipv4']['address'] }}; }; 
-{% endif %}
-    file "db.maledet";
+zone {{ domain }} IN {
+        type master;
+        file "/etc/bind/forward.{{ domain }}.local";
+        allow-update { none; };
+};
+zone "0.168.192.in-addr.arpa" IN {
+        type master;
+        file "/etc/bind/reverse.{{ domain }}.local";
+        allow-update { none; };
 };
