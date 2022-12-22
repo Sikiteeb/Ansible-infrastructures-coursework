@@ -1,0 +1,5 @@
+
+rate(node_cpu_seconds_total[1m])
+
+((node_memory_MemTotal_bytes - node_memory_MemAvailable_bytes) / node_memory_MemTotal_bytes )*100
+((node_memory_MemTotal_bytes - node_memory_MemFree_bytes) / node_memory_MemTotal_bytes )*100

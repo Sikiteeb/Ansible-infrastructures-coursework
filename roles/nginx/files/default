@@ -1,9 +1,18 @@
 server {
 	listen 80 default_server;
-	server_name ubuntu@193.40.156.67;
+	server_name _;
 
-	location / {
-		uwsgi_pass localhost:5000;
-		include uwsgi_params;
-	}
-}
+{% if inventory_hostname in groups['prometheus'] %}       
+  location /prometheus {
+    proxy_pass http://{{ localhost }}:{{ prometheus_port }};
+  }
+{% endif %}
+
+{% if inventory_hostname in groups['web_servers'] %}
+  location / {
+    uwsgi_pass localhost:5000;
+    include uwsgi_params;
+    proxy_pass http://localhost:{{ agama_port + 1}};
+    proxy_set_header Host $http_host;
+  }
+{% endif %}

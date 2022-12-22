@@ -1,0 +1,4 @@
+- name: Restart Node Exporter
+  service:
+    name: prometheus-node-exporter
+    state: restarted

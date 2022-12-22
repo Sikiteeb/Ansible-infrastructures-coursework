@@ -24,7 +24,6 @@
   tags:
     - db
   
-  
 - name: Web server
   hosts: web_servers
   become: true
@@ -35,6 +34,16 @@
     - nginx
   tags: 
     - web
+      
+- name: Prometheus
+  hosts: prometheus
+  become: true
+  gather_facts: false
+  roles:
+    - prometheus
+  
+  tags: 
+    - pro      
 
 
 

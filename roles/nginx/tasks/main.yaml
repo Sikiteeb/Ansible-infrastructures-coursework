@@ -7,7 +7,7 @@
     src: index.html
     dest: /var/www/html/index.html
 
-- name: Copy default.j2
+- name: Copy default file
   copy:
     src: default
     dest: /etc/nginx/sites-enabled/default

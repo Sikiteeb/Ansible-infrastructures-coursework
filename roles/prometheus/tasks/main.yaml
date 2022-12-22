@@ -1,0 +1,16 @@
+- name: Install Prometheus
+  apt:
+    name: prometheus
+
+- name: Prometheus args
+  template:
+    src: prometheus_arg
+    dest: /etc/default/prometheus
+  notify:
+    - Restart Prometheus
+
+- name: Enable Prometheus
+  service:
+    name: prometheus
+    state: started
+    enabled: yes

@@ -15,3 +15,6 @@ sikiteeb-1
 [db_servers]
 sikiteeb-2
 
+[prometheus]
+sikiteeb-2
+

@@ -1,0 +1,15 @@
+- name: Install Node Exporter
+  apt:
+    name: prometheus-node-exporter
+
+- name: Node Exporter arg
+  template:
+    src: prometheus-node-exporter.j2
+    dest: /etc/default/prometheus-node-exporter
+  notify: Restart Node Exporter
+
+- name: Enable Node exporter
+  service:
+    name: prometheus-node-exporter
+    state: started
+    enabled: yes
