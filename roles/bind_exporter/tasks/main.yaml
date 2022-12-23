@@ -1,0 +1,16 @@
+- name: Install Bind Exporter
+  apt:
+    name: prometheus-bind-exporter
+
+- name: Bind-exporter args
+  template:
+    src: prometheus-bind-exporter
+    dest: /etc/default/prometheus-bind-exporter
+  notify:
+    - Restart Bind-exporter
+
+- name: Enable Bind Exporter
+  service:
+    name: prometheus-bind-exporter
+    state: started
+    enabled: yes

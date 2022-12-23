@@ -1,9 +1,8 @@
-sikiteeb-1 ansible_host=193.40.156.67 ansible_port=28422 ansible_ssh_user=ubuntu
-sikiteeb-2 ansible_host=193.40.156.67 ansible_port=43122 ansible_ssh_user=ubuntu
+sikiteeb-1 ansible_host=193.40.156.67 ansible_port=10222 ansible_ssh_user=ubuntu
+sikiteeb-2 ansible_host=193.40.156.67 ansible_port=2522 ansible_ssh_user=ubuntu
 
 
 [dns_servers]
-sikiteeb-1
 sikiteeb-2
 
 [dns_primary]
@@ -18,3 +17,5 @@ sikiteeb-2
 [prometheus]
 sikiteeb-2
 
+[grafana]
+sikiteeb-2

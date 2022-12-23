@@ -4,7 +4,7 @@
 
 - name: Node Exporter arg
   template:
-    src: prometheus-node-exporter.j2
+    src: prometheus-node-exporter
     dest: /etc/default/prometheus-node-exporter
   notify: Restart Node Exporter
 
@@ -12,4 +12,4 @@
   service:
     name: prometheus-node-exporter
     state: started
-    enabled: yes
+    enabled: true

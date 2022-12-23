@@ -20,7 +20,18 @@
     dest: /etc/bind/named.conf.local
   notify:
     - Restart Bind9
-    - Reload rndc    
+    - Reload rndc  
+
+- name: DNS primary Zone
+  template:
+    src: db.maledetta
+    dest: /var/cache/bind/db.maledetta
+    force: no
+  notify:
+    - Restart Bind9
+    - Reload rndc
+  when: inventory_hostname in groups ['dns_primary']
+    
     
 - name: Forward lookup zone file
   template:

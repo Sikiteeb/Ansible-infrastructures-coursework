@@ -1,0 +1,6 @@
+server {
+        listen {{ stub_status_port }} default_server;
+        location = /stub_status {
+                stub_status;
+        }
+}

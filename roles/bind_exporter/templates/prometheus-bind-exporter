@@ -1,0 +1,1 @@
+ARGS="-web.listen-address ':{{prometheus_exporters['bind']['port']}}' -bind.stats-url 'http://localhost:{{bind_stats_port}}/'"

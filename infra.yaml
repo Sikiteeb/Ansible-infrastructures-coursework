@@ -12,6 +12,7 @@
   gather_facts: false
   roles:
     - bind
+    - bind_exporter
   tags:
     - dns
     
@@ -21,6 +22,7 @@
   gather_facts: false
   roles:
     - mysql
+    - mysql_exporter
   tags:
     - db
   
@@ -34,16 +36,34 @@
     - nginx
   tags: 
     - web
-      
+
+- name: Nginx
+  hosts: all
+  become: yes
+  gather_facts: false
+  roles:
+   - nginx
+   - nginx_exporter
+  tags:
+    - ng
+
 - name: Prometheus
   hosts: prometheus
   become: true
   gather_facts: false
   roles:
     - prometheus
-  
+    - node_exporter
   tags: 
     - pro      
+      
+- name: Grafana
+  hosts: grafana
+  become: yes
+  gather_facts: false
+  roles:
+    - grafana
+  tags: gr     
 
 
 
