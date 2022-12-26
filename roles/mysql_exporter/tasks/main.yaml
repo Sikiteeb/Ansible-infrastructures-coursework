@@ -4,13 +4,13 @@
 
 - name: MySQL Exporter Configuration
   template:
-    src: my.cnf
-    dest: /var/lib/prometheus/.my.cnf
+    src: my.cnf.j2
+    dest: /var/lib/prometheus/.my.cnf.j2
     owner: prometheus
     group: prometheus
     mode: 0644
   notify: Restart MySQL Exporter
-  no_log: true
+  no_log: false
   
 - name: Enable MySQL Exporter
   service:

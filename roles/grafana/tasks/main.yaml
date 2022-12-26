@@ -18,7 +18,7 @@
 
 - name: Grafana Dashboard Setting
   template:
-    src: dashboard.yaml
+    src: dashboard.yaml.j2
     dest: /etc/grafana/provisioning/dashboards/dashboard.yaml
   notify: Restart Grafana
 

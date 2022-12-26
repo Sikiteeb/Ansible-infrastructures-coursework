@@ -1,0 +1,25 @@
+server {
+	listen 80 default_server;
+	server_name _;
+
+  location /node-metrics {
+    proxy_pass http://localhost:{{ prometheus_exporters['node']['port'] }}/metrics;
+  }
+
+{% if inventory_hostname in groups['web_servers'] %}
+  location / {
+    #uwsgi_pass localhost:5000;
+    #include uwsgi_params;
+    proxy_pass http://localhost:{{ agama_port + 1}};
+    proxy_set_header Host $http_host;
+  }
+{% endif %}
+
+{% if inventory_hostname in groups['prometheus'] %}
+  location /prometheus {
+    proxy_pass http://localhost:{{ prometheus_port }};
+  }
+{% endif %}
+
+}
+

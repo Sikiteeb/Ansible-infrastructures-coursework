@@ -4,10 +4,16 @@
 
 - name: Prometheus args
   template:
-    src: prometheus_arg
+    src: prometheus.j2
     dest: /etc/default/prometheus
   notify:
     - Restart Prometheus
+    
+- name: Change prometheus.yml
+  template:
+    src: prometheus.yml.j2
+    dest: /etc/prometheus/prometheus.yml
+  notify: Restart Prometheus    
 
 - name: Enable Prometheus
   service:

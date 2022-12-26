@@ -1,16 +1,28 @@
-acl internal-network {
-192.168.43.175;
-};
+acl trusted { {{ internal_network }}; {{ localhost }};  }; 
+
 options {
         directory "/var/cache/bind";
-        allow-query { localhost; };
-        allow-transfer { localhost; };
         forwarders {
            {% for n in forwarders %}
            {{ n -}};
            {% endfor %}
-                    };
-        recursion yes;
-        dnssec-validation auto;
-        listen-on-v6 { any; };
+        };
+        allow-query { localhost; trusted; };
+        dnssec-validation no;
+        listen-on-v6 { none;};
+};
+
+
+statistics-channels {
+  inet 127.0.0.1 port {{ stats_port }} allow { 127.0.0.1; };
+};
+
+key "transfer.key" {
+	algorithm hmac-sha256;
+	secret "{{ transfer_key }}";
+};
+
+key "nsupdate.key" {
+	algorithm hmac-sha256;
+	secret "{{ nsupdate_key }}";
 };

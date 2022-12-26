@@ -3,5 +3,6 @@
     name: bind9
     state: restarted
 
-- name: Reload rndc
-  command: rndc reload
+- name: Reconfigure rndc
+  command: rndc reconfig
+  

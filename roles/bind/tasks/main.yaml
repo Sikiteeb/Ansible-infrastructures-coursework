@@ -5,14 +5,25 @@
       - bind9utils
       - bind9-doc 
       - dnsutils
-      
+        
+- name: Resolv.conf
+  template:
+    src: resolv.conf.j2
+    dest: /etc/resolv.conf
+
+- name: Stop systemd-resolved
+  systemd:
+    name: systemd-resolved
+    enabled: no
+    state: stopped        
+     
 - name: Options conf
   template:
     src: named.conf.options
     dest: /etc/bind/named.conf.options
   notify:
     - Restart Bind9
-    - Reload rndc
+    - Reconfigure rndc
     
 - name: Local conf
   template: 
@@ -20,8 +31,8 @@
     dest: /etc/bind/named.conf.local
   notify:
     - Restart Bind9
-    - Reload rndc  
-
+    - Reconfigure rndc  
+       
 - name: DNS primary Zone
   template:
     src: db.maledetta
@@ -29,25 +40,16 @@
     force: no
   notify:
     - Restart Bind9
-    - Reload rndc
+    - Reconfigure rndc
   when: inventory_hostname in groups ['dns_primary']
-    
-    
-- name: Forward lookup zone file
-  template:
-    src: forward.maledetta.local
-    dest: /etc/bind/
-  notify:
-    - Restart Bind9
-    - Reload rndc  
-    
+     
 - name: Reverse lookup zone file
   template:
-    src: reverse.maledetta.local
-    dest: /etc/bind/reverse.maledetta.local
+    src: db.maledetta.reverse
+    dest: /var/cache/bind/db.maledetta.reverse
   notify:
     - Restart Bind9
-    - Reload rndc  
+    - Reconfigure rndc 
        
 - name: Enable bind9
   service:

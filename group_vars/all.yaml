@@ -11,7 +11,7 @@ mysql_password: !vault |
   3531626133623761620a326665396534636539366665666365666431646536666239316535643531
   3866
 mysql_database: agama
-mysql_host: sikiteeb-2 
+mysql_host: sikiteeb-1 
 agama_port: 8000
 
 # Mysql_exporter
@@ -27,14 +27,17 @@ mysql_exporter_key: !vault |
 # DNS
 domain: maledetta
 fqdn: maledetta.it
-internal_network: "{{ ansible_default_ipv4.network }}/24"
+internal_network: 192.168.43.0/24
 localhost: 127.0.0.0/8
-bind_stats_port: 8053
+stats_port: 8053
 forwarders:
   - 1.1.1.1
   - 8.8.8.8
   - 9.9.9.9
   - 9.9.9.10
+
+transfer_key: 0f4e9c9a568b53d9b608532d0d91e2fc1f5a61bca3e097b53f9726ad53321bb7
+nsupdate_key: e67d8b8758b5419d7946c24ab617f7d8ea52b671aae6336049cf8f43f5974fca 
   
 # Nginx
 stub_status_port: 8080

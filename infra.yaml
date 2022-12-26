@@ -1,12 +1,22 @@
 ---
-- name: Set up
+
+- name: Setup
   hosts: all
   become: true
   gather_facts: true
-  roles:
-    - init
+  tasks:
+    - setup:
   
-- name: Bind
+- name: Global
+  hosts: all
+  become: true
+  gather_facts: false
+  roles:      
+    - init
+    - node_exporter
+ 
+
+- name: DNS
   hosts: dns_servers
   become: true
   gather_facts: false
@@ -15,7 +25,7 @@
     - bind_exporter
   tags:
     - dns
-    
+ 
 - name: Database server
   hosts: db_servers
   become: true
@@ -23,9 +33,9 @@
   roles:
     - mysql
     - mysql_exporter
-  tags:
+  tags: 
     - db
-  
+    
 - name: Web server
   hosts: web_servers
   become: true
@@ -53,18 +63,13 @@
   gather_facts: false
   roles:
     - prometheus
-    - node_exporter
-  tags: 
-    - pro      
-      
-- name: Grafana
+  tags: pro
+
+
+- name: Grafana 
   hosts: grafana
-  become: yes
-  gather_facts: false
+  become: true
+  gather_facts: true
   roles:
     - grafana
-  tags: gr     
-
-
-
-  
+  tags: gr

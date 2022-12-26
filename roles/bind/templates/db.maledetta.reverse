@@ -1,0 +1,17 @@
+$TTL    604800
+{% for vm in groups['dns_primary'] %}
+43.168.192.in-addr.arpa.  IN      SOA   {{ vm }}.{{ domain }}. siki.{{ domain }}. (
+                  2        ; Serial
+             604800        ; Refresh
+              86400        ; Retry
+            2419200        ; Expire
+             604800 )    ; Negative Cache TTL
+;
+{% endfor %}
+
+{% for vm in groups['dns_servers'] %}
+43.168.192.in-addr.arpa.    IN     NS  {{ vm }}.{{ domain }}.
+{% endfor %}
+{% for vm in groups['all'] %}
+{{ (hostvars[vm]['ansible_default_ipv4']['address']|split('.'))[3] }}  IN  PTR  {{ vm }}.{{ domain}}.
+{% endfor %}
