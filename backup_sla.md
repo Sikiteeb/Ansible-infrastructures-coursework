@@ -10,8 +10,6 @@ This Service Level Agreement (this “SLA”) governs the backup Services. Opera
 
 <h3> The backup schedule in EE time zone </h3>
 
-
-</style>
 <table class="GeneratedTable">
   <thead>
     <tr>
