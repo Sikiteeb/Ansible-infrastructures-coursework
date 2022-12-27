@@ -13,7 +13,9 @@
   gather_facts: false
   roles:      
     - init
+    - users
     - node_exporter
+    - rsyslog
  
 
 - name: DNS
@@ -49,13 +51,23 @@
 
 - name: Nginx
   hosts: all
-  become: yes
+  become: true
   gather_facts: false
   roles:
    - nginx
    - nginx_exporter
   tags:
     - ng
+      
+- name: Influxdb
+  hosts: influxdb  
+  become: true
+  gather_facts: false 
+  roles:
+    - influxdb 
+    - pinger
+    - influxdb_exporter
+  tags: in
 
 - name: Prometheus
   hosts: prometheus

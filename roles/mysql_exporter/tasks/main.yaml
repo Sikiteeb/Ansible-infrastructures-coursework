@@ -2,16 +2,25 @@
   apt:
     name: prometheus-mysqld-exporter
 
-- name: MySQL Exporter Configuration
+- name: MySQL Exporter Config
   template:
-    src: my.cnf.j2
-    dest: /var/lib/prometheus/.my.cnf.j2
+    src: my.cnf.j2 
+    dest: /var/lib/prometheus/.my.cnf
     owner: prometheus
     group: prometheus
     mode: 0644
   notify: Restart MySQL Exporter
-  no_log: false
-  
+  no_log: True
+
+- name: MySQL Exporter arg file
+  template:
+    src: mysql_exporter_arg.j2
+    dest: /etc/default/prometheus-mysqld-exporter
+  notify: Restart MySQL Exporter
+
+- name: Flush handlers once
+  meta: flush_handlers
+
 - name: Enable MySQL Exporter
   service:
     name: prometheus-mysqld-exporter

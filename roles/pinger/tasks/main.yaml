@@ -1,0 +1,54 @@
+- name: Install Dependencies
+  apt:
+    name:
+      - fping 
+      - curl 
+
+- name: Install pinger.sh
+  copy:
+    src: ../files/pinger.sh
+    dest: /usr/local/bin/pinger.sh
+  notify: 
+    - daemon-reload
+    - Restart pinger
+  
+- name: Create User 'pinger'
+  user:
+    name: pinger
+
+- name: Create pinger Directory
+  file:
+    path: /etc/pinger 
+    state: directory
+    mode: '0751'
+
+- name: Config file 'pinger.conf'
+  template:
+    src: pinger.conf.j2
+    dest: /etc/pinger/pinger.conf
+  notify: 
+    - daemon-reload
+    - Restart pinger
+  
+- name: pinger Script
+  copy:
+    src: ../files/pinger.sh
+    dest: /usr/local/bin/pinger
+    mode: '0755'
+  notify: 
+    - daemon-reload
+    - Restart pinger
+
+- name: Service 'pinger'
+  template:
+    src: pinger.service.j2
+    dest: /etc/systemd/system/pinger.service
+  notify: 
+    - daemon-reload
+    - Restart pinger
+
+- name: Enable pinger
+  service:
+    name: pinger
+    state: started
+    enabled: yes

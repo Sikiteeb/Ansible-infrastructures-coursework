@@ -1,5 +1,5 @@
-sikiteeb-1 ansible_host=193.40.156.67 ansible_port=41622 ansible_ssh_user=ubuntu
-sikiteeb-2 ansible_host=193.40.156.67 ansible_port=43322 ansible_ssh_user=ubuntu
+sikiteeb-1 ansible_host=193.40.156.67 ansible_port=11222 ansible_ssh_user=ubuntu
+sikiteeb-2 ansible_host=193.40.156.67 ansible_port=9822 ansible_ssh_user=ubuntu
 
 [web_servers]
 sikiteeb-1
@@ -20,4 +20,7 @@ sikiteeb-1
 sikiteeb-2
 
 [grafana]
+sikiteeb-2
+
+[influxdb]
 sikiteeb-2

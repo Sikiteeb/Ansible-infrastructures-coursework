@@ -5,9 +5,25 @@ datasources:
     type: prometheus
     access: proxy
     orgId: 1
-    url: http://prometheus:{{prometheus_port}}/prometheus
+    url: http://prometheus:{{ prometheus_port }}/prometheus
     isDefault: true
     version: 1
     editable: true
 
-  
+  - name: InfluxDB
+    type: influxdb
+    access: proxy
+    orgId: 1
+    url: http://influxdb:{{ influxdb_port }}
+    database: latency
+    version: 1
+    editable: true
+    
+  - name: InfluxDB-telegraf
+    type: influxdb
+    access: proxy
+    orgId: 1
+    url: http://influxdb:{{ influxdb_port }}
+    database: telegraf
+    version: 1
+    editable: true  

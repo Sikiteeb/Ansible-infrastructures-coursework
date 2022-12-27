@@ -1,0 +1,46 @@
+- name: Influxdb APT key
+  apt_key:
+    url: https://repos.influxdata.com/influxdb.key
+  
+- name: Influxdb Repository
+  apt_repository:
+    repo: deb https://repos.influxdata.com/debian stable main
+
+- name: Install Influxdb
+  apt: 
+    name: 
+      - influxdb 
+
+- name: Influx Config
+  template:
+    src: influxdb.conf.j2
+    dest: /etc/influxdb/influxdb.conf
+  notify: Restart Influxdb
+
+- name: Get Telegraf deb
+  get_url:
+    url: https://dl.influxdata.com/telegraf/releases/telegraf_1.24.2-1_amd64.deb
+    dest: /opt/telegraf.deb
+  
+- name: Install Telegraf
+  apt:
+    deb: /opt/telegraf.deb
+  
+- name: Telegraf Configuration
+  template:
+    src: telegraf.conf.j2
+    dest: /etc/telegraf/telegraf.conf
+  notify: Restart Telegraf
+
+- name: Enable Influxdb
+  service:
+    name: influxdb
+    state: started
+    enabled: true
+
+- name: Enable Telegraf
+  service:
+    name: telegraf
+    state: started
+    enabled: true
+  

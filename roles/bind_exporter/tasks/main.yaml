@@ -13,4 +13,4 @@
   service:
     name: prometheus-bind-exporter
     state: started
-    enabled: yes
+    enabled: true

@@ -1,0 +1,5 @@
+- name: Install 50-telegraf.conf
+  template:
+    src: 50-telegraf.conf.j2
+    dest: /etc/rsyslog.d/50-telegraf.conf
+  notify: Restart Rsyslog 

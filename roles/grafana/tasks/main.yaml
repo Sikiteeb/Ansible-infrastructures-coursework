@@ -33,19 +33,10 @@
     path: /etc/grafana/provisioning/dashboard-jsons
     state: directory
     group: grafana
-
-- name: Main Dashboard Json
-  copy:
-    src: "../files/{{item}}"
-    dest: /etc/grafana/provisioning/dashboard-jsons/{{item}}
-    group: grafana
-  loop:
-    - main
-    - mysql
-
+    
 - name: Enable Grafana
   service:
     name: grafana-server
     state: started
-    enabled: yes
+    enabled: true
   

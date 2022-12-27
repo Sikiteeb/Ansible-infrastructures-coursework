@@ -1,0 +1,11 @@
+[Unit]
+Description=Influxdb Exporter
+Documentation=https://github.com/carlpett/influxdb_stats_exporter
+After=network-online.target
+
+[Service]
+User=root
+EnvironmentFile=/etc/default/prometheus-influxdb-exporter
+ExecStart=/usr/local/bin/influxdb-exporter $ARGS
+[Install]
+WantedBy=multi-user.target

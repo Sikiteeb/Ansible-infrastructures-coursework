@@ -1,0 +1,29 @@
+[meta]
+  dir = "/var/lib/influxdb/meta"
+[data]
+  dir = "/var/lib/influxdb/data"
+  wal-dir = "/var/lib/influxdb/wal"
+  series-id-set-cache-size = 100
+  query-log-enabled = false
+[coordinator]
+[retention]
+[shard-precreation]
+[monitor]
+[http]
+  enabled = true
+  bind-address = ":{{influxdb_port}}"
+  auth-enabled = false
+  log-enabled = false
+  write-tracing = false
+  pprof-enabled = false
+  https-enabled = false
+  max-row-limit = 10000
+  realm = "InfluxDB"
+[logging]
+[subscriber]
+[[graphite]]
+[[collectd]]
+[[opentsdb]]
+[[udp]]
+[continuous_queries]
+[tls]
