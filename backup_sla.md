@@ -94,10 +94,6 @@ Two types of backup can be produced: full and incremental.
 
 Full backup contains the whole backed up data and can be solely used to restore require data or service. Full backups are done for each service covered by our backup strategy according to the backup RPO' schedule.
 
-
-Incremental backup stores only the difference in the data relative to the last incremental backup produced. First incremental backup stores difference from the last created full backup. These backups form a chain, if some links disappear, they cannot be used to restore the data or service, but they allow to use less storage. Incremental backups are not produced done only for any service.
-
-
 Time: backups should be done automatically every day at 24:00 (around 00 AM) for each service, according to EET (UTC +2) and EEST (UTC +3) time zones.
 
 Explanation:
