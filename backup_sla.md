@@ -46,8 +46,8 @@ This Service Level Agreement (this “SLA”) governs the backup Services. Opera
   </tbody>
 </table>
 
-
-<h4>Monitoring services - Prometheus, Grafana, Telegraf, Pinger, Bind9 exporter, MySQL exporter, Nginx exporter, Node exporter, Rsyslog, <br>
+<br>
+<h4>Monitoring services - Prometheus, Grafana, Telegraf, Pinger, Bind9 exporter, MySQL exporter, Nginx exporter, Node exporter, Rsyslog, 
   HAProxy exporter, Keepalived exporter</h4>
 
 <h4>Backup services - Scripts, Duplicity</h4>
