@@ -50,15 +50,15 @@ This Service Level Agreement (this “SLA”) governs the backup Services. Opera
 <h4>Monitoring services - Prometheus, Grafana, Telegraf, Pinger, Bind9 exporter, MySQL exporter, Nginx exporter, Node exporter, Rsyslog, 
   HAProxy exporter, Keepalived exporter</h4>
 
-<h4>Backup services - Scripts, Duplicity</h4>
+<h4>Backup services: Scripts, Duplicity</h4>
 
-<h4>Containerisation services - Docker</h4>
+<h4>Containerisation services: Docker</h4>
 
-<h4>Load balancing services - HAProxy, keepalived</h4>
+<h4>Load balancing services: HAProxy, keepalived</h4>
 
-<h4>Additional services - Ansible, uWSGI, Cron</h4>
+<h4>Additional services: Ansible, uWSGI, Cron</h4>
 
-<h4>Ansible repository - https://github.com/Sikiteeb/ica0002 (stores configuration, roles, playbooks to configure all the above-mentioned services)</h4>
+<h4>Ansible repository: https://github.com/Sikiteeb/ica0002 (stores configuration, roles, playbooks to configure all the above-mentioned services)</h4>
 
 Descriptions of backup approaches contain information on specific backup attributes, such as:
 
@@ -74,9 +74,9 @@ Backup RTO (recovery time objective) - how long will it take to restore the serv
 
 Backup service covers only the next services:
 
-Database services - MySQL
+Database services: MySQL
 
-Monitoring services - Grafana
+Monitoring services: Grafana
 
 Explanation:
 All the services included contain user provided information (MySQL) or some log information, reflecting the health of our infrastructure (Grafana). User and the log data, and Grafana configuration cannot be restored by any other means.
@@ -98,10 +98,10 @@ Full backup contains the whole backed up data and can be solely used to restore 
 Incremental backup stores only the difference in the data relative to the last incremental backup produced. First incremental backup stores difference from the last created full backup. These backups form a chain, if some links disappear, they cannot be used to restore the data or service, but they allow to use less storage. Incremental backups are not produced done only for any service.
 
 
-Time: backups should be done automatically every day at 01:10 (around 1 AM) for each service, according to EET (UTC +2) and EEST (UTC +3) time zones.
+Time: backups should be done automatically every day at 24:00 (around 00 AM) for each service, according to EET (UTC +2) and EEST (UTC +3) time zones.
 
 Explanation:
-01:10 time was chosen as the time with the least activity in the region when our service is provided, some backed up services may be in the read-only mode or shutdown.
+24:00 time was chosen as the time with the least activity in the region when our service is provided, some backed up services may be in the read-only mode or shutdown.
 Incremental backups are not produced, main services are backed up rarely and according to the versioning and retention specification, only two versions are stored. These backups do not require a lot of storage in these amounts, as a result only more reliable full backups are created.
 
 <h3>Versioning and retention</h3>
