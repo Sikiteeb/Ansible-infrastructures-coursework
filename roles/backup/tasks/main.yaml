@@ -1,0 +1,26 @@
+- name: Create User "backup"
+  user:
+    name: "{{ backup_user }}"
+    group: "{{ backup_user }}"
+    home: /home/backup
+    generate_ssh_key: yes
+    shell: /bin/bash
+    ssh_key_file: /home/backup/.ssh/id_rsa
+
+- name: Add Backup Server Public Key
+  template:
+    src: known_hosts.j2
+    dest: /home/backup/.ssh/known_hosts
+    group: "{{ backup_user }}"
+    owner: "{{ backup_user }}"
+  no_log: true
+
+- name: Restore directory
+  file:
+    path: /home/backup/restore
+    state: directory
+    owner: "{{ backup_user }}"
+
+- name: Install Duplicity
+  apt:
+    name: duplicity 

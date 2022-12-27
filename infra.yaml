@@ -16,6 +16,14 @@
     - users
     - node_exporter
     - rsyslog
+      
+- name: Backup
+  hosts: all
+  become: true
+  gather_facts: false
+  roles:
+    - backup
+  tags: ba      
  
 
 - name: DNS
