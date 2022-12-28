@@ -34,6 +34,15 @@ This Service Level Agreement (this “SLA”) governs the backup Services. Opera
       <td><center>24:00</center></td>
       <td><center>24:00</center></td>
     </tr>
+       <tr>
+      <td><center>Incremental Backups</center></td>
+      <td><center>24:30</center></td>
+      <td><center>24:30</center></td>
+      <td><center>24:30</center></td>
+      <td><center>24:30</center></td>
+      <td><center>24:30</center></td>
+      <td><center>24:30</center></td>
+      <td><center>24:30</center></td>
     <tr>
       <td>Full Backup</td>
       <td></td>
@@ -48,13 +57,15 @@ This Service Level Agreement (this “SLA”) governs the backup Services. Opera
 
 <br>
 <h4>Monitoring services - Prometheus, Grafana, Telegraf, Pinger, Bind9 exporter, MySQL exporter, Nginx exporter, Node exporter, Rsyslog, 
-  HAProxy exporter, Keepalived exporter</h4>
+  HAProxy exporter and Keepalived exporter</h4>
+
+<h4>Database services: MySql, InfluxDb</h4>
 
 <h4>Backup services: Scripts, Duplicity</h4>
 
 <h4>Containerisation services: Docker</h4>
 
-<h4>Load balancing services: HAProxy, keepalived</h4>
+<h4>Load balancing services: HAProxy, Keepalived</h4>
 
 <h4>Additional services: Ansible, uWSGI, Cron</h4>
 
@@ -85,14 +96,16 @@ All the services not included under the backup service, such as web, app, DNS an
 Backup RPO
 Recovery point objective for:
 
-MySQL equals 4 weeks/28 days.
+MySQL: 4 weeks/28 days.
 
-Grafana equals 4 weeks/28 days.
+Grafana: 4 weeks/28 days.
 
 Two types of backup can be produced: full and incremental.
 
 
 Full backup contains the whole backed up data and can be solely used to restore require data or service. Full backups are done for each service covered by our backup strategy according to the backup RPO' schedule.
+
+Incremental backup stores only the difference in the data relative to the last incremental backup produced. First incremental backup stores difference from the last created full backup. These backups form a chain, if some links disappear, they cannot be used to restore the data or service, but they allow to use less storage. 
 
 Time: backups should be done automatically every day at 24:00 (around 00 AM) for each service, according to EET (UTC +2) and EEST (UTC +3) time zones.
 
@@ -104,7 +117,7 @@ Incremental backups are not produced, main services are backed up rarely and acc
 
 MySQL and Grafana backups are retained for 4 weeks/28 days, only 2 versions can be stored at the same time.
 
-Time: the oldest/3rd backup should be deleted at 02:10 (around 2 AM) on 28th day of every month, according to EET (UTC +2) and EEST (UTC +3) time zones. The date has been chosen considering the short month (February) as we want the deletion happening each month at least.
+Time: the oldest/3rd backup should be deleted at 02:10 (around 2 AM) on 28th day of every month, according to EET (UTC +2) and EEST (UTC +3) time zones. The date has been chosen considering the short month (February) as we want the deletion happening monthly.
 
 Explanation:
 Retention period should be longer than the period between creation of backups to not create a window of time, when there is none. To minimize storage used and still provide reliable backup service, 4 weeks was chosen as a backup retention period for MySQL, and Grafana to retain only 2 backup versions. If the last backup is not compatible with the newer version of the used software, then there is a higher chance that the older backup will cover this issue.

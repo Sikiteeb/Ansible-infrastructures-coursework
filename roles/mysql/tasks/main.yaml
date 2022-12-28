@@ -1,34 +1,60 @@
-
-- name: Install mySQL and dependencies
+- name: Install mysql and dependecies
   apt:
-    name:
+    name: 
       - mysql-server
       - python3-pymysql
-        
-- name: Copy mysql.conf
+
+- name: Copy override.conf
   template:
-    src: override.cnf
+    src: override.cnf.j2
     dest: /etc/mysql/mysql.conf.d/override.cnf
   notify:
-    - Restart MySQL        
+    - Restart MySQL
 
-- name: Enable mysql
+- name: Enable mysql 
   service:
     name: mysql
     state: started
     enabled: yes
-    
+
 - name: Agama MySQL database
   community.mysql.mysql_db:
     name: "{{ mysql_database }}"
     login_unix_socket: /var/run/mysqld/mysqld.sock
 
-- name: Agama MySQL user
+- name: Agama MySQL user  
   community.mysql.mysql_user:
     name: "{{ mysql_user }}"
     password: "{{ mysql_password }}"
     host: "%"
     priv: "{{ mysql_database }}.*:ALL"
     login_unix_socket: /var/run/mysqld/mysqld.sock
-  no_log: True    
+  no_log: True
 
+- name: MySQL Exporter User
+  community.mysql.mysql_user:
+    name: "{{ mysql_exporter_user }}"
+    password: "{{ mysql_exporter_key }}"
+    priv: "*.*:PROCESS,REPLICATION CLIENT,SELECT"
+    login_unix_socket: /var/run/mysqld/mysqld.sock
+  no_log: True
+
+- name: MySQL Replicate User
+  community.mysql.mysql_user:
+    name: "{{ mysql_replicate_user }}"
+    password: "{{ mysql_replicate_pass }}"
+    host: "%"
+    priv: "*.*:REPLICATION SLAVE"
+    login_unix_socket: /var/run/mysqld/mysqld.sock
+  no_log: True
+
+- name: Make replica read-only
+  community.mysql.mysql_variables:
+    variable: read_only
+    value: "{{ 'OFF' if inventory_hostname == mysql_host else 'ON' }}"
+    mode: persist
+    login_unix_socket: /var/run/mysqld/mysqld.sock
+  notify:
+    - Reset MySQL source
+    - Reset MySQL replica
+  

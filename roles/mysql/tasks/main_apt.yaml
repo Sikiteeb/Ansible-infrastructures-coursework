@@ -1,0 +1,34 @@
+
+- name: Install mySQL and dependencies
+  apt:
+    name:
+      - mysql-server
+      - python3-pymysql
+        
+- name: Copy mysql.conf
+  template:
+    src: override.cnf.2
+    dest: /etc/mysql/mysql.conf.d/override.cnf
+  notify:
+    - Restart MySQL        
+
+- name: Enable mysql
+  service:
+    name: mysql
+    state: started
+    enabled: true
+    
+- name: Agama MySQL database
+  community.mysql.mysql_db:
+    name: "{{ mysql_database }}"
+    login_unix_socket: /var/run/mysqld/mysqld.sock
+
+- name: Agama MySQL user
+  community.mysql.mysql_user:
+    name: "{{ mysql_user }}"
+    password: "{{ mysql_password }}"
+    host: "%"
+    priv: "{{ mysql_database }}.*:ALL"
+    login_unix_socket: /var/run/mysqld/mysqld.sock
+  no_log: true    
+

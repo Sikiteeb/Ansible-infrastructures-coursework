@@ -13,7 +13,6 @@
   gather_facts: false
   roles:      
     - init
-    - users
     - node_exporter
     - rsyslog
       
@@ -43,6 +42,7 @@
   roles:
     - mysql
     - mysql_exporter
+    - mysql_backup
   tags: 
     - db
     

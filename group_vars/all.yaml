@@ -1,5 +1,6 @@
 # General
 public_url: http://{{ ansible_host }}:{{ ansible_port//100}}80
+github_username: Sikiteeb
 
 # Agama at mySQL
 mysql_user: agama
@@ -11,8 +12,9 @@ mysql_password: !vault |
   3531626133623761620a326665396534636539366665666365666431646536666239316535643531
   3866
 mysql_database: agama
-mysql_host: sikiteeb-1 
+mysql_host: sikiteeb-2
 agama_port: 8000
+mysql_backup_host: "{{ groups['db_servers'] | reject('eq', mysql_host) | first | default(mysql_host) }}"
 
 # Mysql_exporter
 mysql_exporter_user: exporter
@@ -24,10 +26,22 @@ mysql_exporter_key: !vault |
   3862343865633038610a626538663734366435373034303133633037653234363364663265316239
   6661
   
+mysql_replicate_user: replication
+mysql_replicate_pass: !vault |
+  $ANSIBLE_VAULT;1.1;AES256
+  34616663353365373836306534313239363530633434393338643734636563633763633133373333
+  3034356137336432313032393437353532316136303163650a366438656434313365653237643139
+  62323961353363333034633863633131393234396134373265613732303431373733623335623138
+  6162323830366464660a643265623038386130313539363438616365333930613730663739613731
+  6538
+
+node_id: "{{ hostvars[inventory_hostname]['ansible_default_ipv4']['address'].split('.')[-1] }}"
+
 # Backup
 backup_user: backup
 backup_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEu6pFFWyuRrl4WGFPQGElYN9txwTGm2wSntcpVAaN90
 backup_server_ip: 192.168.42.132 
+
 
 # DNS
 domain: maledetta
