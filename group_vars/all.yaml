@@ -1,6 +1,6 @@
 # General
-public_url: http://{{ ansible_host }}:{{ ansible_port//100}}80
 github_username: Sikiteeb
+prometheus_host: sikiteeb-2
 
 # Agama at mySQL
 mysql_user: agama
@@ -14,6 +14,7 @@ mysql_password: !vault |
 mysql_database: agama
 mysql_host: sikiteeb-2
 agama_port: 8000
+agama_containers: 2
 mysql_backup_host: "{{ groups['db_servers'] | reject('eq', mysql_host) | first | default(mysql_host) }}"
 
 # Mysql_exporter
@@ -77,7 +78,7 @@ prometheus_exporters:
     
 # Grafana
 grafana_user: admin
-grafana_port: 3000  
+grafana_port: 3001 
 grafana_key:  !vault |
   $ANSIBLE_VAULT;1.1;AES256
   34396431343135633139306462303432643532616138363666613231353030656265333162653863

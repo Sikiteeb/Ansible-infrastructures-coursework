@@ -2,24 +2,25 @@
 
 - name: Setup
   hosts: all
-  become: true
-  gather_facts: true
+  become: yes
+  gather_facts: yes
   tasks:
     - setup:
   
 - name: Global
   hosts: all
-  become: true
-  gather_facts: false
+  become: yes
+  gather_facts: no
   roles:      
     - init
     - node_exporter
     - rsyslog
+    - docker
       
 - name: Backup
   hosts: all
-  become: true
-  gather_facts: false
+  become: yes
+  gather_facts: no
   roles:
     - backup
   tags: ba      
@@ -27,8 +28,8 @@
 
 - name: DNS
   hosts: dns_servers
-  become: true
-  gather_facts: false
+  become: yes
+  gather_facts: no
   roles:
     - bind
     - bind_exporter
@@ -37,8 +38,8 @@
  
 - name: Database server
   hosts: db_servers
-  become: true
-  gather_facts: false
+  become: yes
+  gather_facts: no
   roles:
     - mysql
     - mysql_exporter
@@ -48,19 +49,17 @@
     
 - name: Web server
   hosts: web_servers
-  become: true
-  gather_facts: false
+  become: yes
+  gather_facts: no
   roles:
     - agama
-    - uwsgi
-    - nginx
   tags: 
-    - web
+    - aga
 
 - name: Nginx
   hosts: all
-  become: true
-  gather_facts: false
+  become: yes
+  gather_facts: no
   roles:
    - nginx
    - nginx_exporter
@@ -69,8 +68,8 @@
       
 - name: Influxdb
   hosts: influxdb  
-  become: true
-  gather_facts: false 
+  become: yes
+  gather_facts: no 
   roles:
     - influxdb 
     - pinger
@@ -79,8 +78,8 @@
 
 - name: Prometheus
   hosts: prometheus
-  become: true
-  gather_facts: false
+  become: yes
+  gather_facts: no
   roles:
     - prometheus
   tags: pro
@@ -88,8 +87,8 @@
 
 - name: Grafana 
   hosts: grafana
-  become: true
-  gather_facts: true
+  become: yes
+  gather_facts: no
   roles:
     - grafana
   tags: gr
