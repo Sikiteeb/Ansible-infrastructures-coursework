@@ -55,9 +55,26 @@ forwarders:
   - 8.8.8.8
   - 9.9.9.9
   - 9.9.9.10
+dns_serial: "{{ (hostvars['sikiteeb-2']['ansible_date_time']['time']) | replace('-','') | replace(':','') }}"
 
 transfer_key: 0f4e9c9a568b53d9b608532d0d91e2fc1f5a61bca3e097b53f9726ad53321bb7
 nsupdate_key: e67d8b8758b5419d7946c24ab617f7d8ea52b671aae6336049cf8f43f5974fca 
+
+dns_a_records:
+  backup: 192.168.42.132
+dns_cname_records:
+  grafana: "{{ groups['grafana'][0] }}"
+  influxdb: "{{ groups['influxdb'][0] }}"
+  lb1: "{{ groups['haproxy'][0] }}"
+  lb2: "{{ groups['haproxy'][1] }}"
+  mysql1: "{{ groups['db_servers'][0] }}"
+  mysql2: "{{ groups['db_servers'][1] }}"
+  ns1: "{{ groups['dns_servers'][0] }}"
+  ns2: "{{ groups['dns_servers'][1] }}"
+  ns3: "{{ groups['dns_servers'][2] }}"
+  prometheus: "{{ groups['prometheus'][0] }}"
+  web1: "{{ groups['web_servers'][0] }}"
+  web2: "{{ groups['web_servers'][1] }}"
   
 # Nginx
 stub_status_port: 8080
@@ -75,9 +92,14 @@ prometheus_exporters:
     port: 9119  
   influxdb:
     port: 9424
+  haproxy:
+    port: 9101
+  keepalived:
+    port: 9165
     
 # Grafana
 grafana_user: admin
+grafana_host: sikiteeb-2
 grafana_port: 3001 
 grafana_key:  !vault |
   $ANSIBLE_VAULT;1.1;AES256
@@ -89,4 +111,8 @@ grafana_key:  !vault |
   
 # Influxdb
 influxdb_port: 8086
-rsyslog_port: 9188
+rsyslog_port: 6514
+
+# Haproxy
+haproxy_port: 88
+haproxy_stats_port: 9188

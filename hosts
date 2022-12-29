@@ -13,10 +13,10 @@ sikiteeb-2
 sikiteeb-1
 sikiteeb-2
 
-[dns_primary]
+[dns_master]
 sikiteeb-2
 
-[dns_secondary]
+[dns_slaves]
 sikiteeb-1 
 
 [prometheus]
@@ -26,4 +26,11 @@ sikiteeb-2
 sikiteeb-2
 
 [influxdb]
+sikiteeb-2
+
+[keepalived_master]
+sikiteeb-1
+
+[haproxy]
+sikiteeb-1
 sikiteeb-2

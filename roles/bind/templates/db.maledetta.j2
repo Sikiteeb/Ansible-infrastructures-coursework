@@ -1,6 +1,6 @@
 $TTL	604800
-{% for vm in groups['dns_primary'] %}
-{{ domain }}.	    IN  SOA	  {{ vm }}.{{ domain}}. siki.{{ domain }}. (
+{% for vm in groups['dns_master'] %}
+{{ fqdn }}.	    IN  SOA	  {{ vm }}.{{ fqdn }}. siki.{{ fqdn }}. (
 			      2		; Serial
 			 604800		; Refresh
 			  86400		; Retry
@@ -10,7 +10,7 @@ $TTL	604800
 {% endfor %}
 
 {% for vm in groups['dns_servers'] %}
-{{ domain }}.       IN    NS  {{ vm }}
+{{ fqdn }}.       IN    NS  {{ vm }}
 {% endfor %}
 
 {% for vm in groups['all'] %}	
