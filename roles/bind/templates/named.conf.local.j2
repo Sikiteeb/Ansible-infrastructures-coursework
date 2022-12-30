@@ -7,7 +7,7 @@ zone "{{ fqdn }}" {
     type slave;
     masters { {{ hostvars[groups['dns_master'][0]]['ansible_default_ipv4']['address'] }}; }; 
 {% endif %}
-    file "db.maledetta";
+    file "db.maledetta.it";
 };
 
 {% if inventory_hostname in groups ['dns_slaves'] %}
@@ -16,7 +16,7 @@ server {{ hostvars[groups['dns_master'][0]]['ansible_default_ipv4']['address'] }
 };
 {% endif %}
 
-zone "42.168.192.in-addr.arpa" {
+zone "{{ reverse_domain }}" {
 {% if inventory_hostname in groups ['dns_master'] %}
     type master;
     allow-update {key nsupdate.key;};

@@ -35,7 +35,6 @@
   copy:
     src: "../files/{{ item }}"
     dest: /opt/grafana/provisioning/dashboard-jsons/{{ item }}
-    recurse: no
   loop:
     - main.json 
     - mysql.json
@@ -49,7 +48,7 @@
    published_ports: "{{ grafana_port }}:3000"
    volumes: /opt/grafana:/etc/grafana
    restart_policy: always
-   dns_search_domains: "{{ domain }}"
+   dns_search_domains: "{{ fqdn }}"
    dns_servers: 
-    - "{{ hostvars[groups['dns_secondary'][0]]['ansible_default_ipv4']['address'] }}"
- #  - "{{ hostvars[groups['dns_secondary'][1]]['ansible_default_ipv4']['address'] }}"
+    - "{{ hostvars[groups['dns_slaves'][0]]['ansible_default_ipv4']['address'] }}"
+    - "{{ hostvars[groups['dns_slaves'][1]]['ansible_default_ipv4']['address'] }}"

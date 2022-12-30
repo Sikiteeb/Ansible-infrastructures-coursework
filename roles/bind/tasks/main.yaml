@@ -26,7 +26,7 @@
 - name: DNS Primary Zone
   template: 
     src: db.maledetta.j2
-    dest: /var/cache/bind/db.domain
+    dest: /var/cache/bind/db.maledetta.it
     force: no
   notify: 
     - Restart Bind9
@@ -36,8 +36,8 @@
 
 - name: Reverse DNS Primary Zone
   template: 
-    src: db.reverse.j2
-    dest: /var/cache/bind/db.domain.reverse
+    src: db.maledetta.reverse
+    dest: /var/cache/bind/db.maledetta.reverse
     force: no
   notify: 
     - Restart Bind9
@@ -53,11 +53,6 @@
 
 - name: execute handlers
   meta: flush_handlers
-
-- name: Wait for 15 sec
-  pause:
-    seconds: 15
-  when: dns_config.changed
 
 - name: Create A records
   community.general.nsupdate:

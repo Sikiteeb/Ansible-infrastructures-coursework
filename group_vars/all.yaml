@@ -49,6 +49,7 @@ domain: maledetta
 fqdn: maledetta.it
 internal_network: 192.168.43.0/24
 localhost: 127.0.0.0/8
+reverse_domain: 42.168.192.in-addr.arpa
 stats_port: 8053
 forwarders:
   - 1.1.1.1
