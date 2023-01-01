@@ -26,20 +26,20 @@
     dest: /opt/grafana/provisioning/datasources/default.yaml
   notify: Restart Grafana Docker
 
-- name: Create Grafana Dashboards Json Folder
-  file:
-    path: /opt/grafana/provisioning/dashboard-jsons
-    state: directory
+#- name: Create Grafana Dashboards Json Folder
+#  file:
+#    path: /opt/grafana/provisioning/dashboard-jsons
+#    state: directory
 
-- name: Main Dashboard Json
-  copy:
-    src: "../files/{{ item }}"
-    dest: /opt/grafana/provisioning/dashboard-jsons/{{ item }}
-  loop:
-    - main.json 
-    - mysql.json
-    - syslog.json
-  notify: Restart Grafana Docker
+#- name: Main Dashboard Json
+#  copy:
+#    src: "../files/{{ item }}"
+#    dest: /opt/grafana/provisioning/dashboard-jsons/{{ item }}
+#  loop:
+#    - main.json 
+#    - mysql.json
+#    - syslog.json
+#  notify: Restart Grafana Docker
   
 - name: Grafana Docker 
   community.docker.docker_container:

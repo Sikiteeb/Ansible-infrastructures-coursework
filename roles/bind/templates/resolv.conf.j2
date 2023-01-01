@@ -1,3 +1,12 @@
-{% for vm in groups['dns_slaves'] %} nameserver {{ hostvars[vm]['ansible_default_ipv4']['address'] }}
-{% endfor %}
 search {{ fqdn }}
+
+{% for vm in groups['dns_master'] %}
+nameserver {{ hostvars[vm]['ansible_default_ipv4']['address'] }}
+{% endfor %}
+
+
+{% for vm in groups['dns_slaves'] %}
+nameserver {{ hostvars[vm]['ansible_default_ipv4']['address'] }}
+{% endfor %}
+
+

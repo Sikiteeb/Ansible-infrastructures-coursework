@@ -3,6 +3,17 @@
     name: 
       - bind9
       - python3-dnspython
+        
+- name: Resolv.conf
+  template:
+    src: resolv.conf.j2
+    dest: /etc/resolv.conf
+
+- name: Stop systemd-resolved
+  systemd:
+    name: systemd-resolved
+    enabled: no 
+    state: stopped    
   
 - name: Option
   template:
@@ -25,14 +36,14 @@
   
 - name: DNS Primary Zone
   template: 
-    src: db.maledetta.j2
-    dest: /var/cache/bind/db.maledetta.it
+    src: db.maledetta
+    dest: /var/cache/bind/db.maledetta
     force: no
   notify: 
     - Restart Bind9
     - Reconfigure rndc
   when: inventory_hostname in groups ['dns_master']
-  
+  register: dns_config
 
 - name: Reverse DNS Primary Zone
   template: 
@@ -43,8 +54,8 @@
     - Restart Bind9
     - Reconfigure rndc
   when: inventory_hostname in groups ['dns_master']
+  register: dns_config
   
-
 - name: Enable bind9
   service:
     name: bind9
@@ -53,12 +64,17 @@
 
 - name: execute handlers
   meta: flush_handlers
+  
+- name: Wait for 15 sec
+  pause:
+    seconds: 15
+  when: dns_config.changed
 
 - name: Create A records
   community.general.nsupdate:
     key_name: "nsupdate.key"
     key_algorithm: "hmac-sha256"
-    key_secret: "{{ nsupdate_key }}"
+    key_secret: "{{ dns_update_key}}"
     server: "localhost"
     zone: "{{ fqdn }}"
     record: "{{ item.key }}"
@@ -72,7 +88,7 @@
   community.general.nsupdate:
     key_name: "nsupdate.key"
     key_algorithm: "hmac-sha256"
-    key_secret: "{{ nsupdate_key }}"
+    key_secret: "{{ dns_update_key }}"
     server: "localhost"
     zone: "{{ fqdn }}"
     record: "{{ item.key }}"

@@ -13,7 +13,7 @@ mysql_password: !vault |
   3866
 mysql_database: agama
 mysql_host: sikiteeb-2
-agama_port: 8000
+docker_agama_port: 8000
 agama_containers: 2
 mysql_backup_host: "{{ groups['db_servers'] | reject('eq', mysql_host) | first | default(mysql_host) }}"
 
@@ -40,16 +40,16 @@ node_id: "{{ hostvars[inventory_hostname]['ansible_default_ipv4']['address'].spl
 
 # Backup
 backup_user: backup
-backup_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEu6pFFWyuRrl4WGFPQGElYN9txwTGm2wSntcpVAaN90
 backup_server_ip: 192.168.42.132 
+backup_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDiYOoOiQ0I/xQ03JRvEFS99YBTXMaYko0meHqYwfo66
 
 
 # DNS
 domain: maledetta
-fqdn: maledetta.it
+fqdn: maledetta.xtx
 internal_network: 192.168.43.0/24
 localhost: 127.0.0.0/8
-reverse_domain: 42.168.192.in-addr.arpa
+reverse_domain: 43.168.192.in-addr.arpa
 stats_port: 8053
 forwarders:
   - 1.1.1.1
@@ -57,12 +57,29 @@ forwarders:
   - 9.9.9.9
   - 9.9.9.10
 dns_serial: "{{ (hostvars['sikiteeb-2']['ansible_date_time']['time']) | replace('-','') | replace(':','') }}"
-
-transfer_key: 0f4e9c9a568b53d9b608532d0d91e2fc1f5a61bca3e097b53f9726ad53321bb7
-nsupdate_key: e67d8b8758b5419d7946c24ab617f7d8ea52b671aae6336049cf8f43f5974fca 
-
+dns_transfer_key_name: transfer.key
+dns_transfer_key: !vault |
+  $ANSIBLE_VAULT;1.1;AES256
+  36616432336333643931626363616638663434316136343966343338323163336632326531633134
+  3833626339356465323336636436613761663936653664630a316334303738653534303062353261
+  38663263303966623064326535313333313532313832343561623966353738336237303064326230
+  3864646432323766350a636263303439323131383762666339666630623136633939316362316165
+  38333635363830373239616438633863316365353332656665623735626264363733366237646338
+  6231613735646439346563313930626637616339383038363236
+  
+dns_update_key_name: nsupdate.key  
+dns_update_key: !vault |
+  $ANSIBLE_VAULT;1.1;AES256
+  66623333356637303563336131633561353230346665376631626561313935363330333163646163
+  3134666439623233333261396463323964666332396565350a303265643535393661393732613733
+  35646136336533376364643965616336616663663335626433343535343033343838653834343238
+  3237626664356563370a633236633234663831386464626364313735386531366238626236373433
+  35666434393762656239316565356438303631323962396633323863356433616462653034343766
+  6561376464303561303537316462373631663639333664396637
+  
 dns_a_records:
   backup: 192.168.42.132
+  
 dns_cname_records:
   grafana: "{{ groups['grafana'][0] }}"
   influxdb: "{{ groups['influxdb'][0] }}"
@@ -117,3 +134,4 @@ rsyslog_port: 6514
 # Haproxy
 haproxy_port: 88
 haproxy_stats_port: 9188
+

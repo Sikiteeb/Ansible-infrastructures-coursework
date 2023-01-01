@@ -1,12 +1,8 @@
-sikiteeb-1 ansible_host=193.40.156.67 ansible_port=35322 ansible_ssh_user=ubuntu
-sikiteeb-2 ansible_host=193.40.156.67 ansible_port=30422 ansible_ssh_user=ubuntu
-sikiteeb-3 ansible_host=193.40.156.67 ansible_port=39822 ansible_ssh_user=ubuntu
+sikiteeb-1 ansible_host=193.40.156.67 ansible_port=16522 ansible_ssh_user=ubuntu
+sikiteeb-2 ansible_host=193.40.156.67 ansible_port=14922 ansible_ssh_user=ubuntu
+sikiteeb-3 ansible_host=193.40.156.67 ansible_port=11422 ansible_ssh_user=ubuntu
 
 [web_servers]
-sikiteeb-1
-sikiteeb-2
-
-[db_servers]
 sikiteeb-1
 sikiteeb-2
 
@@ -15,15 +11,19 @@ sikiteeb-1
 sikiteeb-2
 sikiteeb-3
 
-[dns_servers:children]
-dns_master
-dns_slaves
-
 [dns_master]
 sikiteeb-3
 
 [dns_slaves]
 sikiteeb-1 
+sikiteeb-2
+
+[dns_servers:children]
+dns_master
+dns_slaves
+
+[db_servers]
+sikiteeb-1
 sikiteeb-2
 
 [prometheus]
@@ -33,7 +33,7 @@ sikiteeb-3
 sikiteeb-3
 
 [influxdb]
-sikiteeb-3
+sikiteeb-1
 
 [keepalived_master]
 sikiteeb-1
