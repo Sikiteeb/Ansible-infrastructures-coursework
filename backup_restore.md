@@ -8,7 +8,7 @@ To restore **MySQL** database you will have to run commands on the first virtual
 Firstly, In order to restore the backup from the server, run this command as **backup** user:  
 ```sudo su - backup```    
 ``` rm -r /home/backup/mysql/restore/* ```  
-```duplicity --no-encryption restore rsync://sikiteeb@backup.maledetta.it//home/sikiteeb/mysql/ /home/backup/mysql/restore```
+```duplicity --no-encryption restore rsync://sikiteeb@backup.maledetta.xtx//home/sikiteeb/mysql/ /home/backup/mysql/restore```
 
 Secondly, In order to upload the restore backup onto the machine, run this command as **root** user:  
 ```mysql agama < /home/backup/mysql/restore/agama.sql```
@@ -18,7 +18,7 @@ To restore **InfluxDB** database you will have to run commands as root on the fi
 Firstly, In order to restore the backup from the server, run this command as **backup** user:  
 ```sudo su - backup```   
 ```rm -r /home/backup/influxdb/restore/*```  
-```duplicity --no-encryption restore rsync://sikiteeb@backup.maledetta.it//home/sikiteeb/mysql/ /home/backup/mysql/restore```
+```duplicity --no-encryption restore rsync://sikiteeb@backup.maledetta.xtx//home/sikiteeb/mysql/ /home/backup/mysql/restore```
 
 To restore the backup you will need to delete existing Telegraf database first. It also makes sense to stop the Telegraf, so that it does not recreate the database before you could restore it, run these commands from **root** user:  
 ```service telegraf stop```  
