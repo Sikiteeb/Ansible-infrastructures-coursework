@@ -1,4 +1,4 @@
-# Backup Restore Manual
+# Backup Restoration Process
 
 Run Ansible playbook to install all the necessary configurations, run this command from the ica0002 folder on your machine.  
 ```ansible-playbook infra.yaml ```
