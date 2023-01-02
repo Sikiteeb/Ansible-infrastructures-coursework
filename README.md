@@ -1,5 +1,5 @@
-##TalTech IT Infrastructure Services course ICA0002
+TalTech IT Infrastructure Services course ICA0002
 
-##Sigrid Hanni
+Sigrid Hanni
 
-##214241IVSB
+214241IVSB
