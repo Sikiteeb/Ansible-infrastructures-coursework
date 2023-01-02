@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="771de464-61cf-40f3-ac3a-95a3782f8fa5" name="Changes" comment="exam run" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="580b4874-9d3d-4196-83eb-5be0e0f95748" />
+        <option name="url" value="git@github.com:Sikiteeb/ica0002.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProjectId" id="2JVGCRQur3zszeePBn7dtRm3akS" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/sigridhanni/Library/Application Support/JetBrains/Rider2022.3/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/sigridhanni/Library/Application Support/JetBrains/Rider2022.3/resharper-host/SourcesCache&quot;,
+      &quot;/Users/sigridhanni/.local/share/Symbols/src&quot;
+    ]
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="771de464-61cf-40f3-ac3a-95a3782f8fa5" name="Changes" comment="" />
+      <created>1672155709507</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1672155709507</updated>
+      <workItem from="1672155720579" duration="2843000" />
+      <workItem from="1672211531154" duration="24239000" />
+      <workItem from="1672295825367" duration="11300000" />
+      <workItem from="1672321056686" duration="438000" />
+      <workItem from="1672384460524" duration="12620000" />
+      <workItem from="1672416531355" duration="6283000" />
+      <workItem from="1672473355392" duration="16598000" />
+      <workItem from="1672496435436" duration="6135000" />
+      <workItem from="1672559884327" duration="14263000" />
+      <workItem from="1672648384147" duration="16665000" />
+    </task>
+    <task id="LOCAL-00001" summary="Lab 10 and a bit of 11">
+      <created>1672234672408</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672234672408</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Lab 12 docker">
+      <created>1672299329247</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1672299329247</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Lab 13 and 14 (to be fixed)">
+      <created>1672306093696</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1672306093696</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Lab 14">
+      <created>1672401061238</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672401061238</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Lab 14_1">
+      <created>1672575311695</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1672575311695</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Done">
+      <created>1672665399416</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1672665399416</updated>
+    </task>
+    <task id="LOCAL-00007" summary="exam run">
+      <created>1672668820150</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1672668820150</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Lab 10 and a bit of 11" />
+    <MESSAGE value="Lab 12 docker" />
+    <MESSAGE value="Lab 13 and 14 (to be fixed)" />
+    <MESSAGE value="Lab 14" />
+    <MESSAGE value="Lab 14_1" />
+    <MESSAGE value="Done" />
+    <MESSAGE value="exam run" />
+    <option name="LAST_COMMIT_MESSAGE" value="exam run" />
+  </component>
+</project>
