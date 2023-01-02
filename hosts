@@ -1,6 +1,6 @@
-sikiteeb-1 ansible_host=193.40.156.67 ansible_port=38322 ansible_ssh_user=ubuntu
-sikiteeb-2 ansible_host=193.40.156.67 ansible_port=31322 ansible_ssh_user=ubuntu
-sikiteeb-3 ansible_host=193.40.156.67 ansible_port=34422 ansible_ssh_user=ubuntu
+sikiteeb-1 ansible_host=193.40.156.67 ansible_port=43922 ansible_ssh_user=ubuntu
+sikiteeb-2 ansible_host=193.40.156.67 ansible_port=43122 ansible_ssh_user=ubuntu
+sikiteeb-3 ansible_host=193.40.156.67 ansible_port=32322 ansible_ssh_user=ubuntu
 
 [web_servers]
 sikiteeb-1

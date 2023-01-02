@@ -1,4 +1,4 @@
-- name: Install mysql and dependecies
+- name: Install mysql and dependencies
   apt:
     name: 
       - mysql-server
