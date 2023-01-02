@@ -33,9 +33,9 @@ defaults
 	errorfile 503 /etc/haproxy/errors/503.http
 	errorfile 504 /etc/haproxy/errors/504.http
 
-listen my_agama_frontend
+listen my_ha_frontend
   bind :{{haproxy_port}}
-{% set port = docker_agama_port %}
+{% set port = agama_port %}
 {%- for item in range(1, agama_containers + 1) -%}
 {% for vm in groups ['haproxy'] %}
   server {{ vm }}-{{ item }} {{ vm }}:{{ port+item }} check

@@ -1,9 +1,9 @@
-- name: Create directory Agama
+- name: Create directory agama
   file:
     path: /opt/agama
     state: directory
-  
-- name: Install Agama 
+
+- name: Install agama stuff
   get_url:
     url: "{{ item }}"
     dest: /opt/agama
@@ -11,24 +11,28 @@
     - https://raw.githubusercontent.com/hudolejev/agama/master/agama.py
     - https://raw.githubusercontent.com/hudolejev/agama/master/Dockerfile
 
-- name: Build Agama docker image
-  community.docker.docker_image: 
-    name: agama 
-    source: build 
+- name: Built agama docker image
+  community.docker.docker_image:
+    name: agama
+    source: build
     build:
       path: /opt/agama
-    
-- name: Agama Docker containers:"{{ agama_containers }}"
+
+- name: Run agama docker container
   community.docker.docker_container:
+    container_default_behavior: no_defaults
     name: "agama{{ item }}"
     image: agama
-    restart_policy: always
-    state: started
-    published_ports: "{{ docker_agama_port + item | int }}:8000"
-    container_default_behavior: no_defaults
+    published_ports: "{{ agama_port + item }}:{{ agama_port1 }}"
     env:
       AGAMA_DATABASE_URI: mysql+pymysql://{{mysql_user}}:{{mysql_password}}@{{mysql_host}}/{{mysql_database}}
-  with_sequence: count={{ agama_containers }}
-    
+    restart_policy: always
+    dns_search_domains: "{{ fqdn}}"
+    dns_servers:
+      - "{{ hostvars[groups['dns_slaves'][0]]['ansible_default_ipv4']['address'] }}"
+      - "{{ hostvars[groups['dns_slaves'][1]]['ansible_default_ipv4']['address'] }}"
+  with_items:
+    - "{{ range(1, agama_containers + 1) | list }}"
+  no_log: false
     
   

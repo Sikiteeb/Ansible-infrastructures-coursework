@@ -13,7 +13,10 @@ mysql_password: !vault |
   3866
 mysql_database: agama
 mysql_host: sikiteeb-2
-docker_agama_port: 8000
+docker_agama_port1: 8003
+docker_agama_port2: 8004
+agama_port: 8000
+agama_port1: 8000
 agama_containers: 2
 mysql_backup_host: "{{ groups['db_servers'] | reject('eq', mysql_host) | first | default(mysql_host) }}"
 
@@ -49,6 +52,7 @@ domain: maledetta
 fqdn: maledetta.xtx
 internal_network: 192.168.43.0/24
 localhost: 127.0.0.0/8
+docker_network: 172.17.0.0/16
 reverse_domain: 43.168.192.in-addr.arpa
 stats_port: 8053
 forwarders:

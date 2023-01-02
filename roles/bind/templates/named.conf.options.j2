@@ -1,4 +1,4 @@
-acl trusted { {{ internal_network }}; {{ localhost }};  }; 
+acl trusted { {{ internal_network }}; {{ localhost }}; {{ docker_network }};  }; 
 
 options {
         directory "/var/cache/bind";

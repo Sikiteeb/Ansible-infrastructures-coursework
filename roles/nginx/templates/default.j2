@@ -10,7 +10,7 @@ server {
   location / {
     #uwsgi_pass localhost:5000;
     #include uwsgi_params;
-    proxy_pass http://localhost:{{ docker_agama_port + 1}};
+    proxy_pass http://localhost:{{ agama_port + 1}};
     proxy_set_header Host $http_host;
   }
 {% endif %}
