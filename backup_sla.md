@@ -1,5 +1,3 @@
-<h4>Table of contents: </h4>
-
 
 <h1>Backup services SLA </h1>
 
