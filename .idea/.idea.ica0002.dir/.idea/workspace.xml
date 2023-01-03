@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="771de464-61cf-40f3-ac3a-95a3782f8fa5" name="Changes" comment="final">
+    <list default="true" id="771de464-61cf-40f3-ac3a-95a3782f8fa5" name="Changes" comment="exam_ready">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ica0002.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ica0002.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hosts" beforeDir="false" afterPath="$PROJECT_DIR$/hosts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre_exam.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/influxdb_backup/templates/influxdb-backup.j2" beforeDir="false" afterPath="$PROJECT_DIR$/roles/influxdb_backup/templates/influxdb-backup.j2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/mysql_backup/templates/mysql-backup.j2" beforeDir="false" afterPath="$PROJECT_DIR$/roles/mysql_backup/templates/mysql-backup.j2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/nginx/tasks/main.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/nginx/tasks/main.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/nginx_exporter/tasks/main.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/nginx_exporter/tasks/main.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/nginx_exporter/templates/stub_status" beforeDir="false" afterPath="$PROJECT_DIR$/roles/nginx/templates/stub_status" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +74,7 @@
       <workItem from="1672559884327" duration="14263000" />
       <workItem from="1672648384147" duration="17545000" />
       <workItem from="1672676119084" duration="5871000" />
-      <workItem from="1672723707821" duration="12015000" />
+      <workItem from="1672723707821" duration="18247000" />
     </task>
     <task id="LOCAL-00001" summary="Lab 10 and a bit of 11">
       <created>1672234672408</created>
@@ -164,7 +167,21 @@
       <option name="project" value="LOCAL" />
       <updated>1672740472668</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="exam_ready">
+      <created>1672747243653</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1672747243653</updated>
+    </task>
+    <task id="LOCAL-00015" summary="exam_ready">
+      <created>1672747295579</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1672747295579</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,6 +200,7 @@
     <MESSAGE value="backup" />
     <MESSAGE value="users" />
     <MESSAGE value="final" />
-    <option name="LAST_COMMIT_MESSAGE" value="final" />
+    <MESSAGE value="exam_ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="exam_ready" />
   </component>
 </project>
