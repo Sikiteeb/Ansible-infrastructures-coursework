@@ -1,17 +1,17 @@
-Tue Jan  3 09:56:45 EET 2023
+Tue Jan  3 13:18:17 EET 2023
 Main.lan
 
 PLAY [Setup] *******************************************************************
 
 TASK [Gathering Facts] *********************************************************
-ok: [sikiteeb-2]
-ok: [sikiteeb-1]
 ok: [sikiteeb-3]
+ok: [sikiteeb-1]
+ok: [sikiteeb-2]
 
 TASK [setup] *******************************************************************
+ok: [sikiteeb-1]
 ok: [sikiteeb-2]
 ok: [sikiteeb-3]
-ok: [sikiteeb-1]
 
 PLAY [Global] ******************************************************************
 
@@ -21,9 +21,9 @@ changed: [sikiteeb-1]
 changed: [sikiteeb-3]
 
 TASK [users : Add user Juri Hudolejev] *****************************************
-changed: [sikiteeb-1]
-changed: [sikiteeb-2]
 changed: [sikiteeb-3]
+changed: [sikiteeb-2]
+changed: [sikiteeb-1]
 
 TASK [users : Add ssh for Juri Hudolejev] **************************************
 --- before: /home/hudolejev/.ssh/authorized_keys
@@ -56,13 +56,13 @@ TASK [users : Add ssh for Roman Kuchin] ****************************************
 @@ -0,0 +1 @@
 +ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDFligqCTgPl8lcKVsgHq9K9zEelCfTP+hcuG9tdhHgBoHwlZPilvTmi4veyORSGTuS9x8XwJuDAnAZsT75TFQVbOjp0XqqcpV/jF4ix6mS6kmdJzzruAaYSI6FWit4ZeRz8/XfNOmg2xaPn3A6hWAUAOhpeOiXtKcSZVOIitJOirjjYrK5Sq+cW8pFGjVWpweU46WwKYoPr1EyEN1PqUjDTOU4LvShEK1TF/kZOeRMysPf9lz1JQO6BKEr0oRWaROCMZwuTDlmh9i0LZEwje6e5ADxMyTHp9fgpCV9a4hDOE7EQdmePDtDO9PHjGQD3m060ydOiFbjSI98q0puzEKxpfzcyMEb/ztdiLWOBO5ANOMzADZ9f+D0S3bqHbSlq/pHXJ2aF2DfROKOrIg1ABFcgz4ugaGhQzYmxsKc2SXgzk/D7952k+FP5FxvW5FpX+xgkMGkt2XlLzjpvZO5eH/rHDppO1v+Pr876di5NbiXCC0GL3C80H2dl4QIrpeDtlFIO5spVtMqFBbUcXticNC9C6dXjOL5p5jhLq82tKHlc5Mnx0cyPRHeO8XCkA0MsipMOGy+tIiOPKaO/dDMT7kiYZKYvaNaUrmdB0MISydE8kTknHBVX9b/qOOysHglMJgmfIYP2YWXDVQFWq9hkWFVIS+yPiaEViphRKbTZMBbLQ== 
 
-changed: [sikiteeb-1]
+changed: [sikiteeb-2]
 --- before: /home/romankuchin/.ssh/authorized_keys
 +++ after: /home/romankuchin/.ssh/authorized_keys
 @@ -0,0 +1 @@
 +ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDFligqCTgPl8lcKVsgHq9K9zEelCfTP+hcuG9tdhHgBoHwlZPilvTmi4veyORSGTuS9x8XwJuDAnAZsT75TFQVbOjp0XqqcpV/jF4ix6mS6kmdJzzruAaYSI6FWit4ZeRz8/XfNOmg2xaPn3A6hWAUAOhpeOiXtKcSZVOIitJOirjjYrK5Sq+cW8pFGjVWpweU46WwKYoPr1EyEN1PqUjDTOU4LvShEK1TF/kZOeRMysPf9lz1JQO6BKEr0oRWaROCMZwuTDlmh9i0LZEwje6e5ADxMyTHp9fgpCV9a4hDOE7EQdmePDtDO9PHjGQD3m060ydOiFbjSI98q0puzEKxpfzcyMEb/ztdiLWOBO5ANOMzADZ9f+D0S3bqHbSlq/pHXJ2aF2DfROKOrIg1ABFcgz4ugaGhQzYmxsKc2SXgzk/D7952k+FP5FxvW5FpX+xgkMGkt2XlLzjpvZO5eH/rHDppO1v+Pr876di5NbiXCC0GL3C80H2dl4QIrpeDtlFIO5spVtMqFBbUcXticNC9C6dXjOL5p5jhLq82tKHlc5Mnx0cyPRHeO8XCkA0MsipMOGy+tIiOPKaO/dDMT7kiYZKYvaNaUrmdB0MISydE8kTknHBVX9b/qOOysHglMJgmfIYP2YWXDVQFWq9hkWFVIS+yPiaEViphRKbTZMBbLQ== 
 
-changed: [sikiteeb-2]
+changed: [sikiteeb-1]
 --- before: /home/romankuchin/.ssh/authorized_keys
 +++ after: /home/romankuchin/.ssh/authorized_keys
 @@ -0,0 +1 @@
@@ -81,7 +81,7 @@ The following NEW packages will be installed:
   moreutils prometheus-node-exporter prometheus-node-exporter-collectors
   smartmontools
 0 upgraded, 8 newly installed, 0 to remove and 231 not upgraded.
-changed: [sikiteeb-1]
+changed: [sikiteeb-3]
 The following additional packages will be installed:
   libio-pty-perl libipc-run-perl libtime-duration-perl libtimedate-perl
   moreutils prometheus-node-exporter-collectors smartmontools
@@ -103,146 +103,11 @@ The following NEW packages will be installed:
   moreutils prometheus-node-exporter prometheus-node-exporter-collectors
   smartmontools
 0 upgraded, 8 newly installed, 0 to remove and 231 not upgraded.
-changed: [sikiteeb-3]
+changed: [sikiteeb-1]
 
 TASK [node_exporter : Node Exporter arg] ***************************************
 --- before: /etc/default/prometheus-node-exporter
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmp3i2zqov0/prometheus-node-exporter
-@@ -1,128 +1 @@
--# Set the command-line arguments to pass to the server.
--# Due to shell scaping, to pass backslashes for regexes, you need to double
--# them (\\d for \d). If running under systemd, you need to double them again
--# (\\\\d to mean \d), and escape newlines too.
--ARGS=""
--
--# Prometheus-node-exporter supports the following options:
--#
--#  --collector.diskstats.ignored-devices="^(ram|loop|fd|(h|s|v|xv)d[a-z]|nvme\\d+n\\d+p)\\d+$"
--#                            Regexp of devices to ignore for diskstats.
--#  --collector.filesystem.ignored-mount-points="^/(dev|proc|run|sys|mnt|media|var/lib/docker)($|/)"
--#                            Regexp of mount points to ignore for filesystem
--#                            collector.
--#  --collector.filesystem.ignored-fs-types="^(autofs|binfmt_misc|cgroup|configfs|debugfs|devpts|devtmpfs|fusectl|hugetlbfs|mqueue|overlay|proc|procfs|pstore|rpc_pipefs|securityfs|sysfs|tracefs)$"
--#                            Regexp of filesystem types to ignore for
--#                            filesystem collector.
--#  --collector.netdev.ignored-devices="^lo$"
--#                            Regexp of net devices to ignore for netdev
--#                            collector.
--#  --collector.netstat.fields="^(.*_(InErrors|InErrs)|Ip_Forwarding|Ip(6|Ext)_(InOctets|OutOctets)|Icmp6?_(InMsgs|OutMsgs)|TcpExt_(Listen.*|Syncookies.*)|Tcp_(ActiveOpens|PassiveOpens|RetransSegs|CurrEstab)|Udp6?_(InDatagrams|OutDatagrams|NoPorts))$"
--#                            Regexp of fields to return for netstat
--#                            collector.
--#  --collector.ntp.server="127.0.0.1"
--#                            NTP server to use for ntp collector
--#  --collector.ntp.protocol-version=4
--#                            NTP protocol version
--#  --collector.ntp.server-is-local
--#                            Certify that collector.ntp.server address is the
--#                            same local host as this collector.
--#  --collector.ntp.ip-ttl=1  IP TTL to use while sending NTP query
--#  --collector.ntp.max-distance=3.46608s
--#                            Max accumulated distance to the root
--#  --collector.ntp.local-offset-tolerance=1ms
--#                            Offset between local clock and local ntpd time
--#                            to tolerate
--#  --path.procfs="/proc"     procfs mountpoint.
--#  --path.sysfs="/sys"       sysfs mountpoint.
--#  --collector.qdisc.fixtures=""
--#                            test fixtures to use for qdisc collector
--#                            end-to-end testing
--#  --collector.runit.servicedir="/etc/service"
--#                            Path to runit service directory.
--#  --collector.supervisord.url="http://localhost:9001/RPC2"
--#                            XML RPC endpoint.
--#  --collector.systemd.unit-whitelist=".+"
--#                            Regexp of systemd units to whitelist. Units must
--#                            both match whitelist and not match blacklist to
--#                            be included.
--#  --collector.systemd.unit-blacklist=".+(\\.device|\\.scope|\\.slice|\\.target)"
--#                            Regexp of systemd units to blacklist. Units must
--#                            both match whitelist and not match blacklist to
--#                            be included.
--#  --collector.systemd.private
--#                            Establish a private, direct connection to
--#                            systemd without dbus.
--#  --collector.textfile.directory="/var/lib/prometheus/node-exporter"
--#                            Directory to read text files with metrics from.
--#  --collector.vmstat.fields="^(oom_kill|pgpg|pswp|pg.*fault).*"
--#                            Regexp of fields to return for vmstat collector.
--#  --collector.wifi.fixtures=""
--#                            test fixtures to use for wifi collector metrics
--#  --collector.arp           Enable the arp collector (default: enabled).
--#  --collector.bcache        Enable the bcache collector (default: enabled).
--#  --collector.bonding       Enable the bonding collector (default: enabled).
--#  --collector.buddyinfo     Enable the buddyinfo collector (default:
--#                            disabled).
--#  --collector.conntrack     Enable the conntrack collector (default:
--#                            enabled).
--#  --collector.cpu           Enable the cpu collector (default: enabled).
--#  --collector.diskstats     Enable the diskstats collector (default:
--#                            enabled).
--#  --collector.drbd          Enable the drbd collector (default: disabled).
--#  --collector.edac          Enable the edac collector (default: enabled).
--#  --collector.entropy       Enable the entropy collector (default: enabled).
--#  --collector.filefd        Enable the filefd collector (default: enabled).
--#  --collector.filesystem    Enable the filesystem collector (default:
--#                            enabled).
--#  --collector.hwmon         Enable the hwmon collector (default: enabled).
--#  --collector.infiniband    Enable the infiniband collector (default:
--#                            enabled).
--#  --collector.interrupts    Enable the interrupts collector (default:
--#                            disabled).
--#  --collector.ipvs          Enable the ipvs collector (default: enabled).
--#  --collector.ksmd          Enable the ksmd collector (default: disabled).
--#  --collector.loadavg       Enable the loadavg collector (default: enabled).
--#  --collector.logind        Enable the logind collector (default: disabled).
--#  --collector.mdadm         Enable the mdadm collector (default: enabled).
--#  --collector.meminfo       Enable the meminfo collector (default: enabled).
--#  --collector.meminfo_numa  Enable the meminfo_numa collector (default:
--#                            disabled).
--#  --collector.mountstats    Enable the mountstats collector (default:
--#                            disabled).
--#  --collector.netdev        Enable the netdev collector (default: enabled).
--#  --collector.netstat       Enable the netstat collector (default: enabled).
--#  --collector.nfs           Enable the nfs collector (default: enabled).
--#  --collector.nfsd          Enable the nfsd collector (default: enabled).
--#  --collector.ntp           Enable the ntp collector (default: disabled).
--#  --collector.qdisc         Enable the qdisc collector (default: disabled).
--#  --collector.runit         Enable the runit collector (default: disabled).
--#  --collector.sockstat      Enable the sockstat collector (default:
--#                            enabled).
--#  --collector.stat          Enable the stat collector (default: enabled).
--#  --collector.supervisord   Enable the supervisord collector (default:
--#                            disabled).
--#  --collector.systemd       Enable the systemd collector (default: enabled).
--#  --collector.tcpstat       Enable the tcpstat collector (default:
--#                            disabled).
--#  --collector.textfile      Enable the textfile collector (default:
--#                            enabled).
--#  --collector.time          Enable the time collector (default: enabled).
--#  --collector.uname         Enable the uname collector (default: enabled).
--#  --collector.vmstat        Enable the vmstat collector (default: enabled).
--#  --collector.wifi          Enable the wifi collector (default: enabled).
--#  --collector.xfs           Enable the xfs collector (default: enabled).
--#  --collector.zfs           Enable the zfs collector (default: enabled).
--#  --collector.timex         Enable the timex collector (default: enabled).
--#  --web.listen-address=":9100"
--#                            Address on which to expose metrics and web
--#                            interface.
--#  --web.telemetry-path="/metrics"
--#                            Path under which to expose metrics.
--#  --log.level="info"        Only log messages with the given severity or
--#                            above. Valid levels: [debug, info, warn, error,
--#                            fatal]
--#  --log.format="logger:stderr"
--#                            Set the log target and format. Example:
--#                            "logger:syslog?appname=bob&local=7" or
--#                            "logger:stdout?json=true"
-+ARGS="--web.listen-address=':9100'"
-\ No newline at end of file
-
-changed: [sikiteeb-2]
---- before: /etc/default/prometheus-node-exporter
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmpy47kond2/prometheus-node-exporter
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmpw4ygo0h1/prometheus-node-exporter
 @@ -1,128 +1 @@
 -# Set the command-line arguments to pass to the server.
 -# Due to shell scaping, to pass backslashes for regexes, you need to double
@@ -377,7 +242,142 @@ changed: [sikiteeb-2]
 
 changed: [sikiteeb-3]
 --- before: /etc/default/prometheus-node-exporter
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmpx9td2kr_/prometheus-node-exporter
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmpovmzt9io/prometheus-node-exporter
+@@ -1,128 +1 @@
+-# Set the command-line arguments to pass to the server.
+-# Due to shell scaping, to pass backslashes for regexes, you need to double
+-# them (\\d for \d). If running under systemd, you need to double them again
+-# (\\\\d to mean \d), and escape newlines too.
+-ARGS=""
+-
+-# Prometheus-node-exporter supports the following options:
+-#
+-#  --collector.diskstats.ignored-devices="^(ram|loop|fd|(h|s|v|xv)d[a-z]|nvme\\d+n\\d+p)\\d+$"
+-#                            Regexp of devices to ignore for diskstats.
+-#  --collector.filesystem.ignored-mount-points="^/(dev|proc|run|sys|mnt|media|var/lib/docker)($|/)"
+-#                            Regexp of mount points to ignore for filesystem
+-#                            collector.
+-#  --collector.filesystem.ignored-fs-types="^(autofs|binfmt_misc|cgroup|configfs|debugfs|devpts|devtmpfs|fusectl|hugetlbfs|mqueue|overlay|proc|procfs|pstore|rpc_pipefs|securityfs|sysfs|tracefs)$"
+-#                            Regexp of filesystem types to ignore for
+-#                            filesystem collector.
+-#  --collector.netdev.ignored-devices="^lo$"
+-#                            Regexp of net devices to ignore for netdev
+-#                            collector.
+-#  --collector.netstat.fields="^(.*_(InErrors|InErrs)|Ip_Forwarding|Ip(6|Ext)_(InOctets|OutOctets)|Icmp6?_(InMsgs|OutMsgs)|TcpExt_(Listen.*|Syncookies.*)|Tcp_(ActiveOpens|PassiveOpens|RetransSegs|CurrEstab)|Udp6?_(InDatagrams|OutDatagrams|NoPorts))$"
+-#                            Regexp of fields to return for netstat
+-#                            collector.
+-#  --collector.ntp.server="127.0.0.1"
+-#                            NTP server to use for ntp collector
+-#  --collector.ntp.protocol-version=4
+-#                            NTP protocol version
+-#  --collector.ntp.server-is-local
+-#                            Certify that collector.ntp.server address is the
+-#                            same local host as this collector.
+-#  --collector.ntp.ip-ttl=1  IP TTL to use while sending NTP query
+-#  --collector.ntp.max-distance=3.46608s
+-#                            Max accumulated distance to the root
+-#  --collector.ntp.local-offset-tolerance=1ms
+-#                            Offset between local clock and local ntpd time
+-#                            to tolerate
+-#  --path.procfs="/proc"     procfs mountpoint.
+-#  --path.sysfs="/sys"       sysfs mountpoint.
+-#  --collector.qdisc.fixtures=""
+-#                            test fixtures to use for qdisc collector
+-#                            end-to-end testing
+-#  --collector.runit.servicedir="/etc/service"
+-#                            Path to runit service directory.
+-#  --collector.supervisord.url="http://localhost:9001/RPC2"
+-#                            XML RPC endpoint.
+-#  --collector.systemd.unit-whitelist=".+"
+-#                            Regexp of systemd units to whitelist. Units must
+-#                            both match whitelist and not match blacklist to
+-#                            be included.
+-#  --collector.systemd.unit-blacklist=".+(\\.device|\\.scope|\\.slice|\\.target)"
+-#                            Regexp of systemd units to blacklist. Units must
+-#                            both match whitelist and not match blacklist to
+-#                            be included.
+-#  --collector.systemd.private
+-#                            Establish a private, direct connection to
+-#                            systemd without dbus.
+-#  --collector.textfile.directory="/var/lib/prometheus/node-exporter"
+-#                            Directory to read text files with metrics from.
+-#  --collector.vmstat.fields="^(oom_kill|pgpg|pswp|pg.*fault).*"
+-#                            Regexp of fields to return for vmstat collector.
+-#  --collector.wifi.fixtures=""
+-#                            test fixtures to use for wifi collector metrics
+-#  --collector.arp           Enable the arp collector (default: enabled).
+-#  --collector.bcache        Enable the bcache collector (default: enabled).
+-#  --collector.bonding       Enable the bonding collector (default: enabled).
+-#  --collector.buddyinfo     Enable the buddyinfo collector (default:
+-#                            disabled).
+-#  --collector.conntrack     Enable the conntrack collector (default:
+-#                            enabled).
+-#  --collector.cpu           Enable the cpu collector (default: enabled).
+-#  --collector.diskstats     Enable the diskstats collector (default:
+-#                            enabled).
+-#  --collector.drbd          Enable the drbd collector (default: disabled).
+-#  --collector.edac          Enable the edac collector (default: enabled).
+-#  --collector.entropy       Enable the entropy collector (default: enabled).
+-#  --collector.filefd        Enable the filefd collector (default: enabled).
+-#  --collector.filesystem    Enable the filesystem collector (default:
+-#                            enabled).
+-#  --collector.hwmon         Enable the hwmon collector (default: enabled).
+-#  --collector.infiniband    Enable the infiniband collector (default:
+-#                            enabled).
+-#  --collector.interrupts    Enable the interrupts collector (default:
+-#                            disabled).
+-#  --collector.ipvs          Enable the ipvs collector (default: enabled).
+-#  --collector.ksmd          Enable the ksmd collector (default: disabled).
+-#  --collector.loadavg       Enable the loadavg collector (default: enabled).
+-#  --collector.logind        Enable the logind collector (default: disabled).
+-#  --collector.mdadm         Enable the mdadm collector (default: enabled).
+-#  --collector.meminfo       Enable the meminfo collector (default: enabled).
+-#  --collector.meminfo_numa  Enable the meminfo_numa collector (default:
+-#                            disabled).
+-#  --collector.mountstats    Enable the mountstats collector (default:
+-#                            disabled).
+-#  --collector.netdev        Enable the netdev collector (default: enabled).
+-#  --collector.netstat       Enable the netstat collector (default: enabled).
+-#  --collector.nfs           Enable the nfs collector (default: enabled).
+-#  --collector.nfsd          Enable the nfsd collector (default: enabled).
+-#  --collector.ntp           Enable the ntp collector (default: disabled).
+-#  --collector.qdisc         Enable the qdisc collector (default: disabled).
+-#  --collector.runit         Enable the runit collector (default: disabled).
+-#  --collector.sockstat      Enable the sockstat collector (default:
+-#                            enabled).
+-#  --collector.stat          Enable the stat collector (default: enabled).
+-#  --collector.supervisord   Enable the supervisord collector (default:
+-#                            disabled).
+-#  --collector.systemd       Enable the systemd collector (default: enabled).
+-#  --collector.tcpstat       Enable the tcpstat collector (default:
+-#                            disabled).
+-#  --collector.textfile      Enable the textfile collector (default:
+-#                            enabled).
+-#  --collector.time          Enable the time collector (default: enabled).
+-#  --collector.uname         Enable the uname collector (default: enabled).
+-#  --collector.vmstat        Enable the vmstat collector (default: enabled).
+-#  --collector.wifi          Enable the wifi collector (default: enabled).
+-#  --collector.xfs           Enable the xfs collector (default: enabled).
+-#  --collector.zfs           Enable the zfs collector (default: enabled).
+-#  --collector.timex         Enable the timex collector (default: enabled).
+-#  --web.listen-address=":9100"
+-#                            Address on which to expose metrics and web
+-#                            interface.
+-#  --web.telemetry-path="/metrics"
+-#                            Path under which to expose metrics.
+-#  --log.level="info"        Only log messages with the given severity or
+-#                            above. Valid levels: [debug, info, warn, error,
+-#                            fatal]
+-#  --log.format="logger:stderr"
+-#                            Set the log target and format. Example:
+-#                            "logger:syslog?appname=bob&local=7" or
+-#                            "logger:stdout?json=true"
++ARGS="--web.listen-address=':9100'"
+\ No newline at end of file
+
+changed: [sikiteeb-2]
+--- before: /etc/default/prometheus-node-exporter
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmpsdi0h851/prometheus-node-exporter
 @@ -1,128 +1 @@
 -# Set the command-line arguments to pass to the server.
 -# Due to shell scaping, to pass backslashes for regexes, you need to double
@@ -513,23 +513,13 @@ changed: [sikiteeb-3]
 changed: [sikiteeb-1]
 
 TASK [node_exporter : Enable Node exporter] ************************************
-ok: [sikiteeb-2]
 ok: [sikiteeb-3]
+ok: [sikiteeb-2]
 ok: [sikiteeb-1]
 
 TASK [rsyslog : Install 50-telegraf.conf] **************************************
 --- before
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmp1533vcmt/50-telegraf.conf.j2
-@@ -0,0 +1,5 @@
-+$ActionQueueType LinkedList # use asynchronous processing
-+$ActionQueueFileName srvrfwd # set file name, also enables disk mode
-+$ActionResumeRetryCount -1 # infinite retries on insert failure
-+$ActionQueueSaveOnShutdown on # save in-memory data if rsyslog shuts down
-+*.* @sikiteeb-3:6514;RSYSLOG_SyslogProtocol23Format
-
-changed: [sikiteeb-2]
---- before
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmppk1a6k69/50-telegraf.conf.j2
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmp0g9a2kxw/50-telegraf.conf.j2
 @@ -0,0 +1,5 @@
 +$ActionQueueType LinkedList # use asynchronous processing
 +$ActionQueueFileName srvrfwd # set file name, also enables disk mode
@@ -539,7 +529,7 @@ changed: [sikiteeb-2]
 
 changed: [sikiteeb-3]
 --- before
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmpv86r0tr1/50-telegraf.conf.j2
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmphcf5u54z/50-telegraf.conf.j2
 @@ -0,0 +1,5 @@
 +$ActionQueueType LinkedList # use asynchronous processing
 +$ActionQueueFileName srvrfwd # set file name, also enables disk mode
@@ -548,6 +538,16 @@ changed: [sikiteeb-3]
 +*.* @sikiteeb-3:6514;RSYSLOG_SyslogProtocol23Format
 
 changed: [sikiteeb-1]
+--- before
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmpiyoons5b/50-telegraf.conf.j2
+@@ -0,0 +1,5 @@
++$ActionQueueType LinkedList # use asynchronous processing
++$ActionQueueFileName srvrfwd # set file name, also enables disk mode
++$ActionResumeRetryCount -1 # infinite retries on insert failure
++$ActionQueueSaveOnShutdown on # save in-memory data if rsyslog shuts down
++*.* @sikiteeb-3:6514;RSYSLOG_SyslogProtocol23Format
+
+changed: [sikiteeb-2]
 
 TASK [docker : Install docker] *************************************************
 The following additional packages will be installed:
@@ -560,7 +560,7 @@ The following NEW packages will be installed:
   bridge-utils containerd dns-root-data dnsmasq-base docker.io libidn11 pigz
   python3-docker python3-websocket runc ubuntu-fan
 0 upgraded, 11 newly installed, 0 to remove and 231 not upgraded.
-changed: [sikiteeb-1]
+changed: [sikiteeb-3]
 The following additional packages will be installed:
   bridge-utils containerd dns-root-data dnsmasq-base libidn11 pigz
   python3-websocket runc ubuntu-fan
@@ -582,17 +582,17 @@ The following NEW packages will be installed:
   bridge-utils containerd dns-root-data dnsmasq-base docker.io libidn11 pigz
   python3-docker python3-websocket runc ubuntu-fan
 0 upgraded, 11 newly installed, 0 to remove and 231 not upgraded.
-changed: [sikiteeb-3]
+changed: [sikiteeb-1]
 
 TASK [docker : Enable docker] **************************************************
-ok: [sikiteeb-2]
 ok: [sikiteeb-3]
+ok: [sikiteeb-2]
 ok: [sikiteeb-1]
 
 RUNNING HANDLER [node_exporter : Restart Node Exporter] ************************
 changed: [sikiteeb-2]
-changed: [sikiteeb-3]
 changed: [sikiteeb-1]
+changed: [sikiteeb-3]
 
 RUNNING HANDLER [rsyslog : Restart Rsyslog] ************************************
 changed: [sikiteeb-2]
@@ -602,14 +602,14 @@ changed: [sikiteeb-1]
 PLAY [Backup] ******************************************************************
 
 TASK [backup : Create User "backup"] *******************************************
-changed: [sikiteeb-1]
 changed: [sikiteeb-3]
 changed: [sikiteeb-2]
+changed: [sikiteeb-1]
 
 TASK [backup : Add Backup Server Public Key] ***********************************
+changed: [sikiteeb-2]
 changed: [sikiteeb-3]
 changed: [sikiteeb-1]
-changed: [sikiteeb-2]
 
 TASK [backup : Restore directory] **********************************************
 --- before
@@ -660,7 +660,7 @@ The following NEW packages will be installed:
   duplicity librsync2 python3-bcrypt python3-fasteners python3-future
   python3-lockfile python3-monotonic python3-paramiko
 0 upgraded, 8 newly installed, 0 to remove and 231 not upgraded.
-changed: [sikiteeb-1]
+changed: [sikiteeb-2]
 The following additional packages will be installed:
   librsync2 python3-bcrypt python3-fasteners python3-future python3-lockfile
   python3-monotonic python3-paramiko
@@ -682,7 +682,7 @@ The following NEW packages will be installed:
   duplicity librsync2 python3-bcrypt python3-fasteners python3-future
   python3-lockfile python3-monotonic python3-paramiko
 0 upgraded, 8 newly installed, 0 to remove and 231 not upgraded.
-changed: [sikiteeb-2]
+changed: [sikiteeb-1]
 
 PLAY [DNS] *********************************************************************
 
@@ -720,7 +720,7 @@ changed: [sikiteeb-3]
 
 TASK [bind : Resolv.conf] ******************************************************
 --- before: /etc/resolv.conf
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmpis17m8aw/resolv.conf.j2
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmpa0mx2_4f/resolv.conf.j2
 @@ -1,19 +1,9 @@
 -# This file is managed by man:systemd-resolved(8). Do not edit.
 -#
@@ -742,49 +742,17 @@ TASK [bind : Resolv.conf] ******************************************************
 -nameserver 127.0.0.53
 -options edns0 trust-ad
 -search openstacklocal
-+nameserver 192.168.42.30
++nameserver 192.168.42.50
 +
 +
-+nameserver 192.168.42.52
-+nameserver 192.168.42.144
-+
-+
-
-changed: [sikiteeb-3]
---- before: /etc/resolv.conf
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmpvn_16s6j/resolv.conf.j2
-@@ -1,19 +1,9 @@
--# This file is managed by man:systemd-resolved(8). Do not edit.
--#
--# This is a dynamic resolv.conf file for connecting local clients to the
--# internal DNS stub resolver of systemd-resolved. This file lists all
--# configured search domains.
--#
--# Run "resolvectl status" to see details about the uplink DNS servers
--# currently in use.
--#
--# Third party programs must not access this file directly, but only through the
--# symlink at /etc/resolv.conf. To manage man:resolv.conf(5) in a different way,
--# replace this symlink by a static file or a different symlink.
--#
--# See man:systemd-resolved.service(8) for details about the supported modes of
--# operation for /etc/resolv.conf.
-+search maledetta.xtx
- 
--nameserver 127.0.0.53
--options edns0 trust-ad
--search openstacklocal
-+nameserver 192.168.42.30
-+
-+
-+nameserver 192.168.42.52
-+nameserver 192.168.42.144
++nameserver 192.168.42.95
++nameserver 192.168.42.111
 +
 +
 
 changed: [sikiteeb-2]
 --- before: /etc/resolv.conf
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmp36b_bh2f/resolv.conf.j2
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmpn3h06m05/resolv.conf.j2
 @@ -1,19 +1,9 @@
 -# This file is managed by man:systemd-resolved(8). Do not edit.
 -#
@@ -806,29 +774,115 @@ changed: [sikiteeb-2]
 -nameserver 127.0.0.53
 -options edns0 trust-ad
 -search openstacklocal
-+nameserver 192.168.42.30
++nameserver 192.168.42.50
 +
 +
-+nameserver 192.168.42.52
-+nameserver 192.168.42.144
++nameserver 192.168.42.95
++nameserver 192.168.42.111
 +
 +
 
 changed: [sikiteeb-1]
+--- before: /etc/resolv.conf
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmptbj8gske/resolv.conf.j2
+@@ -1,19 +1,9 @@
+-# This file is managed by man:systemd-resolved(8). Do not edit.
+-#
+-# This is a dynamic resolv.conf file for connecting local clients to the
+-# internal DNS stub resolver of systemd-resolved. This file lists all
+-# configured search domains.
+-#
+-# Run "resolvectl status" to see details about the uplink DNS servers
+-# currently in use.
+-#
+-# Third party programs must not access this file directly, but only through the
+-# symlink at /etc/resolv.conf. To manage man:resolv.conf(5) in a different way,
+-# replace this symlink by a static file or a different symlink.
+-#
+-# See man:systemd-resolved.service(8) for details about the supported modes of
+-# operation for /etc/resolv.conf.
++search maledetta.xtx
+ 
+-nameserver 127.0.0.53
+-options edns0 trust-ad
+-search openstacklocal
++nameserver 192.168.42.50
++
++
++nameserver 192.168.42.95
++nameserver 192.168.42.111
++
++
+
+changed: [sikiteeb-3]
 
 TASK [bind : Stop systemd-resolved] ********************************************
-changed: [sikiteeb-1]
 changed: [sikiteeb-2]
 changed: [sikiteeb-3]
+changed: [sikiteeb-1]
 
 TASK [bind : Option] ***********************************************************
-changed: [sikiteeb-3]
 changed: [sikiteeb-2]
 changed: [sikiteeb-1]
+changed: [sikiteeb-3]
 
 TASK [bind : Local] ************************************************************
 --- before: /etc/bind/named.conf.local
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmp_3vjx7dm/named.conf.local.j2
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmpz14omhjx/named.conf.local.j2
+@@ -1,8 +1,15 @@
+-//
+-// Do any local configuration here
+-//
++zone "maledetta.xtx" {
++    type slave;
++    masters { 192.168.42.50; }; 
++    file "db.maledetta";
++};
+ 
+-// Consider adding the 1918 zones here, if they are not used in your
+-// organization
+-//include "/etc/bind/zones.rfc1918";
++server 192.168.42.50 {
++    keys { transfer.key; };
++};
+ 
++zone 42.168.192.in-addr.arpa {
++    type slave;
++    masters { 192.168.42.50; }; 
++    file "db.maledetta.reverse";
++};
+\ No newline at end of file
+
+changed: [sikiteeb-1]
+--- before: /etc/bind/named.conf.local
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmpwset3d7d/named.conf.local.j2
+@@ -1,8 +1,15 @@
+-//
+-// Do any local configuration here
+-//
++zone "maledetta.xtx" {
++    type slave;
++    masters { 192.168.42.50; }; 
++    file "db.maledetta";
++};
+ 
+-// Consider adding the 1918 zones here, if they are not used in your
+-// organization
+-//include "/etc/bind/zones.rfc1918";
++server 192.168.42.50 {
++    keys { transfer.key; };
++};
+ 
++zone 42.168.192.in-addr.arpa {
++    type slave;
++    masters { 192.168.42.50; }; 
++    file "db.maledetta.reverse";
++};
+\ No newline at end of file
+
+changed: [sikiteeb-2]
+--- before: /etc/bind/named.conf.local
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmp9m3ff0rq/named.conf.local.j2
 @@ -1,8 +1,14 @@
 -//
 -// Do any local configuration here
@@ -844,7 +898,7 @@ TASK [bind : Local] ************************************************************
 -// organization
 -//include "/etc/bind/zones.rfc1918";
  
-+zone 43.168.192.in-addr.arpa {
++zone 42.168.192.in-addr.arpa {
 +    type master;
 +    allow-update {key nsupdate.key;};
 +    allow-transfer {127.0.0.1; key transfer.key;};
@@ -853,66 +907,12 @@ TASK [bind : Local] ************************************************************
 \ No newline at end of file
 
 changed: [sikiteeb-3]
---- before: /etc/bind/named.conf.local
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmps__q3ndc/named.conf.local.j2
-@@ -1,8 +1,15 @@
--//
--// Do any local configuration here
--//
-+zone "maledetta.xtx" {
-+    type slave;
-+    masters { 192.168.42.30; }; 
-+    file "db.maledetta";
-+};
- 
--// Consider adding the 1918 zones here, if they are not used in your
--// organization
--//include "/etc/bind/zones.rfc1918";
-+server 192.168.42.30 {
-+    keys { transfer.key; };
-+};
- 
-+zone 43.168.192.in-addr.arpa {
-+    type slave;
-+    masters { 192.168.42.30; }; 
-+    file "db.maledetta.reverse";
-+};
-\ No newline at end of file
-
-changed: [sikiteeb-2]
---- before: /etc/bind/named.conf.local
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmprhgguzur/named.conf.local.j2
-@@ -1,8 +1,15 @@
--//
--// Do any local configuration here
--//
-+zone "maledetta.xtx" {
-+    type slave;
-+    masters { 192.168.42.30; }; 
-+    file "db.maledetta";
-+};
- 
--// Consider adding the 1918 zones here, if they are not used in your
--// organization
--//include "/etc/bind/zones.rfc1918";
-+server 192.168.42.30 {
-+    keys { transfer.key; };
-+};
- 
-+zone 43.168.192.in-addr.arpa {
-+    type slave;
-+    masters { 192.168.42.30; }; 
-+    file "db.maledetta.reverse";
-+};
-\ No newline at end of file
-
-changed: [sikiteeb-1]
 
 TASK [bind : DNS Primary Zone] *************************************************
 skipping: [sikiteeb-1]
 skipping: [sikiteeb-2]
 --- before
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmp49fvdj1s/db.maledetta
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmpbwwx3uh6/db.maledetta
 @@ -0,0 +1,19 @@
 +$TTL	604800
 +maledetta.xtx.	            IN     SOA	 sikiteeb-3.maledetta.xtx. siki.maledetta.xtx. (
@@ -928,11 +928,11 @@ skipping: [sikiteeb-2]
 +maledetta.xtx.             IN      NS   sikiteeb-3
 +
 +	
-+sikiteeb-1        IN       A    192.168.42.52
++sikiteeb-1        IN       A    192.168.42.95
 +	
-+sikiteeb-2        IN       A    192.168.42.144
++sikiteeb-2        IN       A    192.168.42.111
 +	
-+sikiteeb-3        IN       A    192.168.42.30
++sikiteeb-3        IN       A    192.168.42.50
 
 changed: [sikiteeb-3]
 
@@ -940,10 +940,10 @@ TASK [bind : Reverse DNS Primary Zone] *****************************************
 skipping: [sikiteeb-1]
 skipping: [sikiteeb-2]
 --- before
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmpcl9646cc/db.maledetta.reverse
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmpiybgf5jm/db.maledetta.reverse
 @@ -0,0 +1,16 @@
 +$TTL	604800
-+43.168.192.in-addr.arpa.  IN	SOA	   sikiteeb-3.maledetta.xtx. siki.maledetta.xtx. (
++42.168.192.in-addr.arpa.  IN	SOA	   sikiteeb-3.maledetta.xtx. siki.maledetta.xtx. (
 +			               2	   ; Serial
 +			          604800	   ; Refresh
 +			           86400	   ; Retry
@@ -951,13 +951,13 @@ skipping: [sikiteeb-2]
 +			          604800 	   ; Negative Cache TTL
 +);
 +
-+43.168.192.in-addr.arpa.	IN	    NS	   sikiteeb-1.maledetta.xtx.
-+43.168.192.in-addr.arpa.	IN	    NS	   sikiteeb-2.maledetta.xtx.
-+43.168.192.in-addr.arpa.	IN	    NS	   sikiteeb-3.maledetta.xtx.
++42.168.192.in-addr.arpa.	IN	    NS	   sikiteeb-1.maledetta.xtx.
++42.168.192.in-addr.arpa.	IN	    NS	   sikiteeb-2.maledetta.xtx.
++42.168.192.in-addr.arpa.	IN	    NS	   sikiteeb-3.maledetta.xtx.
 +
-+52 IN PTR sikiteeb-1.maledetta.xtx.
-+144 IN PTR sikiteeb-2.maledetta.xtx.
-+30 IN PTR sikiteeb-3.maledetta.xtx.
++95 IN PTR sikiteeb-1.maledetta.xtx.
++111 IN PTR sikiteeb-2.maledetta.xtx.
++50 IN PTR sikiteeb-3.maledetta.xtx.
 
 changed: [sikiteeb-3]
 
@@ -969,14 +969,14 @@ ok: [sikiteeb-3]
 TASK [bind : execute handlers] *************************************************
 
 RUNNING HANDLER [bind : Restart Bind9] *****************************************
-changed: [sikiteeb-3]
 changed: [sikiteeb-1]
 changed: [sikiteeb-2]
+changed: [sikiteeb-3]
 
 RUNNING HANDLER [bind : Reconfigure rndc] **************************************
-changed: [sikiteeb-1]
-changed: [sikiteeb-3]
 changed: [sikiteeb-2]
+changed: [sikiteeb-3]
+changed: [sikiteeb-1]
 
 TASK [bind : Wait for 15 sec] **************************************************
 skipping: [sikiteeb-1]
@@ -1002,11 +1002,11 @@ TASK [bind_exporter : Install Bind Exporter] ***********************************
 The following NEW packages will be installed:
   prometheus-bind-exporter
 0 upgraded, 1 newly installed, 0 to remove and 229 not upgraded.
-changed: [sikiteeb-3]
+changed: [sikiteeb-2]
 The following NEW packages will be installed:
   prometheus-bind-exporter
 0 upgraded, 1 newly installed, 0 to remove and 229 not upgraded.
-changed: [sikiteeb-2]
+changed: [sikiteeb-3]
 The following NEW packages will be installed:
   prometheus-bind-exporter
 0 upgraded, 1 newly installed, 0 to remove and 229 not upgraded.
@@ -1014,7 +1014,7 @@ changed: [sikiteeb-1]
 
 TASK [bind_exporter : Bind-exporter args] **************************************
 --- before: /etc/default/prometheus-bind-exporter
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmpo2ylbaeb/prometheus-bind-exporter
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmpsqhk3lqj/prometheus-bind-exporter
 @@ -1,24 +1 @@
 -# Set the command-line arguments to pass to the server.
 -ARGS=''
@@ -1045,7 +1045,7 @@ TASK [bind_exporter : Bind-exporter args] **************************************
 
 changed: [sikiteeb-1]
 --- before: /etc/default/prometheus-bind-exporter
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmpyocv0azj/prometheus-bind-exporter
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmpusqdg5_2/prometheus-bind-exporter
 @@ -1,24 +1 @@
 -# Set the command-line arguments to pass to the server.
 -ARGS=''
@@ -1076,7 +1076,7 @@ changed: [sikiteeb-1]
 
 changed: [sikiteeb-3]
 --- before: /etc/default/prometheus-bind-exporter
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmp4nx0ncyo/prometheus-bind-exporter
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmpbec7cy9l/prometheus-bind-exporter
 @@ -1,24 +1 @@
 -# Set the command-line arguments to pass to the server.
 -ARGS=''
@@ -1108,14 +1108,14 @@ changed: [sikiteeb-3]
 changed: [sikiteeb-2]
 
 TASK [bind_exporter : Enable Bind Exporter] ************************************
+ok: [sikiteeb-1]
 ok: [sikiteeb-2]
 ok: [sikiteeb-3]
-ok: [sikiteeb-1]
 
 RUNNING HANDLER [bind_exporter : Restart Bind-exporter] ************************
-changed: [sikiteeb-2]
-changed: [sikiteeb-3]
 changed: [sikiteeb-1]
+changed: [sikiteeb-3]
+changed: [sikiteeb-2]
 
 PLAY [Database server] *********************************************************
 
@@ -1138,7 +1138,7 @@ The following NEW packages will be installed:
   mecab-utils mysql-client-8.0 mysql-client-core-8.0 mysql-common mysql-server
   mysql-server-8.0 mysql-server-core-8.0 python3-pymysql
 0 upgraded, 25 newly installed, 0 to remove and 229 not upgraded.
-changed: [sikiteeb-1]
+changed: [sikiteeb-2]
 The following additional packages will be installed:
   libcgi-fast-perl libcgi-pm-perl libencode-locale-perl libevent-core-2.1-7
   libevent-pthreads-2.1-7 libfcgi-perl libhtml-parser-perl libhtml-tagset-perl
@@ -1157,37 +1157,37 @@ The following NEW packages will be installed:
   mecab-utils mysql-client-8.0 mysql-client-core-8.0 mysql-common mysql-server
   mysql-server-8.0 mysql-server-core-8.0 python3-pymysql
 0 upgraded, 25 newly installed, 0 to remove and 229 not upgraded.
-changed: [sikiteeb-2]
+changed: [sikiteeb-1]
 
 TASK [mysql : Copy override.conf] **********************************************
 --- before
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmp4g700awg/override.cnf.j2
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmpzutaj5v8/override.cnf.j2
 @@ -0,0 +1,6 @@
 +[mysqld]
 +bind-address = 0.0.0.0
 +log-bin = /var/log/mysql/mysql-bin.log
 +relay-log = /var/log/mysql/mysql-relay.log
 +replicate-do-db = agama
-+server-id = 144
-\ No newline at end of file
-
-changed: [sikiteeb-2]
---- before
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmpssgmla8k/override.cnf.j2
-@@ -0,0 +1,6 @@
-+[mysqld]
-+bind-address = 0.0.0.0
-+log-bin = /var/log/mysql/mysql-bin.log
-+relay-log = /var/log/mysql/mysql-relay.log
-+replicate-do-db = agama
-+server-id = 52
++server-id = 95
 \ No newline at end of file
 
 changed: [sikiteeb-1]
+--- before
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmp5i7ms7ov/override.cnf.j2
+@@ -0,0 +1,6 @@
++[mysqld]
++bind-address = 0.0.0.0
++log-bin = /var/log/mysql/mysql-bin.log
++relay-log = /var/log/mysql/mysql-relay.log
++replicate-do-db = agama
++server-id = 111
+\ No newline at end of file
+
+changed: [sikiteeb-2]
 
 TASK [mysql : Enable mysql] ****************************************************
-ok: [sikiteeb-2]
 ok: [sikiteeb-1]
+ok: [sikiteeb-2]
 
 TASK [mysql : Agama MySQL database] ********************************************
 changed: [sikiteeb-2]
@@ -1198,12 +1198,12 @@ changed: [sikiteeb-1]
 changed: [sikiteeb-2]
 
 TASK [mysql : MySQL Exporter User] *********************************************
-changed: [sikiteeb-1]
 changed: [sikiteeb-2]
+changed: [sikiteeb-1]
 
 TASK [mysql : MySQL Replicate User] ********************************************
-changed: [sikiteeb-2]
 changed: [sikiteeb-1]
+changed: [sikiteeb-2]
 
 TASK [mysql : Make replica read-only] ******************************************
 changed: [sikiteeb-2]
@@ -1229,134 +1229,7 @@ changed: [sikiteeb-2]
 
 TASK [mysql_exporter : MySQL Exporter arg file] ********************************
 --- before: /etc/default/prometheus-mysqld-exporter
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmp9nps1dhi/mysql_exporter_arg.j2
-@@ -1,120 +1 @@
--# By default the connection string will be read from
--# $HOME/my.cnf or from the file specified with the -config.my-cnf parameter.
--
--# To set a connection string from the environment instead, uncomment one of the
--# following lines.
--
--# Using UNIX domain sockets and authentication:
--# DATA_SOURCE_NAME="prometheus:nopassword@unix(/run/mysqld/mysqld.sock)/"
--
--# Using a TCP connection and password authentication:
--# DATA_SOURCE_NAME="login:password@(hostname:port)/dbname"
--
--# Note the user must be granted enough privileges for the exporter to run.
--# Example to create a user to connect with the UNIX socket:
--#
--#  CREATE USER IF NOT EXISTS 'prometheus'@'localhost' IDENTIFIED VIA unix_socket;
--#  GRANT PROCESS, REPLICATION CLIENT, SELECT ON *.* TO 'prometheus'@'localhost';
--
--# Set the command-line arguments to pass to the exporter.
--# ARGS='-config.my-cnf /etc/mysql/debian.cnf'
--
--# Usage of prometheus-mysqld-exporter:
--#   -collect.auto_increment.columns
--#     	Collect auto_increment columns and max values from information_schema
--#  --exporter.lock_wait_timeout=2
--#       Set a lock_wait_timeout on the connection to avoid long metadata
--#       locking.
--#  --exporter.log_slow_filter
--#       Add a log_slow_filter to avoid slow query logging of scrapes. NOTE: Not
--#       supported by Oracle MySQL.
--#  --collect.heartbeat.database="heartbeat"
--#       Database from where to collect heartbeat data
--#  --collect.heartbeat.table="heartbeat"
--#       Table from where to collect heartbeat data
--#  --collect.info_schema.processlist.min_time=0
--#       Minimum time a thread must be in each state to be counted
--#  --collect.info_schema.tables.databases="*"
--#       The list of databases to collect table stats for, or '*' for all
--#  --collect.perf_schema.eventsstatements.limit=250
--#       Limit the number of events statements digests by response time
--#  --collect.perf_schema.eventsstatements.timelimit=86400
--#       Limit how old the 'last_seen' events statements can be, in seconds
--#  --collect.perf_schema.eventsstatements.digest_text_limit=120
--#       Maximum length of the normalized statement text
--#  --collect.perf_schema.file_instances.filter=".*"
--#       RegEx file_name filter for performance_schema.file_summary_by_instance
--#  --collect.perf_schema.file_instances.remove_prefix="/var/lib/mysql/"
--#       Remove path prefix in performance_schema.file_summary_by_instance
--#  --web.listen-address=":9104"
--#       Address to listen on for web interface and telemetry.
--#  --web.telemetry-path="/metrics"
--#       Path under which to expose metrics.
--#  --config.my-cnf="$HOME/.my.cnf"
--#       Path to .my.cnf file to read MySQL credentials from.
--#  --collect.global_variables
--#       Collect from SHOW GLOBAL VARIABLES
--#  --collect.slave_status
--#       Collect from SHOW SLAVE STATUS
--#  --collect.info_schema.processlist
--#       Collect current thread state counts from the
--#       information_schema.processlist
--#  --collect.info_schema.tables
--#       Collect metrics from information_schema.tables
--#  --collect.info_schema.innodb_tablespaces
--#       Collect metrics from information_schema.innodb_sys_tablespaces
--#  --collect.info_schema.innodb_metrics
--#       Collect metrics from information_schema.innodb_metrics
--#  --collect.auto_increment.columns
--#       Collect auto_increment columns and max values from information_schema
--#  --collect.global_status
--#       Collect from SHOW GLOBAL STATUS
--#  --collect.perf_schema.tableiowaits
--#       Collect metrics from performance_schema.table_io_waits_summary_by_table
--#  --collect.perf_schema.indexiowaits
--#       Collect metrics from
--#       performance_schema.table_io_waits_summary_by_index_usage
--#  --collect.perf_schema.tablelocks
--#       Collect metrics from
--#       performance_schema.table_lock_waits_summary_by_table
--#  --collect.perf_schema.eventsstatements
--#       Collect metrics from
--#       performance_schema.events_statements_summary_by_digest
--#  --collect.perf_schema.eventswaits
--#       Collect metrics from
--#       performance_schema.events_waits_summary_global_by_event_name
--#  --collect.perf_schema.file_events
--#       Collect metrics from performance_schema.file_summary_by_event_name
--#  --collect.perf_schema.file_instances
--#       Collect metrics from performance_schema.file_summary_by_instance
--#  --collect.binlog_size
--#       Collect the current size of all registered binlog files
--#  --collect.info_schema.userstats
--#       If running with userstat=1, set to true to collect user statistics
--#  --collect.info_schema.clientstats
--#       If running with userstat=1, set to true to collect client statistics
--#  --collect.info_schema.tablestats
--#       If running with userstat=1, set to true to collect table statistics
--#  --collect.info_schema.innodb_cmp
--#       Collect metrics from information_schema.innodb_cmp
--#  --collect.info_schema.innodb_cmpmem
--#       Collect metrics from information_schema.innodb_cmpmem
--#  --collect.info_schema.query_response_time
--#       Collect query response time distribution if query_response_time_stats
--#       is ON.
--#  --collect.engine_tokudb_status
--#       Collect from SHOW ENGINE TOKUDB STATUS
--#  --collect.perf_schema.replication_group_member_stats
--#       Collect metrics from performance_schema.replication_group_member_stats
--#  --collect.heartbeat
--#       Collect from heartbeat
--#  --collect.slave_hosts
--#       Scrape information from 'SHOW SLAVE HOSTS'
--#  --collect.engine_innodb_status
--#       Collect from SHOW ENGINE INNODB STATUS
--#  --log.level="info"
--#       Only log messages with the given severity or above. Valid levels:
--#       [debug, info, warn, error, fatal]
--#  --log.format="logger:stderr"
--#       Set the log target and format. Example:
--#       "logger:syslog?appname=bob&local=7" or "logger:stdout?json=true"
-+ARGS="--collect.slave_status --web.listen-address=':9104'"
-\ No newline at end of file
-
-changed: [sikiteeb-2]
---- before: /etc/default/prometheus-mysqld-exporter
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmpublzydrr/mysql_exporter_arg.j2
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmp7ncefq8k/mysql_exporter_arg.j2
 @@ -1,120 +1 @@
 -# By default the connection string will be read from
 -# $HOME/my.cnf or from the file specified with the -config.my-cnf parameter.
@@ -1482,12 +1355,139 @@ changed: [sikiteeb-2]
 \ No newline at end of file
 
 changed: [sikiteeb-1]
+--- before: /etc/default/prometheus-mysqld-exporter
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmpmuhor1gr/mysql_exporter_arg.j2
+@@ -1,120 +1 @@
+-# By default the connection string will be read from
+-# $HOME/my.cnf or from the file specified with the -config.my-cnf parameter.
+-
+-# To set a connection string from the environment instead, uncomment one of the
+-# following lines.
+-
+-# Using UNIX domain sockets and authentication:
+-# DATA_SOURCE_NAME="prometheus:nopassword@unix(/run/mysqld/mysqld.sock)/"
+-
+-# Using a TCP connection and password authentication:
+-# DATA_SOURCE_NAME="login:password@(hostname:port)/dbname"
+-
+-# Note the user must be granted enough privileges for the exporter to run.
+-# Example to create a user to connect with the UNIX socket:
+-#
+-#  CREATE USER IF NOT EXISTS 'prometheus'@'localhost' IDENTIFIED VIA unix_socket;
+-#  GRANT PROCESS, REPLICATION CLIENT, SELECT ON *.* TO 'prometheus'@'localhost';
+-
+-# Set the command-line arguments to pass to the exporter.
+-# ARGS='-config.my-cnf /etc/mysql/debian.cnf'
+-
+-# Usage of prometheus-mysqld-exporter:
+-#   -collect.auto_increment.columns
+-#     	Collect auto_increment columns and max values from information_schema
+-#  --exporter.lock_wait_timeout=2
+-#       Set a lock_wait_timeout on the connection to avoid long metadata
+-#       locking.
+-#  --exporter.log_slow_filter
+-#       Add a log_slow_filter to avoid slow query logging of scrapes. NOTE: Not
+-#       supported by Oracle MySQL.
+-#  --collect.heartbeat.database="heartbeat"
+-#       Database from where to collect heartbeat data
+-#  --collect.heartbeat.table="heartbeat"
+-#       Table from where to collect heartbeat data
+-#  --collect.info_schema.processlist.min_time=0
+-#       Minimum time a thread must be in each state to be counted
+-#  --collect.info_schema.tables.databases="*"
+-#       The list of databases to collect table stats for, or '*' for all
+-#  --collect.perf_schema.eventsstatements.limit=250
+-#       Limit the number of events statements digests by response time
+-#  --collect.perf_schema.eventsstatements.timelimit=86400
+-#       Limit how old the 'last_seen' events statements can be, in seconds
+-#  --collect.perf_schema.eventsstatements.digest_text_limit=120
+-#       Maximum length of the normalized statement text
+-#  --collect.perf_schema.file_instances.filter=".*"
+-#       RegEx file_name filter for performance_schema.file_summary_by_instance
+-#  --collect.perf_schema.file_instances.remove_prefix="/var/lib/mysql/"
+-#       Remove path prefix in performance_schema.file_summary_by_instance
+-#  --web.listen-address=":9104"
+-#       Address to listen on for web interface and telemetry.
+-#  --web.telemetry-path="/metrics"
+-#       Path under which to expose metrics.
+-#  --config.my-cnf="$HOME/.my.cnf"
+-#       Path to .my.cnf file to read MySQL credentials from.
+-#  --collect.global_variables
+-#       Collect from SHOW GLOBAL VARIABLES
+-#  --collect.slave_status
+-#       Collect from SHOW SLAVE STATUS
+-#  --collect.info_schema.processlist
+-#       Collect current thread state counts from the
+-#       information_schema.processlist
+-#  --collect.info_schema.tables
+-#       Collect metrics from information_schema.tables
+-#  --collect.info_schema.innodb_tablespaces
+-#       Collect metrics from information_schema.innodb_sys_tablespaces
+-#  --collect.info_schema.innodb_metrics
+-#       Collect metrics from information_schema.innodb_metrics
+-#  --collect.auto_increment.columns
+-#       Collect auto_increment columns and max values from information_schema
+-#  --collect.global_status
+-#       Collect from SHOW GLOBAL STATUS
+-#  --collect.perf_schema.tableiowaits
+-#       Collect metrics from performance_schema.table_io_waits_summary_by_table
+-#  --collect.perf_schema.indexiowaits
+-#       Collect metrics from
+-#       performance_schema.table_io_waits_summary_by_index_usage
+-#  --collect.perf_schema.tablelocks
+-#       Collect metrics from
+-#       performance_schema.table_lock_waits_summary_by_table
+-#  --collect.perf_schema.eventsstatements
+-#       Collect metrics from
+-#       performance_schema.events_statements_summary_by_digest
+-#  --collect.perf_schema.eventswaits
+-#       Collect metrics from
+-#       performance_schema.events_waits_summary_global_by_event_name
+-#  --collect.perf_schema.file_events
+-#       Collect metrics from performance_schema.file_summary_by_event_name
+-#  --collect.perf_schema.file_instances
+-#       Collect metrics from performance_schema.file_summary_by_instance
+-#  --collect.binlog_size
+-#       Collect the current size of all registered binlog files
+-#  --collect.info_schema.userstats
+-#       If running with userstat=1, set to true to collect user statistics
+-#  --collect.info_schema.clientstats
+-#       If running with userstat=1, set to true to collect client statistics
+-#  --collect.info_schema.tablestats
+-#       If running with userstat=1, set to true to collect table statistics
+-#  --collect.info_schema.innodb_cmp
+-#       Collect metrics from information_schema.innodb_cmp
+-#  --collect.info_schema.innodb_cmpmem
+-#       Collect metrics from information_schema.innodb_cmpmem
+-#  --collect.info_schema.query_response_time
+-#       Collect query response time distribution if query_response_time_stats
+-#       is ON.
+-#  --collect.engine_tokudb_status
+-#       Collect from SHOW ENGINE TOKUDB STATUS
+-#  --collect.perf_schema.replication_group_member_stats
+-#       Collect metrics from performance_schema.replication_group_member_stats
+-#  --collect.heartbeat
+-#       Collect from heartbeat
+-#  --collect.slave_hosts
+-#       Scrape information from 'SHOW SLAVE HOSTS'
+-#  --collect.engine_innodb_status
+-#       Collect from SHOW ENGINE INNODB STATUS
+-#  --log.level="info"
+-#       Only log messages with the given severity or above. Valid levels:
+-#       [debug, info, warn, error, fatal]
+-#  --log.format="logger:stderr"
+-#       Set the log target and format. Example:
+-#       "logger:syslog?appname=bob&local=7" or "logger:stdout?json=true"
++ARGS="--collect.slave_status --web.listen-address=':9104'"
+\ No newline at end of file
+
+changed: [sikiteeb-2]
 
 TASK [mysql_exporter : Flush handlers once] ************************************
 
 RUNNING HANDLER [mysql : Restart MySQL] ****************************************
-changed: [sikiteeb-2]
 changed: [sikiteeb-1]
+changed: [sikiteeb-2]
 
 RUNNING HANDLER [mysql : Reset MySQL source] ***********************************
 skipping: [sikiteeb-1] => (item=stopreplica) 
@@ -1508,12 +1508,12 @@ changed: [sikiteeb-1] => (item=None)
 changed: [sikiteeb-1]
 
 RUNNING HANDLER [mysql_exporter : Restart MySQL Exporter] **********************
-changed: [sikiteeb-2]
 changed: [sikiteeb-1]
+changed: [sikiteeb-2]
 
 TASK [mysql_exporter : Enable MySQL Exporter] **********************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 
 TASK [mysql_backup : MySQL Backup directory] ***********************************
 --- before
@@ -1527,7 +1527,7 @@ TASK [mysql_backup : MySQL Backup directory] ***********************************
 +    "state": "directory"
  }
 
-changed: [sikiteeb-2]
+changed: [sikiteeb-1]
 --- before
 +++ after
 @@ -1,5 +1,5 @@
@@ -1539,7 +1539,7 @@ changed: [sikiteeb-2]
 +    "state": "directory"
  }
 
-changed: [sikiteeb-1]
+changed: [sikiteeb-2]
 
 TASK [mysql_backup : Create MySQL user "backup" in DB] *************************
 changed: [sikiteeb-1]
@@ -1550,21 +1550,21 @@ changed: [sikiteeb-1]
 changed: [sikiteeb-2]
 
 TASK [mysql_backup : MySQL backup cron] ****************************************
+changed: [sikiteeb-2]
 --- before
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmp4850o9vu/mysql-backup.j2
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmp5xsskgu3/mysql-backup.j2
 @@ -0,0 +1,5 @@
-+10 10 * * * backup ssh Sikiteeb@backup.maledetta.xtx mkdir mysql
-+10 10 * * 2  backup  mysqldump agama > /home/backup/mysql/agama.sql
-+10 10 * * 2  backup  duplicity --no-encryption full /home/backup/mysql/ rsync://Sikiteeb@backup.maledetta.xtx//home/Sikiteeb/mysql/
++0 23 * * * backup ssh Sikiteeb@backup.maledetta.xtx mkdir mysql
++0 23 * * 2  backup  mysqldump agama > /home/backup/mysql/agama.sql
++30 23 * * 2  backup  duplicity --no-encryption full /home/backup/mysql/ rsync://Sikiteeb@backup.maledetta.xtx//home/Sikiteeb/mysql/
 +30 23 * * 1-6  backup  duplicity --no-encryption incremental /home/backup/mysql/ rsync://Sikiteeb@backup.maledetta.xtx//home/Sikiteeb/mysql/
 +0 0 28 * * backup duplicity remove-older-than 1M rsync://Sikiteeb@backup.maledetta.xtx//home/Sikiteeb/mysql/
 
 changed: [sikiteeb-1]
-changed: [sikiteeb-2]
 
 TASK [mysql_backup : Enable Cron] **********************************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 
 PLAY [Web server] **************************************************************
 
@@ -1578,7 +1578,7 @@ TASK [agama : Create directory agama] ******************************************
 +    "state": "directory"
  }
 
-changed: [sikiteeb-1]
+changed: [sikiteeb-2]
 --- before
 +++ after
 @@ -1,4 +1,4 @@
@@ -1588,11 +1588,11 @@ changed: [sikiteeb-1]
 +    "state": "directory"
  }
 
-changed: [sikiteeb-2]
+changed: [sikiteeb-1]
 
 TASK [agama : Install agama stuff] *********************************************
-changed: [sikiteeb-1] => (item=https://raw.githubusercontent.com/hudolejev/agama/master/agama.py)
 changed: [sikiteeb-2] => (item=https://raw.githubusercontent.com/hudolejev/agama/master/agama.py)
+changed: [sikiteeb-1] => (item=https://raw.githubusercontent.com/hudolejev/agama/master/agama.py)
 changed: [sikiteeb-1] => (item=https://raw.githubusercontent.com/hudolejev/agama/master/Dockerfile)
 changed: [sikiteeb-2] => (item=https://raw.githubusercontent.com/hudolejev/agama/master/Dockerfile)
 
@@ -1633,7 +1633,7 @@ changed: [sikiteeb-2] => (item=1)
 +    "running": true
  }
 
-changed: [sikiteeb-2] => (item=2)
+changed: [sikiteeb-1] => (item=2)
 --- before
 +++ after
 @@ -1,4 +1,4 @@
@@ -1644,25 +1644,11 @@ changed: [sikiteeb-2] => (item=2)
 +    "running": true
  }
 
-changed: [sikiteeb-1] => (item=2)
+changed: [sikiteeb-2] => (item=2)
 
 PLAY [Nginx] *******************************************************************
 
 TASK [nginx : Install Nginx] ***************************************************
-The following additional packages will be installed:
-  fontconfig-config fonts-dejavu-core libfontconfig1 libgd3 libjbig0
-  libjpeg-turbo8 libjpeg8 libnginx-mod-http-image-filter
-  libnginx-mod-http-xslt-filter libnginx-mod-mail libnginx-mod-stream libtiff5
-  libwebp6 libxpm4 nginx-common nginx-core
-Suggested packages:
-  libgd-tools fcgiwrap nginx-doc ssl-cert
-The following NEW packages will be installed:
-  fontconfig-config fonts-dejavu-core libfontconfig1 libgd3 libjbig0
-  libjpeg-turbo8 libjpeg8 libnginx-mod-http-image-filter
-  libnginx-mod-http-xslt-filter libnginx-mod-mail libnginx-mod-stream libtiff5
-  libwebp6 libxpm4 nginx nginx-common nginx-core
-0 upgraded, 17 newly installed, 0 to remove and 229 not upgraded.
-changed: [sikiteeb-1]
 The following additional packages will be installed:
   fontconfig-config fonts-dejavu-core libfontconfig1 libgd3 libjbig0
   libjpeg-turbo8 libjpeg8 libnginx-mod-http-image-filter
@@ -1691,124 +1677,24 @@ The following NEW packages will be installed:
   libwebp6 libxpm4 nginx nginx-common nginx-core
 0 upgraded, 17 newly installed, 0 to remove and 229 not upgraded.
 changed: [sikiteeb-2]
+The following additional packages will be installed:
+  fontconfig-config fonts-dejavu-core libfontconfig1 libgd3 libjbig0
+  libjpeg-turbo8 libjpeg8 libnginx-mod-http-image-filter
+  libnginx-mod-http-xslt-filter libnginx-mod-mail libnginx-mod-stream libtiff5
+  libwebp6 libxpm4 nginx-common nginx-core
+Suggested packages:
+  libgd-tools fcgiwrap nginx-doc ssl-cert
+The following NEW packages will be installed:
+  fontconfig-config fonts-dejavu-core libfontconfig1 libgd3 libjbig0
+  libjpeg-turbo8 libjpeg8 libnginx-mod-http-image-filter
+  libnginx-mod-http-xslt-filter libnginx-mod-mail libnginx-mod-stream libtiff5
+  libwebp6 libxpm4 nginx nginx-common nginx-core
+0 upgraded, 17 newly installed, 0 to remove and 229 not upgraded.
+changed: [sikiteeb-1]
 
 TASK [nginx : Default file] ****************************************************
 --- before: /etc/nginx/sites-enabled/default
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmpiz5136h9/default.j2
-@@ -1,91 +1,27 @@
--##
--# You should look at the following URL's in order to grasp a solid understanding
--# of Nginx configuration files in order to fully unleash the power of Nginx.
--# https://www.nginx.com/resources/wiki/start/
--# https://www.nginx.com/resources/wiki/start/topics/tutorials/config_pitfalls/
--# https://wiki.debian.org/Nginx/DirectoryStructure
--#
--# In most cases, administrators will remove this file from sites-enabled/ and
--# leave it as reference inside of sites-available where it will continue to be
--# updated by the nginx packaging team.
--#
--# This file will automatically load configuration files provided by other
--# applications, such as Drupal or Wordpress. These applications will be made
--# available underneath a path with that package name, such as /drupal8.
--#
--# Please see /usr/share/doc/nginx-doc/examples/ for more detailed examples.
--##
--
--# Default server configuration
--#
- server {
- 	listen 80 default_server;
--	listen [::]:80 default_server;
--
--	# SSL configuration
--	#
--	# listen 443 ssl default_server;
--	# listen [::]:443 ssl default_server;
--	#
--	# Note: You should disable gzip for SSL traffic.
--	# See: https://bugs.debian.org/773332
--	#
--	# Read up on ssl_ciphers to ensure a secure configuration.
--	# See: https://bugs.debian.org/765782
--	#
--	# Self signed certs generated by the ssl-cert package
--	# Don't use them in a production server!
--	#
--	# include snippets/snakeoil.conf;
--
--	root /var/www/html;
--
--	# Add index.php to the list if you are using PHP
--	index index.html index.htm index.nginx-debian.html;
--
- 	server_name _;
- 
--	location / {
--		# First attempt to serve request as file, then
--		# as directory, then fall back to displaying a 404.
--		try_files $uri $uri/ =404;
-+  location /node-metrics {
-+    proxy_pass http://localhost:9100/metrics;
-+  }
-+
-+
-+  location /prometheus {
-+    proxy_pass http://localhost:9090;
-+  }
-+
-+  location /grafana {
-+    proxy_pass http://localhost:3001;
-+    proxy_set_header Host      $host;
-+  }
-+
-+	location /influxdb-metrics {
-+    proxy_pass http://localhost:9424/metrics;
- 	}
- 
--	# pass PHP scripts to FastCGI server
--	#
--	#location ~ \.php$ {
--	#	include snippets/fastcgi-php.conf;
--	#
--	#	# With php-fpm (or other unix sockets):
--	#	fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
--	#	# With php-cgi (or other tcp sockets):
--	#	fastcgi_pass 127.0.0.1:9000;
--	#}
- 
--	# deny access to .htaccess files, if Apache's document root
--	# concurs with nginx's one
--	#
--	#location ~ /\.ht {
--	#	deny all;
--	#}
-+
-+
- }
- 
--
--# Virtual Host configuration for example.com
--#
--# You can move that to a different file under sites-available/ and symlink that
--# to sites-enabled/ to enable it.
--#
--#server {
--#	listen 80;
--#	listen [::]:80;
--#
--#	server_name example.com;
--#
--#	root /var/www/example.com;
--#	index index.html;
--#
--#	location / {
--#		try_files $uri $uri/ =404;
--#	}
--#}
-
-changed: [sikiteeb-3]
---- before: /etc/nginx/sites-enabled/default
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmpnmtkctjf/default.j2
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmpbz6kpisd/default.j2
 @@ -1,91 +1,29 @@
 -##
 -# You should look at the following URL's in order to grasp a solid understanding
@@ -1924,7 +1810,121 @@ changed: [sikiteeb-3]
 
 changed: [sikiteeb-2]
 --- before: /etc/nginx/sites-enabled/default
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmpmbkaeem4/default.j2
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmpcz1ivwqy/default.j2
+@@ -1,91 +1,27 @@
+-##
+-# You should look at the following URL's in order to grasp a solid understanding
+-# of Nginx configuration files in order to fully unleash the power of Nginx.
+-# https://www.nginx.com/resources/wiki/start/
+-# https://www.nginx.com/resources/wiki/start/topics/tutorials/config_pitfalls/
+-# https://wiki.debian.org/Nginx/DirectoryStructure
+-#
+-# In most cases, administrators will remove this file from sites-enabled/ and
+-# leave it as reference inside of sites-available where it will continue to be
+-# updated by the nginx packaging team.
+-#
+-# This file will automatically load configuration files provided by other
+-# applications, such as Drupal or Wordpress. These applications will be made
+-# available underneath a path with that package name, such as /drupal8.
+-#
+-# Please see /usr/share/doc/nginx-doc/examples/ for more detailed examples.
+-##
+-
+-# Default server configuration
+-#
+ server {
+ 	listen 80 default_server;
+-	listen [::]:80 default_server;
+-
+-	# SSL configuration
+-	#
+-	# listen 443 ssl default_server;
+-	# listen [::]:443 ssl default_server;
+-	#
+-	# Note: You should disable gzip for SSL traffic.
+-	# See: https://bugs.debian.org/773332
+-	#
+-	# Read up on ssl_ciphers to ensure a secure configuration.
+-	# See: https://bugs.debian.org/765782
+-	#
+-	# Self signed certs generated by the ssl-cert package
+-	# Don't use them in a production server!
+-	#
+-	# include snippets/snakeoil.conf;
+-
+-	root /var/www/html;
+-
+-	# Add index.php to the list if you are using PHP
+-	index index.html index.htm index.nginx-debian.html;
+-
+ 	server_name _;
+ 
+-	location / {
+-		# First attempt to serve request as file, then
+-		# as directory, then fall back to displaying a 404.
+-		try_files $uri $uri/ =404;
++  location /node-metrics {
++    proxy_pass http://localhost:9100/metrics;
++  }
++
++
++  location /prometheus {
++    proxy_pass http://localhost:9090;
++  }
++
++  location /grafana {
++    proxy_pass http://localhost:3001;
++    proxy_set_header Host      $host;
++  }
++
++	location /influxdb-metrics {
++    proxy_pass http://localhost:9424/metrics;
+ 	}
+ 
+-	# pass PHP scripts to FastCGI server
+-	#
+-	#location ~ \.php$ {
+-	#	include snippets/fastcgi-php.conf;
+-	#
+-	#	# With php-fpm (or other unix sockets):
+-	#	fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
+-	#	# With php-cgi (or other tcp sockets):
+-	#	fastcgi_pass 127.0.0.1:9000;
+-	#}
+ 
+-	# deny access to .htaccess files, if Apache's document root
+-	# concurs with nginx's one
+-	#
+-	#location ~ /\.ht {
+-	#	deny all;
+-	#}
++
++
+ }
+ 
+-
+-# Virtual Host configuration for example.com
+-#
+-# You can move that to a different file under sites-available/ and symlink that
+-# to sites-enabled/ to enable it.
+-#
+-#server {
+-#	listen 80;
+-#	listen [::]:80;
+-#
+-#	server_name example.com;
+-#
+-#	root /var/www/example.com;
+-#	index index.html;
+-#
+-#	location / {
+-#		try_files $uri $uri/ =404;
+-#	}
+-#}
+
+changed: [sikiteeb-3]
+--- before: /etc/nginx/sites-enabled/default
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmpwej1ysq4/default.j2
 @@ -1,91 +1,29 @@
 -##
 -# You should look at the following URL's in order to grasp a solid understanding
@@ -2041,19 +2041,19 @@ changed: [sikiteeb-2]
 changed: [sikiteeb-1]
 
 TASK [nginx : Enable Nginx] ****************************************************
+ok: [sikiteeb-2]
 ok: [sikiteeb-1]
 ok: [sikiteeb-3]
-ok: [sikiteeb-2]
 
 TASK [nginx_exporter : Install Nginx Exporter] *********************************
 The following NEW packages will be installed:
   prometheus-nginx-exporter
 0 upgraded, 1 newly installed, 0 to remove and 229 not upgraded.
-changed: [sikiteeb-1]
+changed: [sikiteeb-2]
 The following NEW packages will be installed:
   prometheus-nginx-exporter
 0 upgraded, 1 newly installed, 0 to remove and 229 not upgraded.
-changed: [sikiteeb-2]
+changed: [sikiteeb-1]
 The following NEW packages will be installed:
   prometheus-nginx-exporter
 0 upgraded, 1 newly installed, 0 to remove and 229 not upgraded.
@@ -2061,7 +2061,7 @@ changed: [sikiteeb-3]
 
 TASK [nginx_exporter : Expose stub_status on Port 8080] ************************
 --- before
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmp8kzmkemv/stub_status
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmp3hkvvroi/stub_status
 @@ -0,0 +1,6 @@
 +server {
 +        listen 8080 default_server;
@@ -2073,19 +2073,7 @@ TASK [nginx_exporter : Expose stub_status on Port 8080] ************************
 
 changed: [sikiteeb-1]
 --- before
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmp_r9vg_0t/stub_status
-@@ -0,0 +1,6 @@
-+server {
-+        listen 8080 default_server;
-+        location = /stub_status {
-+                stub_status;
-+        }
-+}
-\ No newline at end of file
-
-changed: [sikiteeb-2]
---- before
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmp3vzhwoli/stub_status
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmpb4rx2w52/stub_status
 @@ -0,0 +1,6 @@
 +server {
 +        listen 8080 default_server;
@@ -2096,10 +2084,22 @@ changed: [sikiteeb-2]
 \ No newline at end of file
 
 changed: [sikiteeb-3]
+--- before
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmpxgt3usm_/stub_status
+@@ -0,0 +1,6 @@
++server {
++        listen 8080 default_server;
++        location = /stub_status {
++                stub_status;
++        }
++}
+\ No newline at end of file
+
+changed: [sikiteeb-2]
 
 TASK [nginx_exporter : Nginx-exporter args] ************************************
 --- before: /etc/default/prometheus-nginx-exporter
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmp9cvad7hf/prometheus-nginx-exporter
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmpntnvd5p9/prometheus-nginx-exporter
 @@ -1,14 +1 @@
 -ARGS=""
 -
@@ -2118,9 +2118,9 @@ TASK [nginx_exporter : Nginx-exporter args] ************************************
 +ARGS="-web.listen-address ':9113'"
 \ No newline at end of file
 
-changed: [sikiteeb-2]
+changed: [sikiteeb-3]
 --- before: /etc/default/prometheus-nginx-exporter
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmpoxib2720/prometheus-nginx-exporter
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmp6vk07hyw/prometheus-nginx-exporter
 @@ -1,14 +1 @@
 -ARGS=""
 -
@@ -2141,7 +2141,7 @@ changed: [sikiteeb-2]
 
 changed: [sikiteeb-1]
 --- before: /etc/default/prometheus-nginx-exporter
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmp_qxg3sat/prometheus-nginx-exporter
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmp3m_29f9v/prometheus-nginx-exporter
 @@ -1,14 +1 @@
 -ARGS=""
 -
@@ -2160,27 +2160,27 @@ changed: [sikiteeb-1]
 +ARGS="-web.listen-address ':9113'"
 \ No newline at end of file
 
-changed: [sikiteeb-3]
+changed: [sikiteeb-2]
 
 TASK [nginx_exporter : Enable Nginx Exporter] **********************************
-changed: [sikiteeb-2]
 changed: [sikiteeb-3]
+changed: [sikiteeb-2]
 changed: [sikiteeb-1]
 
 RUNNING HANDLER [nginx_exporter : Restart Nginx Exporter] **********************
-changed: [sikiteeb-1]
-changed: [sikiteeb-2]
 changed: [sikiteeb-3]
+changed: [sikiteeb-2]
+changed: [sikiteeb-1]
 
 RUNNING HANDLER [nginx_exporter : Restart Nginx] *******************************
-changed: [sikiteeb-2]
 changed: [sikiteeb-3]
+changed: [sikiteeb-2]
 changed: [sikiteeb-1]
 
 RUNNING HANDLER [nginx_exporter : Reload Daemons] ******************************
+changed: [sikiteeb-3]
 changed: [sikiteeb-2]
 changed: [sikiteeb-1]
-changed: [sikiteeb-3]
 
 PLAY [Influxdb] ****************************************************************
 
@@ -2203,7 +2203,7 @@ changed: [sikiteeb-3]
 
 TASK [influxdb : Influx Config] ************************************************
 --- before: /etc/influxdb/influxdb.conf
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmps94wclba/influxdb.conf.j2
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmp_jupjfmr/influxdb.conf.j2
 @@ -1,596 +1,29 @@
 -### Welcome to the InfluxDB configuration file.
 -
@@ -2902,7 +2902,7 @@ changed: [sikiteeb-3]
 
 TASK [pinger : Config file 'pinger.conf'] **************************************
 --- before
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmpfry12vit/pinger.conf.j2
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmp_imj1jy9/pinger.conf.j2
 @@ -0,0 +1,3 @@
 +database_url=http://influxdb:8086
 +database_name=latency
@@ -2953,7 +2953,7 @@ changed: [sikiteeb-3]
 
 TASK [pinger : Service 'pinger'] ***********************************************
 --- before
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmpn18u32mo/pinger.service.j2
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmpjbcw1nb9/pinger.service.j2
 @@ -0,0 +1,12 @@
 +[Unit]
 +Description=Report connection latency to influxdb
@@ -2979,7 +2979,7 @@ changed: [sikiteeb-3]
 
 TASK [influxdb_exporter : Influxdb exporter args] ******************************
 --- before
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmp7y1l2sv2/prometheus-influxdb-exporter.j2
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmpjqf1krrc/prometheus-influxdb-exporter.j2
 @@ -0,0 +1 @@
 +ARGS="--influx.url 'http://localhost:8086' --web.listen-address ':9424'"
 \ No newline at end of file
@@ -2988,7 +2988,7 @@ changed: [sikiteeb-3]
 
 TASK [influxdb_exporter : Service template] ************************************
 --- before
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmp42bzko99/prometheus-influxdb-stats-exporter.service.j2
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmpud0da7z_/prometheus-influxdb-stats-exporter.service.j2
 @@ -0,0 +1,11 @@
 +[Unit]
 +Description=Influxdb Exporter
@@ -3024,11 +3024,11 @@ changed: [sikiteeb-3]
 
 TASK [influxdb_backup : InfluxDB cron] *****************************************
 --- before
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmph1ne1olh/influxdb-backup.j2
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmp_xdvdobn/influxdb-backup.j2
 @@ -0,0 +1,5 @@
-+10 10 * * * backup ssh Sikiteeb@backup.maledetta.xtx mkdir influxdb
-+10 10 * * 2 backup rm -rf /home/backup/influxdb/*; influxd backup -portable -database telegraf /home/backup/influxdb
-+10 10 * * 2  backup  duplicity --no-encryption full /home/backup/influxdb/ rsync://Sikiteeb@backup.maledetta.xtx//home/Sikiteeb/influxdb/
++0 23 * * * backup ssh Sikiteeb@backup.maledetta.xtx mkdir influxdb
++0 23 * * 2 backup rm -rf /home/backup/influxdb/*; influxd backup -portable -database telegraf /home/backup/influxdb
++0 23 * * 2  backup  duplicity --no-encryption full /home/backup/influxdb/ rsync://Sikiteeb@backup.maledetta.xtx//home/Sikiteeb/influxdb/
 +30 23 * * 1-6  backup  duplicity --no-encryption incremental /home/backup/influxdb/ rsync://Sikiteeb@backup.maledetta.xtx//home/Sikiteeb/influxdb/
 +0 0 28 * * backup duplicity remove-older-than 1M rsync://Sikiteeb@backup.maledetta.xtx//home/Sikiteeb/influxdb/
 \ No newline at end of file
@@ -3078,7 +3078,7 @@ changed: [sikiteeb-3]
 
 TASK [prometheus : Prometheus args] ********************************************
 --- before: /etc/default/prometheus
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmpmrkcj7zx/prometheus.j2
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmp751f82i2/prometheus.j2
 @@ -1,57 +1 @@
 -# Set the command-line arguments to pass to the server.
 -ARGS=""
@@ -3137,14 +3137,14 @@ TASK [prometheus : Prometheus args] ********************************************
 -#                             Maximum number of queries executed concurrently.
 -#  --log.level=info           Only log messages with the given severity or
 -#                             above. One of: [debug, info, warn, error]
-+ARGS="--web.external-url http://"sikiteeb-2":"3080"/prometheus"
++ARGS="--web.external-url http://"sikiteeb-2":"5080"/prometheus"
 \ No newline at end of file
 
 changed: [sikiteeb-3]
 
 TASK [prometheus : Change prometheus.yml] **************************************
 --- before: /etc/prometheus/prometheus.yml
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmp06p7ft6q/prometheus.yml.j2
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmpkl2g2ior/prometheus.yml.j2
 @@ -1,44 +1,60 @@
 -# Sample config for Prometheus.
 +global:
@@ -3277,7 +3277,7 @@ changed: [sikiteeb-3]
 
 TASK [grafana : Grafana Dashboard Setting] *************************************
 --- before
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmppibymt3l/dashboard.yaml.j2
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmprftpd3m0/dashboard.yaml.j2
 @@ -0,0 +1,13 @@
 +
 +apiVersion: 1
@@ -3297,7 +3297,7 @@ changed: [sikiteeb-3]
 
 TASK [grafana : Grafana Datasource Setting] ************************************
 --- before
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmpu2i2ibst/datasource.yaml.j2
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmpghvm6rgs/datasource.yaml.j2
 @@ -0,0 +1,29 @@
 +apiVersion: 1
 +
@@ -3347,7 +3347,7 @@ changed: [sikiteeb-3]
 TASK [grafana : Main Dashboard Json] *******************************************
 --- before
 +++ after: /Users/sigridhanni/RiderProjects/ica0002/roles/grafana/files/main.json
-@@ -0,0 +1,812 @@
+@@ -0,0 +1,1079 @@
 +{
 +  "annotations": {
 +    "list": [
@@ -3374,19 +3374,49 @@ TASK [grafana : Main Dashboard Json] *******************************************
 +  "editable": true,
 +  "fiscalYearStartMonth": 0,
 +  "graphTooltip": 0,
-+  "id": 1,
++  "id": 3,
 +  "links": [],
 +  "liveNow": false,
 +  "panels": [
 +    {
 +      "datasource": {
 +        "type": "prometheus",
-+        "uid": "_dcPfup4k"
++        "uid": "e_mCWqp4z"
 +      },
 +      "fieldConfig": {
 +        "defaults": {
 +          "color": {
-+            "mode": "thresholds"
++            "mode": "palette-classic"
++          },
++          "custom": {
++            "axisCenteredZero": false,
++            "axisColorMode": "text",
++            "axisLabel": "",
++            "axisPlacement": "auto",
++            "barAlignment": 0,
++            "drawStyle": "line",
++            "fillOpacity": 0,
++            "gradientMode": "none",
++            "hideFrom": {
++              "legend": false,
++              "tooltip": false,
++              "viz": false
++            },
++            "lineInterpolation": "linear",
++            "lineWidth": 1,
++            "pointSize": 5,
++            "scaleDistribution": {
++              "type": "linear"
++            },
++            "showPoints": "auto",
++            "spanNulls": false,
++            "stacking": {
++              "group": "A",
++              "mode": "none"
++            },
++            "thresholdsStyle": {
++              "mode": "off"
++            }
 +          },
 +          "mappings": [],
 +          "thresholds": {
@@ -3411,75 +3441,86 @@ TASK [grafana : Main Dashboard Json] *******************************************
 +        "x": 0,
 +        "y": 0
 +      },
-+      "id": 18,
++      "id": 26,
 +      "options": {
-+        "colorMode": "value",
-+        "graphMode": "none",
-+        "justifyMode": "center",
-+        "orientation": "auto",
-+        "reduceOptions": {
-+          "calcs": [
-+            "last"
-+          ],
-+          "fields": "",
-+          "values": false
++        "legend": {
++          "calcs": [],
++          "displayMode": "table",
++          "placement": "bottom",
++          "showLegend": true
 +        },
-+        "textMode": "auto"
++        "tooltip": {
++          "mode": "single",
++          "sort": "none"
++        }
 +      },
-+      "pluginVersion": "9.2.6",
 +      "targets": [
 +        {
 +          "datasource": {
 +            "type": "prometheus",
-+            "uid": "_dcPfup4k"
++            "uid": "e_mCWqp4z"
 +          },
 +          "editorMode": "builder",
-+          "expr": "keepalived_vrrp_state",
++          "expr": "node_memory_Active_bytes",
 +          "legendFormat": "__auto",
 +          "range": true,
 +          "refId": "A"
 +        }
 +      ],
-+      "title": "Keepalived Vrrp State",
-+      "type": "stat"
++      "title": "Node Memory Active Bytes",
++      "type": "timeseries"
 +    },
 +    {
 +      "datasource": {
 +        "type": "prometheus",
-+        "uid": "_dcPfup4k"
++        "uid": "e_mCWqp4z"
 +      },
 +      "fieldConfig": {
 +        "defaults": {
 +          "color": {
-+            "mode": "thresholds"
++            "mode": "palette-classic"
 +          },
-+          "mappings": [
-+            {
-+              "options": {
-+                "0": {
-+                  "color": "dark-red",
-+                  "index": 1,
-+                  "text": "down"
-+                },
-+                "1": {
-+                  "color": "green",
-+                  "index": 0,
-+                  "text": "up"
-+                }
-+              },
-+              "type": "value"
++          "custom": {
++            "axisCenteredZero": false,
++            "axisColorMode": "text",
++            "axisLabel": "",
++            "axisPlacement": "auto",
++            "barAlignment": 0,
++            "drawStyle": "line",
++            "fillOpacity": 0,
++            "gradientMode": "none",
++            "hideFrom": {
++              "legend": false,
++              "tooltip": false,
++              "viz": false
++            },
++            "lineInterpolation": "linear",
++            "lineWidth": 1,
++            "pointSize": 5,
++            "scaleDistribution": {
++              "type": "linear"
++            },
++            "showPoints": "auto",
++            "spanNulls": false,
++            "stacking": {
++              "group": "A",
++              "mode": "none"
++            },
++            "thresholdsStyle": {
++              "mode": "off"
 +            }
-+          ],
++          },
++          "mappings": [],
 +          "thresholds": {
 +            "mode": "absolute",
 +            "steps": [
 +              {
-+                "color": "dark-red",
++                "color": "green",
 +                "value": null
 +              },
 +              {
-+                "color": "dark-green",
-+                "value": 1
++                "color": "red",
++                "value": 80
 +              }
 +            ]
 +          }
@@ -3492,71 +3533,86 @@ TASK [grafana : Main Dashboard Json] *******************************************
 +        "x": 0,
 +        "y": 8
 +      },
-+      "id": 16,
++      "id": 24,
 +      "options": {
-+        "colorMode": "value",
-+        "graphMode": "none",
-+        "justifyMode": "auto",
-+        "orientation": "auto",
-+        "reduceOptions": {
-+          "calcs": [
-+            "last"
-+          ],
-+          "fields": "",
-+          "values": false
++        "legend": {
++          "calcs": [],
++          "displayMode": "table",
++          "placement": "bottom",
++          "showLegend": true
 +        },
-+        "textMode": "auto"
++        "tooltip": {
++          "mode": "single",
++          "sort": "none"
++        }
 +      },
-+      "pluginVersion": "9.2.6",
 +      "targets": [
 +        {
 +          "datasource": {
 +            "type": "prometheus",
-+            "uid": "_dcPfup4k"
++            "uid": "e_mCWqp4z"
 +          },
 +          "editorMode": "builder",
-+          "expr": "haproxy_server_up",
++          "expr": "nginx_http_requests_total",
 +          "legendFormat": "__auto",
 +          "range": true,
 +          "refId": "A"
 +        }
 +      ],
-+      "title": "Haproxy server status",
-+      "transparent": true,
-+      "type": "stat"
++      "title": "nginx_http_requests_total",
++      "type": "timeseries"
 +    },
 +    {
 +      "datasource": {
 +        "type": "prometheus",
-+        "uid": "_dcPfup4k"
++        "uid": "e_mCWqp4z"
 +      },
 +      "fieldConfig": {
 +        "defaults": {
 +          "color": {
-+            "mode": "thresholds"
++            "mode": "palette-classic"
 +          },
-+          "mappings": [
-+            {
-+              "options": {
-+                "Base": {
-+                  "color": "dark-red",
-+                  "index": 0,
-+                  "text": "down"
-+                }
-+              },
-+              "type": "value"
++          "custom": {
++            "axisCenteredZero": false,
++            "axisColorMode": "text",
++            "axisLabel": "",
++            "axisPlacement": "auto",
++            "barAlignment": 0,
++            "drawStyle": "line",
++            "fillOpacity": 0,
++            "gradientMode": "none",
++            "hideFrom": {
++              "legend": false,
++              "tooltip": false,
++              "viz": false
++            },
++            "lineInterpolation": "linear",
++            "lineWidth": 1,
++            "pointSize": 5,
++            "scaleDistribution": {
++              "type": "linear"
++            },
++            "showPoints": "auto",
++            "spanNulls": false,
++            "stacking": {
++              "group": "A",
++              "mode": "none"
++            },
++            "thresholdsStyle": {
++              "mode": "off"
 +            }
-+          ],
++          },
++          "mappings": [],
 +          "thresholds": {
 +            "mode": "absolute",
 +            "steps": [
 +              {
-+                "color": "dark-red",
++                "color": "green",
 +                "value": null
 +              },
 +              {
-+                "color": "dark-green",
-+                "value": 1
++                "color": "red",
++                "value": 80
 +              }
 +            ]
 +          }
@@ -3569,40 +3625,39 @@ TASK [grafana : Main Dashboard Json] *******************************************
 +        "x": 0,
 +        "y": 16
 +      },
-+      "id": 14,
++      "id": 22,
 +      "options": {
-+        "orientation": "auto",
-+        "reduceOptions": {
-+          "calcs": [
-+            "last"
-+          ],
-+          "fields": "",
-+          "values": false
++        "legend": {
++          "calcs": [],
++          "displayMode": "table",
++          "placement": "bottom",
++          "showLegend": true
 +        },
-+        "showThresholdLabels": false,
-+        "showThresholdMarkers": false
++        "tooltip": {
++          "mode": "single",
++          "sort": "none"
++        }
 +      },
-+      "pluginVersion": "9.2.6",
 +      "targets": [
 +        {
 +          "datasource": {
 +            "type": "prometheus",
-+            "uid": "_dcPfup4k"
++            "uid": "e_mCWqp4z"
 +          },
 +          "editorMode": "builder",
-+          "expr": "haproxy_up",
++          "expr": "mysql_global_status_commands_total",
 +          "legendFormat": "__auto",
 +          "range": true,
 +          "refId": "A"
 +        }
 +      ],
-+      "title": "Haproxy status",
-+      "type": "gauge"
++      "title": "mysql_global_status_commands_total",
++      "type": "timeseries"
 +    },
 +    {
 +      "datasource": {
 +        "type": "prometheus",
-+        "uid": "_dcPfup4k"
++        "uid": "e_mCWqp4z"
 +      },
 +      "fieldConfig": {
 +        "defaults": {
@@ -3662,40 +3717,39 @@ TASK [grafana : Main Dashboard Json] *******************************************
 +        "x": 0,
 +        "y": 24
 +      },
-+      "id": 12,
++      "id": 20,
 +      "options": {
 +        "legend": {
 +          "calcs": [],
-+          "displayMode": "list",
++          "displayMode": "table",
 +          "placement": "bottom",
 +          "showLegend": true
 +        },
 +        "tooltip": {
-+          "mode": "multi",
++          "mode": "single",
 +          "sort": "none"
 +        }
 +      },
-+      "pluginVersion": "9.2.6",
 +      "targets": [
 +        {
 +          "datasource": {
 +            "type": "prometheus",
-+            "uid": "_dcPfup4k"
++            "uid": "e_mCWqp4z"
 +          },
 +          "editorMode": "builder",
-+          "expr": "node_cpu_seconds_total",
++          "expr": "bind_resolver_queries_total",
 +          "legendFormat": "__auto",
 +          "range": true,
 +          "refId": "A"
 +        }
 +      ],
-+      "title": "CPU load",
++      "title": "bind_resolver_queries_total",
 +      "type": "timeseries"
 +    },
 +    {
 +      "datasource": {
 +        "type": "prometheus",
-+        "uid": "_dcPfup4k"
++        "uid": "e_mCWqp4z"
 +      },
 +      "fieldConfig": {
 +        "defaults": {
@@ -3717,13 +3771,13 @@ TASK [grafana : Main Dashboard Json] *******************************************
 +              "viz": false
 +            },
 +            "lineInterpolation": "linear",
-+            "lineWidth": 1,
-+            "pointSize": 5,
++            "lineWidth": 2,
++            "pointSize": 3,
 +            "scaleDistribution": {
 +              "type": "linear"
 +            },
 +            "showPoints": "auto",
-+            "spanNulls": false,
++            "spanNulls": true,
 +            "stacking": {
 +              "group": "A",
 +              "mode": "none"
@@ -3755,7 +3809,7 @@ TASK [grafana : Main Dashboard Json] *******************************************
 +        "x": 0,
 +        "y": 32
 +      },
-+      "id": 10,
++      "id": 18,
 +      "options": {
 +        "legend": {
 +          "calcs": [],
@@ -3772,57 +3826,27 @@ TASK [grafana : Main Dashboard Json] *******************************************
 +        {
 +          "datasource": {
 +            "type": "prometheus",
-+            "uid": "_dcPfup4k"
++            "uid": "e_mCWqp4z"
 +          },
 +          "editorMode": "builder",
-+          "expr": "node_memory_Percpu_bytes",
++          "expr": "node_cpu_seconds_total",
 +          "legendFormat": "__auto",
 +          "range": true,
 +          "refId": "A"
 +        }
 +      ],
-+      "title": "Node Memory per CPU",
++      "title": "Node CPU seconds total",
 +      "type": "timeseries"
 +    },
 +    {
 +      "datasource": {
 +        "type": "prometheus",
-+        "uid": "_dcPfup4k"
++        "uid": "e_mCWqp4z"
 +      },
 +      "fieldConfig": {
 +        "defaults": {
 +          "color": {
-+            "mode": "palette-classic"
-+          },
-+          "custom": {
-+            "axisCenteredZero": false,
-+            "axisColorMode": "text",
-+            "axisLabel": "",
-+            "axisPlacement": "auto",
-+            "barAlignment": 0,
-+            "drawStyle": "line",
-+            "fillOpacity": 0,
-+            "gradientMode": "none",
-+            "hideFrom": {
-+              "legend": false,
-+              "tooltip": false,
-+              "viz": false
-+            },
-+            "lineInterpolation": "linear",
-+            "lineWidth": 1,
-+            "pointSize": 5,
-+            "scaleDistribution": {
-+              "type": "linear"
-+            },
-+            "showPoints": "auto",
-+            "spanNulls": false,
-+            "stacking": {
-+              "group": "A",
-+              "mode": "none"
-+            },
-+            "thresholdsStyle": {
-+              "mode": "off"
-+            }
++            "mode": "thresholds"
 +          },
 +          "mappings": [],
 +          "thresholds": {
@@ -3847,74 +3871,47 @@ TASK [grafana : Main Dashboard Json] *******************************************
 +        "x": 0,
 +        "y": 40
 +      },
-+      "id": 8,
++      "id": 16,
 +      "options": {
-+        "legend": {
-+          "calcs": [],
-+          "displayMode": "list",
-+          "placement": "bottom",
-+          "showLegend": true
++        "colorMode": "value",
++        "graphMode": "none",
++        "justifyMode": "auto",
++        "orientation": "auto",
++        "reduceOptions": {
++          "calcs": [
++            "lastNotNull"
++          ],
++          "fields": "",
++          "values": false
 +        },
-+        "tooltip": {
-+          "mode": "single",
-+          "sort": "none"
-+        }
++        "textMode": "auto"
 +      },
++      "pluginVersion": "9.2.6",
 +      "targets": [
 +        {
 +          "datasource": {
 +            "type": "prometheus",
-+            "uid": "_dcPfup4k"
++            "uid": "e_mCWqp4z"
 +          },
 +          "editorMode": "builder",
-+          "expr": "nginx_http_requests_total",
++          "expr": "mysql_slave_status_slave_sql_running",
 +          "legendFormat": "__auto",
 +          "range": true,
 +          "refId": "A"
 +        }
 +      ],
-+      "title": "Nginx HTTP requests",
-+      "type": "timeseries"
++      "title": "mysql_slave_status_slave_sql_running",
++      "type": "stat"
 +    },
 +    {
 +      "datasource": {
 +        "type": "prometheus",
-+        "uid": "_dcPfup4k"
++        "uid": "e_mCWqp4z"
 +      },
 +      "fieldConfig": {
 +        "defaults": {
 +          "color": {
-+            "mode": "palette-classic"
-+          },
-+          "custom": {
-+            "axisCenteredZero": false,
-+            "axisColorMode": "text",
-+            "axisLabel": "",
-+            "axisPlacement": "auto",
-+            "barAlignment": 0,
-+            "drawStyle": "line",
-+            "fillOpacity": 0,
-+            "gradientMode": "none",
-+            "hideFrom": {
-+              "legend": false,
-+              "tooltip": false,
-+              "viz": false
-+            },
-+            "lineInterpolation": "linear",
-+            "lineWidth": 1,
-+            "pointSize": 5,
-+            "scaleDistribution": {
-+              "type": "linear"
-+            },
-+            "showPoints": "auto",
-+            "spanNulls": false,
-+            "stacking": {
-+              "group": "A",
-+              "mode": "none"
-+            },
-+            "thresholdsStyle": {
-+              "mode": "off"
-+            }
++            "mode": "thresholds"
 +          },
 +          "mappings": [],
 +          "thresholds": {
@@ -3939,75 +3936,47 @@ TASK [grafana : Main Dashboard Json] *******************************************
 +        "x": 0,
 +        "y": 48
 +      },
-+      "id": 6,
++      "id": 14,
 +      "options": {
-+        "legend": {
-+          "calcs": [],
-+          "displayMode": "list",
-+          "placement": "bottom",
-+          "showLegend": true
++        "colorMode": "value",
++        "graphMode": "none",
++        "justifyMode": "auto",
++        "orientation": "auto",
++        "reduceOptions": {
++          "calcs": [
++            "lastNotNull"
++          ],
++          "fields": "",
++          "values": false
 +        },
-+        "tooltip": {
-+          "mode": "single",
-+          "sort": "none"
-+        }
++        "textMode": "auto"
 +      },
 +      "pluginVersion": "9.2.6",
 +      "targets": [
 +        {
 +          "datasource": {
 +            "type": "prometheus",
-+            "uid": "_dcPfup4k"
++            "uid": "e_mCWqp4z"
 +          },
 +          "editorMode": "builder",
-+          "expr": "bind_resolver_queries_total",
++          "expr": "mysql_slave_status_slave_io_running",
 +          "legendFormat": "__auto",
 +          "range": true,
 +          "refId": "A"
 +        }
 +      ],
-+      "title": "Bind Resolver DNS Queries Total",
-+      "type": "timeseries"
++      "title": "mysql_slave_status_slave_io_running",
++      "type": "stat"
 +    },
 +    {
 +      "datasource": {
 +        "type": "prometheus",
-+        "uid": "_dcPfup4k"
++        "uid": "e_mCWqp4z"
 +      },
 +      "fieldConfig": {
 +        "defaults": {
 +          "color": {
-+            "mode": "palette-classic"
-+          },
-+          "custom": {
-+            "axisCenteredZero": false,
-+            "axisColorMode": "text",
-+            "axisLabel": "",
-+            "axisPlacement": "auto",
-+            "barAlignment": 0,
-+            "drawStyle": "line",
-+            "fillOpacity": 0,
-+            "gradientMode": "none",
-+            "hideFrom": {
-+              "legend": false,
-+              "tooltip": false,
-+              "viz": false
-+            },
-+            "lineInterpolation": "linear",
-+            "lineWidth": 1,
-+            "pointSize": 5,
-+            "scaleDistribution": {
-+              "type": "linear"
-+            },
-+            "showPoints": "auto",
-+            "spanNulls": false,
-+            "stacking": {
-+              "group": "A",
-+              "mode": "none"
-+            },
-+            "thresholdsStyle": {
-+              "mode": "off"
-+            }
++            "mode": "thresholds"
 +          },
 +          "mappings": [],
 +          "thresholds": {
@@ -4032,40 +4001,253 @@ TASK [grafana : Main Dashboard Json] *******************************************
 +        "x": 0,
 +        "y": 56
 +      },
-+      "id": 4,
++      "id": 12,
 +      "options": {
-+        "legend": {
-+          "calcs": [],
-+          "displayMode": "table",
-+          "placement": "bottom",
-+          "showLegend": true
++        "colorMode": "none",
++        "graphMode": "none",
++        "justifyMode": "auto",
++        "orientation": "horizontal",
++        "reduceOptions": {
++          "calcs": [
++            "lastNotNull"
++          ],
++          "fields": "",
++          "values": false
 +        },
-+        "tooltip": {
-+          "mode": "single",
-+          "sort": "none"
-+        }
++        "textMode": "auto"
 +      },
 +      "pluginVersion": "9.2.6",
 +      "targets": [
 +        {
 +          "datasource": {
 +            "type": "prometheus",
-+            "uid": "_dcPfup4k"
++            "uid": "e_mCWqp4z"
 +          },
 +          "editorMode": "builder",
-+          "expr": "mysql_global_status_commands_total",
++          "expr": "mysql_global_variables_read_only",
 +          "legendFormat": "__auto",
 +          "range": true,
 +          "refId": "A"
 +        }
 +      ],
-+      "title": "Mysql Global Status ",
-+      "type": "timeseries"
++      "title": "MySQL_global_vars Read Only",
++      "type": "stat"
 +    },
 +    {
 +      "datasource": {
 +        "type": "prometheus",
-+        "uid": "_dcPfup4k"
++        "uid": "e_mCWqp4z"
++      },
++      "fieldConfig": {
++        "defaults": {
++          "color": {
++            "mode": "thresholds"
++          },
++          "mappings": [],
++          "thresholds": {
++            "mode": "absolute",
++            "steps": [
++              {
++                "color": "green",
++                "value": null
++              },
++              {
++                "color": "light-blue",
++                "value": 1
++              }
++            ]
++          }
++        },
++        "overrides": []
++      },
++      "gridPos": {
++        "h": 8,
++        "w": 12,
++        "x": 0,
++        "y": 64
++      },
++      "id": 10,
++      "options": {
++        "colorMode": "value",
++        "graphMode": "none",
++        "justifyMode": "auto",
++        "orientation": "horizontal",
++        "reduceOptions": {
++          "calcs": [
++            "lastNotNull"
++          ],
++          "fields": "",
++          "values": false
++        },
++        "textMode": "auto"
++      },
++      "pluginVersion": "9.2.6",
++      "targets": [
++        {
++          "datasource": {
++            "type": "prometheus",
++            "uid": "e_mCWqp4z"
++          },
++          "editorMode": "builder",
++          "expr": "mysql_global_variables_server_id",
++          "legendFormat": "__auto",
++          "range": true,
++          "refId": "A"
++        }
++      ],
++      "title": "Mysql Global Var ServerID",
++      "type": "stat"
++    },
++    {
++      "datasource": {
++        "type": "prometheus",
++        "uid": "e_mCWqp4z"
++      },
++      "fieldConfig": {
++        "defaults": {
++          "color": {
++            "mode": "thresholds"
++          },
++          "mappings": [],
++          "thresholds": {
++            "mode": "absolute",
++            "steps": [
++              {
++                "color": "green",
++                "value": null
++              },
++              {
++                "color": "super-light-green",
++                "value": 1
++              }
++            ]
++          }
++        },
++        "overrides": []
++      },
++      "gridPos": {
++        "h": 8,
++        "w": 12,
++        "x": 0,
++        "y": 72
++      },
++      "id": 8,
++      "options": {
++        "colorMode": "none",
++        "graphMode": "none",
++        "justifyMode": "auto",
++        "orientation": "horizontal",
++        "reduceOptions": {
++          "calcs": [
++            "last"
++          ],
++          "fields": "",
++          "values": false
++        },
++        "textMode": "value_and_name"
++      },
++      "pluginVersion": "9.2.6",
++      "targets": [
++        {
++          "datasource": {
++            "type": "prometheus",
++            "uid": "e_mCWqp4z"
++          },
++          "editorMode": "builder",
++          "expr": "keepalived_vrrp_state",
++          "legendFormat": "__auto",
++          "range": true,
++          "refId": "A"
++        }
++      ],
++      "title": "Keepalived_vvrp_state",
++      "type": "stat"
++    },
++    {
++      "datasource": {
++        "type": "prometheus",
++        "uid": "e_mCWqp4z"
++      },
++      "fieldConfig": {
++        "defaults": {
++          "color": {
++            "mode": "thresholds"
++          },
++          "mappings": [
++            {
++              "options": {
++                "0": {
++                  "color": "dark-red",
++                  "index": 1,
++                  "text": "down"
++                },
++                "1": {
++                  "color": "semi-dark-green",
++                  "index": 0,
++                  "text": "up"
++                }
++              },
++              "type": "value"
++            }
++          ],
++          "thresholds": {
++            "mode": "absolute",
++            "steps": [
++              {
++                "color": "dark-red",
++                "value": null
++              },
++              {
++                "color": "dark-green",
++                "value": 1
++              }
++            ]
++          }
++        },
++        "overrides": []
++      },
++      "gridPos": {
++        "h": 8,
++        "w": 12,
++        "x": 0,
++        "y": 80
++      },
++      "id": 6,
++      "options": {
++        "colorMode": "value",
++        "graphMode": "none",
++        "justifyMode": "center",
++        "orientation": "auto",
++        "reduceOptions": {
++          "calcs": [
++            "lastNotNull"
++          ],
++          "fields": "",
++          "values": false
++        },
++        "textMode": "auto"
++      },
++      "pluginVersion": "9.2.6",
++      "targets": [
++        {
++          "datasource": {
++            "type": "prometheus",
++            "uid": "e_mCWqp4z"
++          },
++          "editorMode": "builder",
++          "expr": "haproxy_server_up",
++          "legendFormat": "__auto",
++          "range": true,
++          "refId": "A"
++        }
++      ],
++      "title": "Haproxy Server Status",
++      "type": "stat"
++    },
++    {
++      "datasource": {
++        "type": "prometheus",
++        "uid": "e_mCWqp4z"
 +      },
 +      "fieldConfig": {
 +        "defaults": {
@@ -4093,11 +4275,12 @@ TASK [grafana : Main Dashboard Json] *******************************************
 +            "mode": "absolute",
 +            "steps": [
 +              {
-+                "color": "dark-red"
++                "color": "dark-red",
++                "value": null
 +              },
 +              {
 +                "color": "dark-green",
-+                "value": 0.5
++                "value": 1
 +              }
 +            ]
 +          }
@@ -4105,41 +4288,125 @@ TASK [grafana : Main Dashboard Json] *******************************************
 +        "overrides": []
 +      },
 +      "gridPos": {
-+        "h": 9,
++        "h": 8,
 +        "w": 12,
 +        "x": 0,
-+        "y": 64
++        "y": 88
 +      },
-+      "id": 2,
++      "id": 4,
 +      "options": {
 +        "colorMode": "value",
 +        "graphMode": "none",
 +        "justifyMode": "center",
-+        "orientation": "vertical",
++        "orientation": "auto",
 +        "reduceOptions": {
 +          "calcs": [
-+            "lastNotNull"
++            "last"
 +          ],
-+          "fields": "/.*/",
++          "fields": "",
 +          "values": false
 +        },
-+        "textMode": "value"
++        "textMode": "auto"
 +      },
 +      "pluginVersion": "9.2.6",
 +      "targets": [
 +        {
 +          "datasource": {
 +            "type": "prometheus",
-+            "uid": "_dcPfup4k"
++            "uid": "e_mCWqp4z"
 +          },
 +          "editorMode": "builder",
-+          "expr": "nginx_up",
++          "expr": "haproxy_up",
 +          "legendFormat": "__auto",
 +          "range": true,
 +          "refId": "A"
 +        }
 +      ],
-+      "title": "Nginx  Status 1, 2 and 3",
++      "title": "Haproxy Status",
++      "type": "stat"
++    },
++    {
++      "datasource": {
++        "type": "prometheus",
++        "uid": "e_mCWqp4z"
++      },
++      "fieldConfig": {
++        "defaults": {
++          "color": {
++            "mode": "thresholds"
++          },
++          "mappings": [
++            {
++              "options": {
++                "0": {
++                  "color": "dark-red",
++                  "index": 1,
++                  "text": "down"
++                },
++                "1": {
++                  "color": "dark-green",
++                  "index": 0,
++                  "text": "up"
++                }
++              },
++              "type": "value"
++            }
++          ],
++          "thresholds": {
++            "mode": "absolute",
++            "steps": [
++              {
++                "color": "dark-red",
++                "value": null
++              },
++              {
++                "color": "dark-green",
++                "value": 1
++              }
++            ]
++          }
++        },
++        "overrides": []
++      },
++      "gridPos": {
++        "h": 8,
++        "w": 12,
++        "x": 0,
++        "y": 96
++      },
++      "id": 2,
++      "options": {
++        "colorMode": "value",
++        "graphMode": "none",
++        "justifyMode": "center",
++        "orientation": "auto",
++        "reduceOptions": {
++          "calcs": [
++            "lastNotNull"
++          ],
++          "fields": "",
++          "values": false
++        },
++        "textMode": "value_and_name"
++      },
++      "pluginVersion": "9.2.6",
++      "targets": [
++        {
++          "datasource": {
++            "type": "prometheus",
++            "uid": "e_mCWqp4z"
++          },
++          "editorMode": "builder",
++          "exemplar": false,
++          "expr": "nginx_up",
++          "format": "time_series",
++          "instant": true,
++          "legendFormat": "__auto",
++          "range": false,
++          "refId": "A"
++        }
++      ],
++      "title": "Nginx Status 1,2, 3",
 +      "type": "stat"
 +    }
 +  ],
@@ -4192,14 +4459,14 @@ changed: [sikiteeb-3] => (item=main.json)
 +  "editable": true,
 +  "fiscalYearStartMonth": 0,
 +  "graphTooltip": 0,
-+  "id": 2,
++  "id": 1,
 +  "links": [],
 +  "liveNow": false,
 +  "panels": [
 +    {
 +      "datasource": {
 +        "type": "prometheus",
-+        "uid": "PBFA97CFB590B2093"
++        "uid": "e_mCWqp4z"
 +      },
 +      "fieldConfig": {
 +        "defaults": {
@@ -4268,7 +4535,7 @@ changed: [sikiteeb-3] => (item=main.json)
 +        {
 +          "datasource": {
 +            "type": "prometheus",
-+            "uid": "PBFA97CFB590B2093"
++            "uid": "e_mCWqp4z"
 +          },
 +          "editorMode": "builder",
 +          "expr": "mysql_global_variables_read_only",
@@ -4283,7 +4550,7 @@ changed: [sikiteeb-3] => (item=main.json)
 +    {
 +      "datasource": {
 +        "type": "prometheus",
-+        "uid": "PBFA97CFB590B2093"
++        "uid": "e_mCWqp4z"
 +      },
 +      "fieldConfig": {
 +        "defaults": {
@@ -4341,7 +4608,7 @@ changed: [sikiteeb-3] => (item=main.json)
 +        {
 +          "datasource": {
 +            "type": "prometheus",
-+            "uid": "PBFA97CFB590B2093"
++            "uid": "e_mCWqp4z"
 +          },
 +          "editorMode": "builder",
 +          "expr": "mysql_slave_status_slave_sql_running",
@@ -4356,7 +4623,7 @@ changed: [sikiteeb-3] => (item=main.json)
 +    {
 +      "datasource": {
 +        "type": "prometheus",
-+        "uid": "PBFA97CFB590B2093"
++        "uid": "e_mCWqp4z"
 +      },
 +      "fieldConfig": {
 +        "defaults": {
@@ -4414,7 +4681,7 @@ changed: [sikiteeb-3] => (item=main.json)
 +        {
 +          "datasource": {
 +            "type": "prometheus",
-+            "uid": "PBFA97CFB590B2093"
++            "uid": "e_mCWqp4z"
 +          },
 +          "editorMode": "builder",
 +          "expr": "mysql_slave_status_slave_io_running",
@@ -4429,7 +4696,7 @@ changed: [sikiteeb-3] => (item=main.json)
 +    {
 +      "datasource": {
 +        "type": "prometheus",
-+        "uid": "PBFA97CFB590B2093"
++        "uid": "e_mCWqp4z"
 +      },
 +      "fieldConfig": {
 +        "defaults": {
@@ -4506,7 +4773,7 @@ changed: [sikiteeb-3] => (item=main.json)
 +        {
 +          "datasource": {
 +            "type": "prometheus",
-+            "uid": "Aj23gQSVz"
++            "uid": "e_mCWqp4z"
 +          },
 +          "editorMode": "code",
 +          "expr": "rate(mysql_global_status_commands_total{command=\"select\"}[1m])",
@@ -4521,7 +4788,7 @@ changed: [sikiteeb-3] => (item=main.json)
 +    {
 +      "datasource": {
 +        "type": "prometheus",
-+        "uid": "PBFA97CFB590B2093"
++        "uid": "e_mCWqp4z"
 +      },
 +      "fieldConfig": {
 +        "defaults": {
@@ -4565,7 +4832,7 @@ changed: [sikiteeb-3] => (item=main.json)
 +        {
 +          "datasource": {
 +            "type": "prometheus",
-+            "uid": "PBFA97CFB590B2093"
++            "uid": "e_mCWqp4z"
 +          },
 +          "editorMode": "builder",
 +          "expr": "mysql_global_variables_server_id",
@@ -4593,7 +4860,7 @@ changed: [sikiteeb-3] => (item=main.json)
 +  "timezone": "",
 +  "title": "MySQL",
 +  "uid": "E3ziDgKVk",
-+  "version": 1,
++  "version": 2,
 +  "weekStart": ""
 +}
 \ No newline at end of file
@@ -4601,633 +4868,1023 @@ changed: [sikiteeb-3] => (item=main.json)
 changed: [sikiteeb-3] => (item=mysql.json)
 --- before
 +++ after: /Users/sigridhanni/RiderProjects/ica0002/roles/grafana/files/syslog.json
-@@ -0,0 +1,627 @@
+@@ -0,0 +1,1017 @@
 +{
-+  "id": 10,
-+  "gridPos": {
-+    "h": 7,
-+    "w": 24,
-+    "x": 0,
-+    "y": 0
++  "annotations": {
++    "list": [
++      {
++        "builtIn": 1,
++        "datasource": {
++          "type": "datasource",
++          "uid": "grafana"
++        },
++        "enable": true,
++        "hide": true,
++        "iconColor": "rgba(0, 211, 255, 1)",
++        "name": "Annotations & Alerts",
++        "target": {
++          "limit": 100,
++          "matchAny": false,
++          "tags": [],
++          "type": "dashboard"
++        },
++        "type": "dashboard"
++      }
++    ]
 +  },
-+  "type": "graph",
-+  "title": "syslog count",
-+  "datasource": {
-+    "uid": "PC61D9CAFA4D33E15",
-+    "type": "influxdb"
-+  },
-+  "thresholds": [],
-+  "pluginVersion": "9.2.6",
++  "description": "Telegraf / InfluxDB / Grafana as syslog receiver",
++  "editable": true,
++  "fiscalYearStartMonth": 0,
++  "gnetId": 12433,
++  "graphTooltip": 0,
++  "id": 6,
 +  "links": [],
-+  "legend": {
-+    "alignAsTable": true,
-+    "avg": true,
-+    "current": false,
-+    "max": true,
-+    "min": false,
-+    "rightSide": true,
-+    "show": true,
-+    "sort": null,
-+    "sortDesc": null,
-+    "total": true,
-+    "values": true
-+  },
-+  "aliasColors": {},
-+  "bars": true,
-+  "dashLength": 10,
-+  "dashes": false,
-+  "decimals": 0,
-+  "fill": 1,
-+  "fillGradient": 0,
-+  "hiddenSeries": false,
-+  "interval": "",
-+  "lines": false,
-+  "linewidth": 1,
-+  "nullPointMode": "connected",
-+  "options": {
-+    "alertThreshold": true
-+  },
-+  "percentage": false,
-+  "pointradius": 2,
-+  "points": false,
-+  "renderer": "flot",
-+  "seriesOverrides": [
++  "liveNow": false,
++  "panels": [
 +    {
-+      "alias": "Info",
-+      "color": "rgb(80, 80, 80)",
-+      "stack": "A"
-+    },
-+    {
-+      "alias": "Notice",
-+      "color": "rgb(182, 182, 182)",
-+      "stack": "A"
-+    },
-+    {
-+      "alias": "Warning",
-+      "color": "#E0B400",
-+      "stack": "A"
-+    },
-+    {
-+      "alias": "Error",
-+      "color": "#FF780A",
-+      "stack": "A"
-+    },
-+    {
-+      "alias": "Critical",
-+      "color": "#E02F44",
-+      "stack": "A"
-+    },
-+    {
-+      "alias": "Alert",
-+      "color": "#8F3BB8",
-+      "stack": "A"
-+    },
-+    {
-+      "alias": "Emergency",
-+      "color": "#8F3BB8",
-+      "stack": "A"
-+    }
-+  ],
-+  "spaceLength": 10,
-+  "stack": false,
-+  "steppedLine": false,
-+  "targets": [
-+    {
-+      "alias": "Info",
-+      "groupBy": [
-+        {
-+          "params": [
-+            "1m"
-+          ],
-+          "type": "time"
-+        },
-+        {
-+          "params": [
-+            "null"
-+          ],
-+          "type": "fill"
-+        }
-+      ],
-+      "measurement": "syslog",
-+      "orderByTime": "ASC",
-+      "policy": "default",
-+      "refId": "A",
-+      "resultFormat": "time_series",
-+      "select": [
-+        [
-+          {
-+            "params": [
-+              "severity_code"
-+            ],
-+            "type": "field"
-+          },
-+          {
-+            "params": [],
-+            "type": "count"
-+          }
-+        ]
-+      ],
-+      "tags": [
-+        {
-+          "key": "severity",
-+          "operator": "=",
-+          "value": "info"
-+        },
-+        {
-+          "condition": "AND",
-+          "key": "hostname",
-+          "operator": "=~",
-+          "value": "/^$hostname$/"
-+        },
-+        {
-+          "condition": "AND",
-+          "key": "severity",
-+          "operator": "=~",
-+          "value": "/^$severity$/"
-+        },
-+        {
-+          "condition": "AND",
-+          "key": "appname",
-+          "operator": "=~",
-+          "value": "/^$appname$/"
-+        },
-+        {
-+          "condition": "AND",
-+          "key": "message",
-+          "operator": "=~",
-+          "value": "/$Query/"
-+        }
-+      ],
++      "aliasColors": {},
++      "bars": true,
++      "dashLength": 10,
++      "dashes": false,
 +      "datasource": {
-+        "uid": "PC61D9CAFA4D33E15",
-+        "type": "influxdb"
-+      }
-+    },
-+    {
-+      "alias": "Notice",
-+      "groupBy": [
-+        {
-+          "params": [
-+            "1m"
-+          ],
-+          "type": "time"
-+        },
-+        {
-+          "params": [
-+            "null"
-+          ],
-+          "type": "fill"
-+        }
-+      ],
-+      "measurement": "syslog",
-+      "orderByTime": "ASC",
-+      "policy": "default",
-+      "refId": "B",
-+      "resultFormat": "time_series",
-+      "select": [
-+        [
-+          {
-+            "params": [
-+              "severity_code"
-+            ],
-+            "type": "field"
-+          },
-+          {
-+            "params": [],
-+            "type": "count"
-+          }
-+        ]
-+      ],
-+      "tags": [
-+        {
-+          "key": "severity",
-+          "operator": "=",
-+          "value": "notice"
-+        },
-+        {
-+          "condition": "AND",
-+          "key": "hostname",
-+          "operator": "=~",
-+          "value": "/^$hostname$/"
-+        },
-+        {
-+          "condition": "AND",
-+          "key": "severity",
-+          "operator": "=~",
-+          "value": "/^$severity$/"
-+        },
-+        {
-+          "condition": "AND",
-+          "key": "appname",
-+          "operator": "=~",
-+          "value": "/^$appname$/"
-+        },
-+        {
-+          "condition": "AND",
-+          "key": "message",
-+          "operator": "=~",
-+          "value": "/$Query/"
-+        }
-+      ],
-+      "datasource": {
-+        "uid": "PC61D9CAFA4D33E15",
-+        "type": "influxdb"
-+      }
-+    },
-+    {
-+      "alias": "Warning",
-+      "groupBy": [
-+        {
-+          "params": [
-+            "1m"
-+          ],
-+          "type": "time"
-+        },
-+        {
-+          "params": [
-+            "null"
-+          ],
-+          "type": "fill"
-+        }
-+      ],
-+      "measurement": "syslog",
-+      "orderByTime": "ASC",
-+      "policy": "default",
-+      "refId": "D",
-+      "resultFormat": "time_series",
-+      "select": [
-+        [
-+          {
-+            "params": [
-+              "severity_code"
-+            ],
-+            "type": "field"
-+          },
-+          {
-+            "params": [],
-+            "type": "count"
-+          }
-+        ]
-+      ],
-+      "tags": [
-+        {
-+          "key": "severity",
-+          "operator": "=",
-+          "value": "warning"
-+        },
-+        {
-+          "condition": "AND",
-+          "key": "hostname",
-+          "operator": "=~",
-+          "value": "/^$hostname$/"
-+        },
-+        {
-+          "condition": "AND",
-+          "key": "severity",
-+          "operator": "=~",
-+          "value": "/^$severity$/"
-+        },
-+        {
-+          "condition": "AND",
-+          "key": "appname",
-+          "operator": "=~",
-+          "value": "/^$appname$/"
-+        },
-+        {
-+          "condition": "AND",
-+          "key": "message",
-+          "operator": "=~",
-+          "value": "/$Query/"
-+        }
-+      ],
-+      "datasource": {
-+        "uid": "PC61D9CAFA4D33E15",
-+        "type": "influxdb"
-+      }
-+    },
-+    {
-+      "alias": "Error",
-+      "groupBy": [
-+        {
-+          "params": [
-+            "1m"
-+          ],
-+          "type": "time"
-+        },
-+        {
-+          "params": [
-+            "null"
-+          ],
-+          "type": "fill"
-+        }
-+      ],
-+      "measurement": "syslog",
-+      "orderByTime": "ASC",
-+      "policy": "default",
-+      "refId": "C",
-+      "resultFormat": "time_series",
-+      "select": [
-+        [
-+          {
-+            "params": [
-+              "severity_code"
-+            ],
-+            "type": "field"
-+          },
-+          {
-+            "params": [],
-+            "type": "count"
-+          }
-+        ]
-+      ],
-+      "tags": [
-+        {
-+          "key": "severity",
-+          "operator": "=",
-+          "value": "err"
-+        },
-+        {
-+          "condition": "AND",
-+          "key": "hostname",
-+          "operator": "=~",
-+          "value": "/^$hostname$/"
-+        },
-+        {
-+          "condition": "AND",
-+          "key": "severity",
-+          "operator": "=~",
-+          "value": "/^$severity$/"
-+        },
-+        {
-+          "condition": "AND",
-+          "key": "appname",
-+          "operator": "=~",
-+          "value": "/^$appname$/"
-+        },
-+        {
-+          "condition": "AND",
-+          "key": "message",
-+          "operator": "=~",
-+          "value": "/$Query/"
-+        }
-+      ],
-+      "datasource": {
-+        "uid": "PC61D9CAFA4D33E15",
-+        "type": "influxdb"
-+      }
-+    },
-+    {
-+      "alias": "Critical",
-+      "groupBy": [
-+        {
-+          "params": [
-+            "1m"
-+          ],
-+          "type": "time"
-+        },
-+        {
-+          "params": [
-+            "null"
-+          ],
-+          "type": "fill"
-+        }
-+      ],
-+      "measurement": "syslog",
-+      "orderByTime": "ASC",
-+      "policy": "default",
-+      "refId": "E",
-+      "resultFormat": "time_series",
-+      "select": [
-+        [
-+          {
-+            "params": [
-+              "severity_code"
-+            ],
-+            "type": "field"
-+          },
-+          {
-+            "params": [],
-+            "type": "count"
-+          }
-+        ]
-+      ],
-+      "tags": [
-+        {
-+          "key": "severity",
-+          "operator": "=",
-+          "value": "crit"
-+        },
-+        {
-+          "condition": "AND",
-+          "key": "hostname",
-+          "operator": "=~",
-+          "value": "/^$hostname$/"
-+        },
-+        {
-+          "condition": "AND",
-+          "key": "severity",
-+          "operator": "=~",
-+          "value": "/^$severity$/"
-+        },
-+        {
-+          "condition": "AND",
-+          "key": "appname",
-+          "operator": "=~",
-+          "value": "/^$appname$/"
-+        },
-+        {
-+          "condition": "AND",
-+          "key": "message",
-+          "operator": "=~",
-+          "value": "/$Query/"
-+        }
-+      ],
-+      "datasource": {
-+        "uid": "PC61D9CAFA4D33E15",
-+        "type": "influxdb"
-+      }
-+    },
-+    {
-+      "alias": "Alert",
-+      "groupBy": [
-+        {
-+          "params": [
-+            "1m"
-+          ],
-+          "type": "time"
-+        },
-+        {
-+          "params": [
-+            "null"
-+          ],
-+          "type": "fill"
-+        }
-+      ],
-+      "measurement": "syslog",
-+      "orderByTime": "ASC",
-+      "policy": "default",
-+      "refId": "F",
-+      "resultFormat": "time_series",
-+      "select": [
-+        [
-+          {
-+            "params": [
-+              "severity_code"
-+            ],
-+            "type": "field"
-+          },
-+          {
-+            "params": [],
-+            "type": "count"
-+          }
-+        ]
-+      ],
-+      "tags": [
-+        {
-+          "key": "severity",
-+          "operator": "=",
-+          "value": "alert"
-+        },
-+        {
-+          "condition": "AND",
-+          "key": "hostname",
-+          "operator": "=~",
-+          "value": "/^$hostname$/"
-+        },
-+        {
-+          "condition": "AND",
-+          "key": "severity",
-+          "operator": "=~",
-+          "value": "/^$severity$/"
-+        },
-+        {
-+          "condition": "AND",
-+          "key": "appname",
-+          "operator": "=~",
-+          "value": "/^$appname$/"
-+        },
-+        {
-+          "condition": "AND",
-+          "key": "message",
-+          "operator": "=~",
-+          "value": "/$Query/"
-+        }
-+      ],
-+      "datasource": {
-+        "uid": "PC61D9CAFA4D33E15",
-+        "type": "influxdb"
-+      }
-+    },
-+    {
-+      "alias": "Emergency",
-+      "groupBy": [
-+        {
-+          "params": [
-+            "1m"
-+          ],
-+          "type": "time"
-+        },
-+        {
-+          "params": [
-+            "null"
-+          ],
-+          "type": "fill"
-+        }
-+      ],
-+      "measurement": "syslog",
-+      "orderByTime": "ASC",
-+      "policy": "default",
-+      "refId": "G",
-+      "resultFormat": "time_series",
-+      "select": [
-+        [
-+          {
-+            "params": [
-+              "severity_code"
-+            ],
-+            "type": "field"
-+          },
-+          {
-+            "params": [],
-+            "type": "count"
-+          }
-+        ]
-+      ],
-+      "tags": [
-+        {
-+          "key": "severity",
-+          "operator": "=",
-+          "value": "emerg"
-+        },
-+        {
-+          "condition": "AND",
-+          "key": "hostname",
-+          "operator": "=~",
-+          "value": "/^$hostname$/"
-+        },
-+        {
-+          "condition": "AND",
-+          "key": "severity",
-+          "operator": "=~",
-+          "value": "/^$severity$/"
-+        },
-+        {
-+          "condition": "AND",
-+          "key": "appname",
-+          "operator": "=~",
-+          "value": "/^$appname$/"
-+        },
-+        {
-+          "condition": "AND",
-+          "key": "message",
-+          "operator": "=~",
-+          "value": "/$Query/"
-+        }
-+      ],
-+      "datasource": {
-+        "uid": "PC61D9CAFA4D33E15",
-+        "type": "influxdb"
-+      }
-+    }
-+  ],
-+  "timeFrom": null,
-+  "timeRegions": [],
-+  "timeShift": null,
-+  "tooltip": {
-+    "shared": true,
-+    "sort": 0,
-+    "value_type": "individual"
-+  },
-+  "xaxis": {
-+    "buckets": null,
-+    "mode": "time",
-+    "name": null,
-+    "show": true,
-+    "values": []
-+  },
-+  "yaxes": [
-+    {
++        "type": "influxdb",
++        "uid": "PC61D9CAFA4D33E15"
++      },
 +      "decimals": 0,
-+      "format": "none",
-+      "label": "Messages / min",
-+      "logBase": 1,
-+      "max": null,
-+      "min": null,
-+      "show": true
++      "fill": 1,
++      "fillGradient": 0,
++      "gridPos": {
++        "h": 7,
++        "w": 24,
++        "x": 0,
++        "y": 0
++      },
++      "hiddenSeries": false,
++      "id": 10,
++      "interval": "",
++      "legend": {
++        "alignAsTable": true,
++        "avg": true,
++        "current": false,
++        "max": true,
++        "min": false,
++        "rightSide": true,
++        "show": true,
++        "total": true,
++        "values": true
++      },
++      "lines": false,
++      "linewidth": 1,
++      "links": [],
++      "nullPointMode": "connected",
++      "options": {
++        "alertThreshold": true
++      },
++      "percentage": false,
++      "pluginVersion": "9.2.6",
++      "pointradius": 2,
++      "points": false,
++      "renderer": "flot",
++      "seriesOverrides": [
++        {
++          "alias": "Info",
++          "color": "rgb(80, 80, 80)",
++          "stack": "A"
++        },
++        {
++          "alias": "Notice",
++          "color": "rgb(182, 182, 182)",
++          "stack": "A"
++        },
++        {
++          "alias": "Warning",
++          "color": "#E0B400",
++          "stack": "A"
++        },
++        {
++          "alias": "Error",
++          "color": "#FF780A",
++          "stack": "A"
++        },
++        {
++          "alias": "Critical",
++          "color": "#E02F44",
++          "stack": "A"
++        },
++        {
++          "alias": "Alert",
++          "color": "#8F3BB8",
++          "stack": "A"
++        },
++        {
++          "alias": "Emergency",
++          "color": "#8F3BB8",
++          "stack": "A"
++        }
++      ],
++      "spaceLength": 10,
++      "stack": false,
++      "steppedLine": false,
++      "targets": [
++        {
++          "alias": "Info",
++          "datasource": {
++            "type": "influxdb",
++            "uid": "PC61D9CAFA4D33E15"
++          },
++          "groupBy": [
++            {
++              "params": [
++                "1m"
++              ],
++              "type": "time"
++            },
++            {
++              "params": [
++                "null"
++              ],
++              "type": "fill"
++            }
++          ],
++          "measurement": "syslog",
++          "orderByTime": "ASC",
++          "policy": "default",
++          "refId": "A",
++          "resultFormat": "time_series",
++          "select": [
++            [
++              {
++                "params": [
++                  "severity_code"
++                ],
++                "type": "field"
++              },
++              {
++                "params": [],
++                "type": "count"
++              }
++            ]
++          ],
++          "tags": [
++            {
++              "key": "severity",
++              "operator": "=",
++              "value": "info"
++            },
++            {
++              "condition": "AND",
++              "key": "hostname",
++              "operator": "=~",
++              "value": "/^$hostname$/"
++            },
++            {
++              "condition": "AND",
++              "key": "severity",
++              "operator": "=~",
++              "value": "/^$severity$/"
++            },
++            {
++              "condition": "AND",
++              "key": "appname",
++              "operator": "=~",
++              "value": "/^$appname$/"
++            },
++            {
++              "condition": "AND",
++              "key": "message",
++              "operator": "=~",
++              "value": "/$Query/"
++            }
++          ]
++        },
++        {
++          "alias": "Notice",
++          "datasource": {
++            "type": "influxdb",
++            "uid": "PC61D9CAFA4D33E15"
++          },
++          "groupBy": [
++            {
++              "params": [
++                "1m"
++              ],
++              "type": "time"
++            },
++            {
++              "params": [
++                "null"
++              ],
++              "type": "fill"
++            }
++          ],
++          "measurement": "syslog",
++          "orderByTime": "ASC",
++          "policy": "default",
++          "refId": "B",
++          "resultFormat": "time_series",
++          "select": [
++            [
++              {
++                "params": [
++                  "severity_code"
++                ],
++                "type": "field"
++              },
++              {
++                "params": [],
++                "type": "count"
++              }
++            ]
++          ],
++          "tags": [
++            {
++              "key": "severity",
++              "operator": "=",
++              "value": "notice"
++            },
++            {
++              "condition": "AND",
++              "key": "hostname",
++              "operator": "=~",
++              "value": "/^$hostname$/"
++            },
++            {
++              "condition": "AND",
++              "key": "severity",
++              "operator": "=~",
++              "value": "/^$severity$/"
++            },
++            {
++              "condition": "AND",
++              "key": "appname",
++              "operator": "=~",
++              "value": "/^$appname$/"
++            },
++            {
++              "condition": "AND",
++              "key": "message",
++              "operator": "=~",
++              "value": "/$Query/"
++            }
++          ]
++        },
++        {
++          "alias": "Warning",
++          "datasource": {
++            "type": "influxdb",
++            "uid": "PC61D9CAFA4D33E15"
++          },
++          "groupBy": [
++            {
++              "params": [
++                "1m"
++              ],
++              "type": "time"
++            },
++            {
++              "params": [
++                "null"
++              ],
++              "type": "fill"
++            }
++          ],
++          "measurement": "syslog",
++          "orderByTime": "ASC",
++          "policy": "default",
++          "refId": "D",
++          "resultFormat": "time_series",
++          "select": [
++            [
++              {
++                "params": [
++                  "severity_code"
++                ],
++                "type": "field"
++              },
++              {
++                "params": [],
++                "type": "count"
++              }
++            ]
++          ],
++          "tags": [
++            {
++              "key": "severity",
++              "operator": "=",
++              "value": "warning"
++            },
++            {
++              "condition": "AND",
++              "key": "hostname",
++              "operator": "=~",
++              "value": "/^$hostname$/"
++            },
++            {
++              "condition": "AND",
++              "key": "severity",
++              "operator": "=~",
++              "value": "/^$severity$/"
++            },
++            {
++              "condition": "AND",
++              "key": "appname",
++              "operator": "=~",
++              "value": "/^$appname$/"
++            },
++            {
++              "condition": "AND",
++              "key": "message",
++              "operator": "=~",
++              "value": "/$Query/"
++            }
++          ]
++        },
++        {
++          "alias": "Error",
++          "datasource": {
++            "type": "influxdb",
++            "uid": "PC61D9CAFA4D33E15"
++          },
++          "groupBy": [
++            {
++              "params": [
++                "1m"
++              ],
++              "type": "time"
++            },
++            {
++              "params": [
++                "null"
++              ],
++              "type": "fill"
++            }
++          ],
++          "measurement": "syslog",
++          "orderByTime": "ASC",
++          "policy": "default",
++          "refId": "C",
++          "resultFormat": "time_series",
++          "select": [
++            [
++              {
++                "params": [
++                  "severity_code"
++                ],
++                "type": "field"
++              },
++              {
++                "params": [],
++                "type": "count"
++              }
++            ]
++          ],
++          "tags": [
++            {
++              "key": "severity",
++              "operator": "=",
++              "value": "err"
++            },
++            {
++              "condition": "AND",
++              "key": "hostname",
++              "operator": "=~",
++              "value": "/^$hostname$/"
++            },
++            {
++              "condition": "AND",
++              "key": "severity",
++              "operator": "=~",
++              "value": "/^$severity$/"
++            },
++            {
++              "condition": "AND",
++              "key": "appname",
++              "operator": "=~",
++              "value": "/^$appname$/"
++            },
++            {
++              "condition": "AND",
++              "key": "message",
++              "operator": "=~",
++              "value": "/$Query/"
++            }
++          ]
++        },
++        {
++          "alias": "Critical",
++          "datasource": {
++            "type": "influxdb",
++            "uid": "PC61D9CAFA4D33E15"
++          },
++          "groupBy": [
++            {
++              "params": [
++                "1m"
++              ],
++              "type": "time"
++            },
++            {
++              "params": [
++                "null"
++              ],
++              "type": "fill"
++            }
++          ],
++          "measurement": "syslog",
++          "orderByTime": "ASC",
++          "policy": "default",
++          "refId": "E",
++          "resultFormat": "time_series",
++          "select": [
++            [
++              {
++                "params": [
++                  "severity_code"
++                ],
++                "type": "field"
++              },
++              {
++                "params": [],
++                "type": "count"
++              }
++            ]
++          ],
++          "tags": [
++            {
++              "key": "severity",
++              "operator": "=",
++              "value": "crit"
++            },
++            {
++              "condition": "AND",
++              "key": "hostname",
++              "operator": "=~",
++              "value": "/^$hostname$/"
++            },
++            {
++              "condition": "AND",
++              "key": "severity",
++              "operator": "=~",
++              "value": "/^$severity$/"
++            },
++            {
++              "condition": "AND",
++              "key": "appname",
++              "operator": "=~",
++              "value": "/^$appname$/"
++            },
++            {
++              "condition": "AND",
++              "key": "message",
++              "operator": "=~",
++              "value": "/$Query/"
++            }
++          ]
++        },
++        {
++          "alias": "Alert",
++          "datasource": {
++            "type": "influxdb",
++            "uid": "PC61D9CAFA4D33E15"
++          },
++          "groupBy": [
++            {
++              "params": [
++                "1m"
++              ],
++              "type": "time"
++            },
++            {
++              "params": [
++                "null"
++              ],
++              "type": "fill"
++            }
++          ],
++          "measurement": "syslog",
++          "orderByTime": "ASC",
++          "policy": "default",
++          "refId": "F",
++          "resultFormat": "time_series",
++          "select": [
++            [
++              {
++                "params": [
++                  "severity_code"
++                ],
++                "type": "field"
++              },
++              {
++                "params": [],
++                "type": "count"
++              }
++            ]
++          ],
++          "tags": [
++            {
++              "key": "severity",
++              "operator": "=",
++              "value": "alert"
++            },
++            {
++              "condition": "AND",
++              "key": "hostname",
++              "operator": "=~",
++              "value": "/^$hostname$/"
++            },
++            {
++              "condition": "AND",
++              "key": "severity",
++              "operator": "=~",
++              "value": "/^$severity$/"
++            },
++            {
++              "condition": "AND",
++              "key": "appname",
++              "operator": "=~",
++              "value": "/^$appname$/"
++            },
++            {
++              "condition": "AND",
++              "key": "message",
++              "operator": "=~",
++              "value": "/$Query/"
++            }
++          ]
++        },
++        {
++          "alias": "Emergency",
++          "datasource": {
++            "type": "influxdb",
++            "uid": "PC61D9CAFA4D33E15"
++          },
++          "groupBy": [
++            {
++              "params": [
++                "1m"
++              ],
++              "type": "time"
++            },
++            {
++              "params": [
++                "null"
++              ],
++              "type": "fill"
++            }
++          ],
++          "measurement": "syslog",
++          "orderByTime": "ASC",
++          "policy": "default",
++          "refId": "G",
++          "resultFormat": "time_series",
++          "select": [
++            [
++              {
++                "params": [
++                  "severity_code"
++                ],
++                "type": "field"
++              },
++              {
++                "params": [],
++                "type": "count"
++              }
++            ]
++          ],
++          "tags": [
++            {
++              "key": "severity",
++              "operator": "=",
++              "value": "emerg"
++            },
++            {
++              "condition": "AND",
++              "key": "hostname",
++              "operator": "=~",
++              "value": "/^$hostname$/"
++            },
++            {
++              "condition": "AND",
++              "key": "severity",
++              "operator": "=~",
++              "value": "/^$severity$/"
++            },
++            {
++              "condition": "AND",
++              "key": "appname",
++              "operator": "=~",
++              "value": "/^$appname$/"
++            },
++            {
++              "condition": "AND",
++              "key": "message",
++              "operator": "=~",
++              "value": "/$Query/"
++            }
++          ]
++        }
++      ],
++      "thresholds": [],
++      "timeRegions": [],
++      "title": "syslog count",
++      "tooltip": {
++        "shared": true,
++        "sort": 0,
++        "value_type": "individual"
++      },
++      "type": "graph",
++      "xaxis": {
++        "mode": "time",
++        "show": true,
++        "values": []
++      },
++      "yaxes": [
++        {
++          "decimals": 0,
++          "format": "none",
++          "label": "Messages / min",
++          "logBase": 1,
++          "show": true
++        },
++        {
++          "format": "short",
++          "logBase": 1,
++          "show": false
++        }
++      ],
++      "yaxis": {
++        "align": false
++      }
 +    },
 +    {
-+      "format": "short",
-+      "label": null,
-+      "logBase": 1,
-+      "max": null,
-+      "min": null,
-+      "show": false
++      "datasource": {
++        "type": "influxdb",
++        "uid": "PC61D9CAFA4D33E15"
++      },
++      "description": "",
++      "fieldConfig": {
++        "defaults": {
++          "color": {
++            "mode": "thresholds"
++          },
++          "custom": {
++            "align": "left",
++            "displayMode": "auto",
++            "filterable": false,
++            "inspect": false
++          },
++          "mappings": [],
++          "thresholds": {
++            "mode": "absolute",
++            "steps": [
++              {
++                "color": "dark-purple",
++                "value": null
++              },
++              {
++                "color": "dark-red",
++                "value": 2
++              },
++              {
++                "color": "dark-orange",
++                "value": 3
++              },
++              {
++                "color": "dark-yellow",
++                "value": 4
++              },
++              {
++                "color": "rgb(150, 150, 150)",
++                "value": 5
++              },
++              {
++                "color": "rgb(51, 51, 51)",
++                "value": 6
++              },
++              {
++                "color": "rgb(5, 5, 5)",
++                "value": 7
++              }
++            ]
++          }
++        },
++        "overrides": [
++          {
++            "matcher": {
++              "id": "byName",
++              "options": "severity_code"
++            },
++            "properties": [
++              {
++                "id": "mappings",
++                "value": [
++                  {
++                    "options": {
++                      "0": {
++                        "text": "Emergency"
++                      },
++                      "1": {
++                        "text": "Alert"
++                      },
++                      "2": {
++                        "text": "Critical"
++                      },
++                      "3": {
++                        "text": "Error"
++                      },
++                      "4": {
++                        "text": "Warning"
++                      },
++                      "5": {
++                        "text": "Notice"
++                      },
++                      "6": {
++                        "text": "Info"
++                      },
++                      "7": {
++                        "text": "Debug"
++                      }
++                    },
++                    "type": "value"
++                  }
++                ]
++              },
++              {
++                "id": "custom.displayMode",
++                "value": "color-background"
++              },
++              {
++                "id": "custom.width",
++                "value": 119
++              }
++            ]
++          },
++          {
++            "matcher": {
++              "id": "byName",
++              "options": "Time"
++            },
++            "properties": [
++              {
++                "id": "custom.width",
++                "value": 163
++              }
++            ]
++          },
++          {
++            "matcher": {
++              "id": "byName",
++              "options": "hostname"
++            },
++            "properties": [
++              {
++                "id": "custom.width",
++                "value": 194
++              }
++            ]
++          },
++          {
++            "matcher": {
++              "id": "byName",
++              "options": "appname"
++            },
++            "properties": [
++              {
++                "id": "custom.width",
++                "value": 264
++              }
++            ]
++          }
++        ]
++      },
++      "gridPos": {
++        "h": 24,
++        "w": 24,
++        "x": 0,
++        "y": 7
++      },
++      "id": 12,
++      "options": {
++        "footer": {
++          "fields": "",
++          "reducer": [
++            "sum"
++          ],
++          "show": false
++        },
++        "showHeader": true,
++        "sortBy": [
++          {
++            "desc": true,
++            "displayName": "Time"
++          }
++        ]
++      },
++      "pluginVersion": "9.2.6",
++      "targets": [
++        {
++          "datasource": {
++            "type": "influxdb",
++            "uid": "PC61D9CAFA4D33E15"
++          },
++          "groupBy": [
++            {
++              "params": [
++                "hostname"
++              ],
++              "type": "tag"
++            },
++            {
++              "params": [
++                "appname"
++              ],
++              "type": "tag"
++            }
++          ],
++          "measurement": "syslog",
++          "orderByTime": "ASC",
++          "policy": "default",
++          "refId": "A",
++          "resultFormat": "table",
++          "select": [
++            [
++              {
++                "params": [
++                  "severity_code"
++                ],
++                "type": "field"
++              }
++            ],
++            [
++              {
++                "params": [
++                  "message"
++                ],
++                "type": "field"
++              }
++            ]
++          ],
++          "tags": [
++            {
++              "key": "hostname",
++              "operator": "=~",
++              "value": "/^$hostname$/"
++            },
++            {
++              "condition": "AND",
++              "key": "appname",
++              "operator": "=~",
++              "value": "/^$appname$/"
++            },
++            {
++              "condition": "AND",
++              "key": "severity",
++              "operator": "=~",
++              "value": "/^$severity$/"
++            },
++            {
++              "condition": "AND",
++              "key": "message",
++              "operator": "=~",
++              "value": "/$Query/"
++            }
++          ]
++        }
++      ],
++      "title": "Syslog Messages",
++      "type": "table"
 +    }
 +  ],
-+  "yaxis": {
-+    "align": false,
-+    "alignLevel": null
-+  }
++  "refresh": "5s",
++  "schemaVersion": 37,
++  "style": "dark",
++  "tags": [],
++  "templating": {
++    "list": [
++      {
++        "allValue": "",
++        "current": {},
++        "datasource": {
++          "type": "influxdb",
++          "uid": "PC61D9CAFA4D33E15"
++        },
++        "definition": "SHOW TAG VALUES FROM syslog WITH KEY=appname",
++        "hide": 0,
++        "includeAll": true,
++        "label": "Appname",
++        "multi": true,
++        "name": "appname",
++        "options": [],
++        "query": "SHOW TAG VALUES FROM syslog WITH KEY=appname",
++        "refresh": 2,
++        "regex": "",
++        "skipUrlSync": false,
++        "sort": 1,
++        "tagValuesQuery": "",
++        "tagsQuery": "",
++        "type": "query",
++        "useTags": false
++      },
++      {
++        "allValue": "",
++        "current": {},
++        "datasource": {
++          "type": "influxdb",
++          "uid": "PC61D9CAFA4D33E15"
++        },
++        "definition": "SHOW TAG VALUES FROM syslog WITH KEY=hostname",
++        "hide": 0,
++        "includeAll": true,
++        "label": "Hostname",
++        "multi": true,
++        "name": "hostname",
++        "options": [],
++        "query": "SHOW TAG VALUES FROM syslog WITH KEY=hostname",
++        "refresh": 2,
++        "regex": "",
++        "skipUrlSync": false,
++        "sort": 1,
++        "tagValuesQuery": "",
++        "tagsQuery": "",
++        "type": "query",
++        "useTags": false
++      },
++      {
++        "allValue": "",
++        "current": {},
++        "datasource": {
++          "type": "influxdb",
++          "uid": "PC61D9CAFA4D33E15"
++        },
++        "definition": "SHOW TAG VALUES FROM syslog WITH KEY=severity",
++        "hide": 0,
++        "includeAll": true,
++        "label": "Severity",
++        "multi": true,
++        "name": "severity",
++        "options": [],
++        "query": "SHOW TAG VALUES FROM syslog WITH KEY=severity",
++        "refresh": 2,
++        "regex": "",
++        "skipUrlSync": false,
++        "sort": 0,
++        "tagValuesQuery": "",
++        "tagsQuery": "",
++        "type": "query",
++        "useTags": false
++      },
++      {
++        "current": {
++          "selected": false,
++          "text": "",
++          "value": ""
++        },
++        "description": "Querystring",
++        "hide": 0,
++        "label": "MessageQuery",
++        "name": "Query",
++        "options": [
++          {
++            "selected": true,
++            "text": "",
++            "value": ""
++          }
++        ],
++        "query": "",
++        "skipUrlSync": false,
++        "type": "textbox"
++      }
++    ]
++  },
++  "time": {
++    "from": "now-1h",
++    "to": "now"
++  },
++  "timepicker": {
++    "refresh_intervals": [
++      "5s",
++      " 10s",
++      " 30s",
++      " 1m",
++      " 5m"
++    ],
++    "time_options": [
++      "5m",
++      "15m",
++      "1h",
++      "6h",
++      "12h",
++      "24h",
++      "2d",
++      "7d",
++      "30d"
++    ]
++  },
++  "timezone": "",
++  "title": "Syslog",
++  "uid": "TIYeHqRgZ",
++  "version": 1,
++  "weekStart": ""
 +}
 \ No newline at end of file
 
@@ -5270,7 +5927,7 @@ The following NEW packages will be installed:
   ipvsadm keepalived libmysqlclient21 libnl-3-200 libnl-genl-3-200
   libsensors-config libsensors5 libsnmp-base libsnmp35
 0 upgraded, 9 newly installed, 0 to remove and 229 not upgraded.
-changed: [sikiteeb-1]
+changed: [sikiteeb-2]
 The following additional packages will be installed:
   ipvsadm libmysqlclient21 libnl-3-200 libnl-genl-3-200 libsensors-config
   libsensors5 libsnmp-base libsnmp35
@@ -5280,7 +5937,7 @@ The following NEW packages will be installed:
   ipvsadm keepalived libmysqlclient21 libnl-3-200 libnl-genl-3-200
   libsensors-config libsensors5 libsnmp-base libsnmp35
 0 upgraded, 9 newly installed, 0 to remove and 229 not upgraded.
-changed: [sikiteeb-2]
+changed: [sikiteeb-1]
 
 TASK [keepalived : Create user "keepalived_script"] ****************************
 changed: [sikiteeb-1]
@@ -5288,7 +5945,7 @@ changed: [sikiteeb-2]
 
 TASK [keepalived : keepalived.conf] ********************************************
 --- before
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmptryxm0aj/keepalived.conf.j2
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmpck6eyk45/keepalived.conf.j2
 @@ -0,0 +1,27 @@
 +global_defs {
 +      enable_script_security
@@ -5308,10 +5965,10 @@ TASK [keepalived : keepalived.conf] ********************************************
 +        advert_int 1                            
 +    virtual_ipaddress {    
 +                                   
-+      192.168.100.52/24                  
++      192.168.100.95/24                  
 +    }
 +    unicast_peer {                          
-+                                192.168.42.144 
++                                192.168.42.111 
 +                }
 +    track_script {
 +        check_haproxy
@@ -5321,7 +5978,7 @@ TASK [keepalived : keepalived.conf] ********************************************
 
 changed: [sikiteeb-1]
 --- before
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmphjv_y5g0/keepalived.conf.j2
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmp62k4ugl7/keepalived.conf.j2
 @@ -0,0 +1,27 @@
 +global_defs {
 +      enable_script_security
@@ -5341,10 +5998,10 @@ changed: [sikiteeb-1]
 +        advert_int 1                            
 +    virtual_ipaddress {    
 +                                   
-+      192.168.100.52/24                  
++      192.168.100.95/24                  
 +    }
 +    unicast_peer {                          
-+                    192.168.42.52 
++                    192.168.42.95 
 +                            }
 +    track_script {
 +        check_haproxy
@@ -5356,7 +6013,7 @@ changed: [sikiteeb-2]
 
 TASK [keepalived : vrrp_script] ************************************************
 --- before
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmpfxjmg_r9/vrrp_script.j2
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmpy_pqowvy/vrrp_script.j2
 @@ -0,0 +1,2 @@
 +#!/bin/bash
 +ss -ntl | grep -q ':88 '
@@ -5364,7 +6021,7 @@ TASK [keepalived : vrrp_script] ************************************************
 
 changed: [sikiteeb-1]
 --- before
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmpq2ym8h5a/vrrp_script.j2
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmpjvezbxwa/vrrp_script.j2
 @@ -0,0 +1,2 @@
 +#!/bin/bash
 +ss -ntl | grep -q ':88 '
@@ -5378,7 +6035,7 @@ changed: [sikiteeb-1]
 
 TASK [keepalived : keepalived exporter service] ********************************
 --- before
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmp5ul7yg7g/keepalived_exporter.service
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmpww17brvb/keepalived_exporter.service
 @@ -0,0 +1,12 @@
 +[Unit]
 +Description=Keepalived Exporter
@@ -5396,7 +6053,7 @@ TASK [keepalived : keepalived exporter service] ********************************
 
 changed: [sikiteeb-1]
 --- before
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmpp4t4n8mr/keepalived_exporter.service
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmpoaxyey6x/keepalived_exporter.service
 @@ -0,0 +1,12 @@
 +[Unit]
 +Description=Keepalived Exporter
@@ -5416,19 +6073,19 @@ changed: [sikiteeb-2]
 
 TASK [keepalived : keepalived exporter args] ***********************************
 --- before
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmpkpd6rl3n/keepalived_exporter.j2
-@@ -0,0 +1 @@
-+ARGS="-web.listen-address ':9165'"
-\ No newline at end of file
-
-changed: [sikiteeb-1]
---- before
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmpyv1x6t8h/keepalived_exporter.j2
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmp9n30sepq/keepalived_exporter.j2
 @@ -0,0 +1 @@
 +ARGS="-web.listen-address ':9165'"
 \ No newline at end of file
 
 changed: [sikiteeb-2]
+--- before
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmp_zwrn91u/keepalived_exporter.j2
+@@ -0,0 +1 @@
++ARGS="-web.listen-address ':9165'"
+\ No newline at end of file
+
+changed: [sikiteeb-1]
 
 TASK [keepalived : Enable keepalived and keepalived_exporter] ******************
 changed: [sikiteeb-1] => (item=keepalived)
@@ -5444,7 +6101,7 @@ Suggested packages:
 The following NEW packages will be installed:
   haproxy liblua5.3-0
 0 upgraded, 2 newly installed, 0 to remove and 229 not upgraded.
-changed: [sikiteeb-2]
+changed: [sikiteeb-1]
 The following additional packages will be installed:
   liblua5.3-0
 Suggested packages:
@@ -5452,11 +6109,11 @@ Suggested packages:
 The following NEW packages will be installed:
   haproxy liblua5.3-0
 0 upgraded, 2 newly installed, 0 to remove and 229 not upgraded.
-changed: [sikiteeb-1]
+changed: [sikiteeb-2]
 
 TASK [haproxy : /etc/haproxy/haproxy.cfg] **************************************
 --- before: /etc/haproxy/haproxy.cfg
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmpsce85e69/haproxy.cfg.j2
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmpmok3cnjs/haproxy.cfg.j2
 @@ -32,3 +32,14 @@
  	errorfile 502 /etc/haproxy/errors/502.http
  	errorfile 503 /etc/haproxy/errors/503.http
@@ -5476,7 +6133,7 @@ TASK [haproxy : /etc/haproxy/haproxy.cfg] **************************************
 
 changed: [sikiteeb-2]
 --- before: /etc/haproxy/haproxy.cfg
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmp63xpcji6/haproxy.cfg.j2
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmpbode1iui/haproxy.cfg.j2
 @@ -32,3 +32,14 @@
  	errorfile 502 /etc/haproxy/errors/502.http
  	errorfile 503 /etc/haproxy/errors/503.http
@@ -5512,49 +6169,7 @@ changed: [sikiteeb-1]
 
 TASK [haproxy : /etc/default/prometheus-haproxy-exporter] **********************
 --- before: /etc/default/prometheus-haproxy-exporter
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmppcij7mzy/prometheus-haproxy-exporter.j2
-@@ -1,35 +1 @@
--# Set the command-line arguments to pass to the server.
--# Due to shell scaping, to pass backslashes for regexes, you need to double
--# them (\\d for \d). If running under systemd, you need to double them again
--# (\\\\d to mean \d), and escape newlines too.
--ARGS=""
--
--# Prometheus-haproxy-exporter supports the following options:
--#
--#  --web.listen-address=":9101"
--#    Address to listen on for web interface and telemetry.
--#  --web.telemetry-path="/metrics"
--#    Path under which to expose metrics.
--#  --haproxy.scrape-uri="http://localhost/;csv"
--#    URI on which to scrape HAProxy.
--#  --haproxy.ssl-verify
--#    Flag that enables SSL certificate verification for the scrape URI
--#  --haproxy.server-metric-fields="2,3,4,5,6,7,8,9,13,14,15,16,17,18,21,24,33,35,38,39,40,41,42,43,44"
--#    Comma-separated list of exported server metrics. See
--#    http://cbonte.github.io/haproxy-dconv/configuration-1.5.html#9.1
--#  --haproxy.timeout=5s
--#    Timeout for trying to get stats from HAProxy.
--#  --haproxy.pid-file=""
--#    Path to HAProxy pid file.
--#
--#    If provided, the standard process metrics get exported for the HAProxy
--#    process, prefixed with 'haproxy_process_...'. The haproxy_process exporter
--#    needs to have read access to files owned by the HAProxy process. Depends
--#    on the availability of /proc.
--#    https://prometheus.io/docs/instrumenting/writing_clientlibs/#process-metrics.
--#  --log.level="info"
--#    Only log messages with the given severity or above.
--#    Valid levels: [debug, info, warn, error, fatal]
--#  --log.format="logger:stderr"
--#    Set the log target and format. Example:
--#    "logger:syslog?appname=bob&local=7" or "logger:stdout?json=true"
-+ARGS="--haproxy.scrape-uri='http://sikiteeb-1.maledetta.xtx:9188/stats;csv' --web.listen-address=':9101'"
-\ No newline at end of file
-
-changed: [sikiteeb-1]
---- before: /etc/default/prometheus-haproxy-exporter
-+++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-16153bpkwcod/tmpidlm7wu8/prometheus-haproxy-exporter.j2
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmp9fkuf6fh/prometheus-haproxy-exporter.j2
 @@ -1,35 +1 @@
 -# Set the command-line arguments to pass to the server.
 -# Due to shell scaping, to pass backslashes for regexes, you need to double
@@ -5595,30 +6210,72 @@ changed: [sikiteeb-1]
 \ No newline at end of file
 
 changed: [sikiteeb-2]
+--- before: /etc/default/prometheus-haproxy-exporter
++++ after: /Users/sigridhanni/.ansible/tmp/ansible-local-20391qi7mfiy2/tmpr21193pi/prometheus-haproxy-exporter.j2
+@@ -1,35 +1 @@
+-# Set the command-line arguments to pass to the server.
+-# Due to shell scaping, to pass backslashes for regexes, you need to double
+-# them (\\d for \d). If running under systemd, you need to double them again
+-# (\\\\d to mean \d), and escape newlines too.
+-ARGS=""
+-
+-# Prometheus-haproxy-exporter supports the following options:
+-#
+-#  --web.listen-address=":9101"
+-#    Address to listen on for web interface and telemetry.
+-#  --web.telemetry-path="/metrics"
+-#    Path under which to expose metrics.
+-#  --haproxy.scrape-uri="http://localhost/;csv"
+-#    URI on which to scrape HAProxy.
+-#  --haproxy.ssl-verify
+-#    Flag that enables SSL certificate verification for the scrape URI
+-#  --haproxy.server-metric-fields="2,3,4,5,6,7,8,9,13,14,15,16,17,18,21,24,33,35,38,39,40,41,42,43,44"
+-#    Comma-separated list of exported server metrics. See
+-#    http://cbonte.github.io/haproxy-dconv/configuration-1.5.html#9.1
+-#  --haproxy.timeout=5s
+-#    Timeout for trying to get stats from HAProxy.
+-#  --haproxy.pid-file=""
+-#    Path to HAProxy pid file.
+-#
+-#    If provided, the standard process metrics get exported for the HAProxy
+-#    process, prefixed with 'haproxy_process_...'. The haproxy_process exporter
+-#    needs to have read access to files owned by the HAProxy process. Depends
+-#    on the availability of /proc.
+-#    https://prometheus.io/docs/instrumenting/writing_clientlibs/#process-metrics.
+-#  --log.level="info"
+-#    Only log messages with the given severity or above.
+-#    Valid levels: [debug, info, warn, error, fatal]
+-#  --log.format="logger:stderr"
+-#    Set the log target and format. Example:
+-#    "logger:syslog?appname=bob&local=7" or "logger:stdout?json=true"
++ARGS="--haproxy.scrape-uri='http://sikiteeb-1.maledetta.xtx:9188/stats;csv' --web.listen-address=':9101'"
+\ No newline at end of file
+
+changed: [sikiteeb-1]
 
 TASK [haproxy : Haproxy exporter started] **************************************
-ok: [sikiteeb-2]
 ok: [sikiteeb-1]
+ok: [sikiteeb-2]
 
 RUNNING HANDLER [keepalived : Reload daemon] ***********************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 
 RUNNING HANDLER [keepalived : Restart keepalived] ******************************
 changed: [sikiteeb-1]
 changed: [sikiteeb-2]
 
 RUNNING HANDLER [keepalived : Restart keepalived exporter] *********************
-changed: [sikiteeb-1]
 changed: [sikiteeb-2]
+changed: [sikiteeb-1]
 
 RUNNING HANDLER [haproxy : Restart Haproxy] ************************************
-changed: [sikiteeb-2]
 changed: [sikiteeb-1]
+changed: [sikiteeb-2]
 
 RUNNING HANDLER [haproxy : Restart Prometheus-haproxy-exporter] ****************
-changed: [sikiteeb-1]
 changed: [sikiteeb-2]
+changed: [sikiteeb-1]
 
 PLAY RECAP *********************************************************************
 sikiteeb-1                 : ok=84   changed=71   unreachable=0    failed=0    skipped=6    rescued=0    ignored=0   
@@ -5634,15 +6291,15 @@ ok: [sikiteeb-1]
 ok: [sikiteeb-3]
 
 TASK [setup] *******************************************************************
+ok: [sikiteeb-3]
 ok: [sikiteeb-1]
 ok: [sikiteeb-2]
-ok: [sikiteeb-3]
 
 PLAY [Global] ******************************************************************
 
 TASK [init : Update APT cache] *************************************************
-ok: [sikiteeb-2]
 ok: [sikiteeb-1]
+ok: [sikiteeb-2]
 ok: [sikiteeb-3]
 
 TASK [users : Add user Juri Hudolejev] *****************************************
@@ -5651,14 +6308,14 @@ ok: [sikiteeb-1]
 ok: [sikiteeb-3]
 
 TASK [users : Add ssh for Juri Hudolejev] **************************************
-ok: [sikiteeb-1]
-ok: [sikiteeb-2]
 ok: [sikiteeb-3]
+ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 
 TASK [users : Add user Roman 'romankuchin'] ************************************
 ok: [sikiteeb-1]
-ok: [sikiteeb-2]
 ok: [sikiteeb-3]
+ok: [sikiteeb-2]
 
 TASK [users : Add ssh for Roman Kuchin] ****************************************
 ok: [sikiteeb-3]
@@ -5666,14 +6323,14 @@ ok: [sikiteeb-1]
 ok: [sikiteeb-2]
 
 TASK [node_exporter : Install Node Exporter] ***********************************
-ok: [sikiteeb-2]
 ok: [sikiteeb-1]
+ok: [sikiteeb-2]
 ok: [sikiteeb-3]
 
 TASK [node_exporter : Node Exporter arg] ***************************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
 ok: [sikiteeb-3]
+ok: [sikiteeb-1]
 
 TASK [node_exporter : Enable Node exporter] ************************************
 ok: [sikiteeb-3]
@@ -5687,24 +6344,24 @@ ok: [sikiteeb-3]
 
 TASK [docker : Install docker] *************************************************
 ok: [sikiteeb-2]
-ok: [sikiteeb-1]
 ok: [sikiteeb-3]
+ok: [sikiteeb-1]
 
 TASK [docker : Enable docker] **************************************************
 ok: [sikiteeb-2]
-ok: [sikiteeb-3]
 ok: [sikiteeb-1]
+ok: [sikiteeb-3]
 
 PLAY [Backup] ******************************************************************
 
 TASK [backup : Create User "backup"] *******************************************
 ok: [sikiteeb-1]
-ok: [sikiteeb-2]
 ok: [sikiteeb-3]
+ok: [sikiteeb-2]
 
 TASK [backup : Add Backup Server Public Key] ***********************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 ok: [sikiteeb-3]
 
 TASK [backup : Restore directory] **********************************************
@@ -5713,16 +6370,16 @@ ok: [sikiteeb-1]
 ok: [sikiteeb-3]
 
 TASK [backup : Install Duplicity] **********************************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
 ok: [sikiteeb-3]
+ok: [sikiteeb-1]
 
 PLAY [DNS] *********************************************************************
 
 TASK [bind : Install bind9] ****************************************************
+ok: [sikiteeb-3]
 ok: [sikiteeb-2]
 ok: [sikiteeb-1]
-ok: [sikiteeb-3]
 
 TASK [bind : Resolv.conf] ******************************************************
 ok: [sikiteeb-1]
@@ -5730,19 +6387,19 @@ ok: [sikiteeb-2]
 ok: [sikiteeb-3]
 
 TASK [bind : Stop systemd-resolved] ********************************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
 ok: [sikiteeb-3]
+ok: [sikiteeb-1]
 
 TASK [bind : Option] ***********************************************************
-ok: [sikiteeb-2]
 ok: [sikiteeb-1]
+ok: [sikiteeb-2]
 ok: [sikiteeb-3]
 
 TASK [bind : Local] ************************************************************
-ok: [sikiteeb-2]
-ok: [sikiteeb-1]
 ok: [sikiteeb-3]
+ok: [sikiteeb-1]
+ok: [sikiteeb-2]
 
 TASK [bind : DNS Primary Zone] *************************************************
 skipping: [sikiteeb-1]
@@ -5782,25 +6439,25 @@ skipping: [sikiteeb-1] => (item={'key': 'web1', 'value': 'sikiteeb-1'})
 skipping: [sikiteeb-1] => (item={'key': 'web2', 'value': 'sikiteeb-2'}) 
 
 TASK [bind_exporter : Install Bind Exporter] ***********************************
+ok: [sikiteeb-3]
 ok: [sikiteeb-2]
 ok: [sikiteeb-1]
-ok: [sikiteeb-3]
 
 TASK [bind_exporter : Bind-exporter args] **************************************
 ok: [sikiteeb-1]
-ok: [sikiteeb-2]
 ok: [sikiteeb-3]
+ok: [sikiteeb-2]
 
 TASK [bind_exporter : Enable Bind Exporter] ************************************
-ok: [sikiteeb-2]
 ok: [sikiteeb-1]
+ok: [sikiteeb-2]
 ok: [sikiteeb-3]
 
 PLAY [Database server] *********************************************************
 
 TASK [mysql : Install mysql and dependencies] **********************************
-ok: [sikiteeb-2]
 ok: [sikiteeb-1]
+ok: [sikiteeb-2]
 
 TASK [mysql : Copy override.conf] **********************************************
 ok: [sikiteeb-1]
@@ -5811,12 +6468,12 @@ ok: [sikiteeb-1]
 ok: [sikiteeb-2]
 
 TASK [mysql : Agama MySQL database] ********************************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 
 TASK [mysql : Agama MySQL user] ************************************************
-ok: [sikiteeb-2]
 ok: [sikiteeb-1]
+ok: [sikiteeb-2]
 
 TASK [mysql : MySQL Exporter User] *********************************************
 ok: [sikiteeb-1]
@@ -5831,26 +6488,26 @@ ok: [sikiteeb-2]
 ok: [sikiteeb-1]
 
 TASK [mysql_exporter : Install MySQL Exporter] *********************************
-ok: [sikiteeb-2]
 ok: [sikiteeb-1]
+ok: [sikiteeb-2]
 
 TASK [mysql_exporter : MySQL Exporter Config] **********************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 
 TASK [mysql_exporter : MySQL Exporter arg file] ********************************
-ok: [sikiteeb-2]
 ok: [sikiteeb-1]
+ok: [sikiteeb-2]
 
 TASK [mysql_exporter : Flush handlers once] ************************************
 
 TASK [mysql_exporter : Enable MySQL Exporter] **********************************
-ok: [sikiteeb-2]
 ok: [sikiteeb-1]
+ok: [sikiteeb-2]
 
 TASK [mysql_backup : MySQL Backup directory] ***********************************
-ok: [sikiteeb-2]
 ok: [sikiteeb-1]
+ok: [sikiteeb-2]
 
 TASK [mysql_backup : Create MySQL user "backup" in DB] *************************
 ok: [sikiteeb-1]
@@ -5875,42 +6532,42 @@ ok: [sikiteeb-1]
 ok: [sikiteeb-2]
 
 TASK [agama : Install agama stuff] *********************************************
-ok: [sikiteeb-2] => (item=https://raw.githubusercontent.com/hudolejev/agama/master/agama.py)
 ok: [sikiteeb-1] => (item=https://raw.githubusercontent.com/hudolejev/agama/master/agama.py)
-ok: [sikiteeb-2] => (item=https://raw.githubusercontent.com/hudolejev/agama/master/Dockerfile)
+ok: [sikiteeb-2] => (item=https://raw.githubusercontent.com/hudolejev/agama/master/agama.py)
 ok: [sikiteeb-1] => (item=https://raw.githubusercontent.com/hudolejev/agama/master/Dockerfile)
+ok: [sikiteeb-2] => (item=https://raw.githubusercontent.com/hudolejev/agama/master/Dockerfile)
 
 TASK [agama : Built agama docker image] ****************************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 
 TASK [agama : Run agama docker container] **************************************
-ok: [sikiteeb-2] => (item=1)
 ok: [sikiteeb-1] => (item=1)
+ok: [sikiteeb-2] => (item=1)
 ok: [sikiteeb-2] => (item=2)
 ok: [sikiteeb-1] => (item=2)
 
 PLAY [Nginx] *******************************************************************
 
 TASK [nginx : Install Nginx] ***************************************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 ok: [sikiteeb-3]
 
 TASK [nginx : Default file] ****************************************************
-ok: [sikiteeb-2]
 ok: [sikiteeb-1]
+ok: [sikiteeb-2]
 ok: [sikiteeb-3]
 
 TASK [nginx : Enable Nginx] ****************************************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
 ok: [sikiteeb-3]
+ok: [sikiteeb-1]
 
 TASK [nginx_exporter : Install Nginx Exporter] *********************************
-ok: [sikiteeb-2]
 ok: [sikiteeb-1]
 ok: [sikiteeb-3]
+ok: [sikiteeb-2]
 
 TASK [nginx_exporter : Expose stub_status on Port 8080] ************************
 ok: [sikiteeb-2]
@@ -5923,9 +6580,9 @@ ok: [sikiteeb-2]
 ok: [sikiteeb-3]
 
 TASK [nginx_exporter : Enable Nginx Exporter] **********************************
+changed: [sikiteeb-1]
 changed: [sikiteeb-2]
 changed: [sikiteeb-3]
-changed: [sikiteeb-1]
 
 PLAY [Influxdb] ****************************************************************
 
@@ -6044,24 +6701,24 @@ ok: [sikiteeb-3]
 PLAY [Keepalived and Haproxy] **************************************************
 
 TASK [keepalived : Install keepalived & keepalived_exporter] *******************
-ok: [sikiteeb-2]
 ok: [sikiteeb-1]
+ok: [sikiteeb-2]
 
 TASK [keepalived : Create user "keepalived_script"] ****************************
-ok: [sikiteeb-2]
 ok: [sikiteeb-1]
+ok: [sikiteeb-2]
 
 TASK [keepalived : keepalived.conf] ********************************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 
 TASK [keepalived : vrrp_script] ************************************************
 ok: [sikiteeb-1]
 ok: [sikiteeb-2]
 
 TASK [keepalived : Install keepalived_exporter] ********************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 
 TASK [keepalived : keepalived exporter service] ********************************
 ok: [sikiteeb-1]
@@ -6072,14 +6729,14 @@ ok: [sikiteeb-1]
 ok: [sikiteeb-2]
 
 TASK [keepalived : Enable keepalived and keepalived_exporter] ******************
-ok: [sikiteeb-1] => (item=keepalived)
 ok: [sikiteeb-2] => (item=keepalived)
-ok: [sikiteeb-1] => (item=keepalived_exporter)
+ok: [sikiteeb-1] => (item=keepalived)
 ok: [sikiteeb-2] => (item=keepalived_exporter)
+ok: [sikiteeb-1] => (item=keepalived_exporter)
 
 TASK [haproxy : Install haproxy] ***********************************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 
 TASK [haproxy : /etc/haproxy/haproxy.cfg] **************************************
 ok: [sikiteeb-1]
@@ -6098,8 +6755,8 @@ ok: [sikiteeb-2]
 ok: [sikiteeb-1]
 
 TASK [haproxy : Haproxy exporter started] **************************************
-ok: [sikiteeb-2]
 ok: [sikiteeb-1]
+ok: [sikiteeb-2]
 
 PLAY RECAP *********************************************************************
 sikiteeb-1                 : ok=68   changed=1    unreachable=0    failed=0    skipped=5    rescued=0    ignored=0   
@@ -6108,17 +6765,17 @@ sikiteeb-3                 : ok=70   changed=1    unreachable=0    failed=0    s
 
 sikiteeb-3 | CHANGED => {
     "changed": true,
-    "elapsed": 28,
-    "rebooted": true
-}
-sikiteeb-2 | CHANGED => {
-    "changed": true,
-    "elapsed": 45,
+    "elapsed": 49,
     "rebooted": true
 }
 sikiteeb-1 | CHANGED => {
     "changed": true,
-    "elapsed": 45,
+    "elapsed": 55,
+    "rebooted": true
+}
+sikiteeb-2 | CHANGED => {
+    "changed": true,
+    "elapsed": 58,
     "rebooted": true
 }
 
@@ -6137,108 +6794,108 @@ ok: [sikiteeb-2]
 PLAY [Global] ******************************************************************
 
 TASK [init : Update APT cache] *************************************************
+ok: [sikiteeb-3]
 ok: [sikiteeb-2]
 ok: [sikiteeb-1]
-ok: [sikiteeb-3]
 
 TASK [users : Add user Juri Hudolejev] *****************************************
 ok: [sikiteeb-3]
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 
 TASK [users : Add ssh for Juri Hudolejev] **************************************
-ok: [sikiteeb-1]
-ok: [sikiteeb-2]
 ok: [sikiteeb-3]
+ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 
 TASK [users : Add user Roman 'romankuchin'] ************************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-3]
 ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 
 TASK [users : Add ssh for Roman Kuchin] ****************************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
 ok: [sikiteeb-3]
+ok: [sikiteeb-1]
 
 TASK [node_exporter : Install Node Exporter] ***********************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-3]
 ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 
 TASK [node_exporter : Node Exporter arg] ***************************************
+ok: [sikiteeb-1]
 ok: [sikiteeb-3]
 ok: [sikiteeb-2]
-ok: [sikiteeb-1]
 
 TASK [node_exporter : Enable Node exporter] ************************************
+ok: [sikiteeb-3]
 ok: [sikiteeb-1]
 ok: [sikiteeb-2]
-ok: [sikiteeb-3]
 
 TASK [rsyslog : Install 50-telegraf.conf] **************************************
 ok: [sikiteeb-3]
-ok: [sikiteeb-2]
 ok: [sikiteeb-1]
+ok: [sikiteeb-2]
 
 TASK [docker : Install docker] *************************************************
+ok: [sikiteeb-3]
 ok: [sikiteeb-2]
 ok: [sikiteeb-1]
-ok: [sikiteeb-3]
 
 TASK [docker : Enable docker] **************************************************
-ok: [sikiteeb-1]
-ok: [sikiteeb-2]
 ok: [sikiteeb-3]
+ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 
 PLAY [Backup] ******************************************************************
 
 TASK [backup : Create User "backup"] *******************************************
 ok: [sikiteeb-3]
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 
 TASK [backup : Add Backup Server Public Key] ***********************************
-ok: [sikiteeb-1]
-ok: [sikiteeb-3]
 ok: [sikiteeb-2]
+ok: [sikiteeb-3]
+ok: [sikiteeb-1]
 
 TASK [backup : Restore directory] **********************************************
 ok: [sikiteeb-1]
-ok: [sikiteeb-3]
 ok: [sikiteeb-2]
+ok: [sikiteeb-3]
 
 TASK [backup : Install Duplicity] **********************************************
 ok: [sikiteeb-1]
-ok: [sikiteeb-3]
 ok: [sikiteeb-2]
+ok: [sikiteeb-3]
 
 PLAY [DNS] *********************************************************************
 
 TASK [bind : Install bind9] ****************************************************
 ok: [sikiteeb-1]
-ok: [sikiteeb-2]
 ok: [sikiteeb-3]
+ok: [sikiteeb-2]
 
 TASK [bind : Resolv.conf] ******************************************************
 ok: [sikiteeb-1]
-ok: [sikiteeb-3]
 ok: [sikiteeb-2]
+ok: [sikiteeb-3]
 
 TASK [bind : Stop systemd-resolved] ********************************************
 ok: [sikiteeb-1]
-ok: [sikiteeb-2]
 ok: [sikiteeb-3]
+ok: [sikiteeb-2]
 
 TASK [bind : Option] ***********************************************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 ok: [sikiteeb-3]
 
 TASK [bind : Local] ************************************************************
+ok: [sikiteeb-3]
 ok: [sikiteeb-1]
 ok: [sikiteeb-2]
-ok: [sikiteeb-3]
 
 TASK [bind : DNS Primary Zone] *************************************************
 skipping: [sikiteeb-1]
@@ -6251,8 +6908,8 @@ skipping: [sikiteeb-2]
 ok: [sikiteeb-3]
 
 TASK [bind : Enable bind9] *****************************************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 ok: [sikiteeb-3]
 
 TASK [bind : execute handlers] *************************************************
@@ -6278,9 +6935,9 @@ skipping: [sikiteeb-1] => (item={'key': 'web1', 'value': 'sikiteeb-1'})
 skipping: [sikiteeb-1] => (item={'key': 'web2', 'value': 'sikiteeb-2'}) 
 
 TASK [bind_exporter : Install Bind Exporter] ***********************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
 ok: [sikiteeb-3]
+ok: [sikiteeb-1]
 
 TASK [bind_exporter : Bind-exporter args] **************************************
 ok: [sikiteeb-1]
@@ -6288,61 +6945,61 @@ ok: [sikiteeb-2]
 ok: [sikiteeb-3]
 
 TASK [bind_exporter : Enable Bind Exporter] ************************************
+ok: [sikiteeb-2]
 ok: [sikiteeb-1]
 ok: [sikiteeb-3]
-ok: [sikiteeb-2]
 
 PLAY [Database server] *********************************************************
 
 TASK [mysql : Install mysql and dependencies] **********************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 
 TASK [mysql : Copy override.conf] **********************************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 
 TASK [mysql : Enable mysql] ****************************************************
 ok: [sikiteeb-1]
 ok: [sikiteeb-2]
 
 TASK [mysql : Agama MySQL database] ********************************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 
 TASK [mysql : Agama MySQL user] ************************************************
 ok: [sikiteeb-2]
 ok: [sikiteeb-1]
 
 TASK [mysql : MySQL Exporter User] *********************************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 
 TASK [mysql : MySQL Replicate User] ********************************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 
 TASK [mysql : Make replica read-only] ******************************************
 ok: [sikiteeb-2]
 ok: [sikiteeb-1]
 
 TASK [mysql_exporter : Install MySQL Exporter] *********************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 
 TASK [mysql_exporter : MySQL Exporter Config] **********************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 
 TASK [mysql_exporter : MySQL Exporter arg file] ********************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 
 TASK [mysql_exporter : Flush handlers once] ************************************
 
 TASK [mysql_exporter : Enable MySQL Exporter] **********************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 
 TASK [mysql_backup : MySQL Backup directory] ***********************************
 ok: [sikiteeb-1]
@@ -6367,61 +7024,61 @@ ok: [sikiteeb-2]
 PLAY [Web server] **************************************************************
 
 TASK [agama : Create directory agama] ******************************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 
 TASK [agama : Install agama stuff] *********************************************
-ok: [sikiteeb-1] => (item=https://raw.githubusercontent.com/hudolejev/agama/master/agama.py)
 ok: [sikiteeb-2] => (item=https://raw.githubusercontent.com/hudolejev/agama/master/agama.py)
-ok: [sikiteeb-1] => (item=https://raw.githubusercontent.com/hudolejev/agama/master/Dockerfile)
+ok: [sikiteeb-1] => (item=https://raw.githubusercontent.com/hudolejev/agama/master/agama.py)
 ok: [sikiteeb-2] => (item=https://raw.githubusercontent.com/hudolejev/agama/master/Dockerfile)
+ok: [sikiteeb-1] => (item=https://raw.githubusercontent.com/hudolejev/agama/master/Dockerfile)
 
 TASK [agama : Built agama docker image] ****************************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 
 TASK [agama : Run agama docker container] **************************************
-ok: [sikiteeb-1] => (item=1)
 ok: [sikiteeb-2] => (item=1)
-ok: [sikiteeb-1] => (item=2)
+ok: [sikiteeb-1] => (item=1)
 ok: [sikiteeb-2] => (item=2)
+ok: [sikiteeb-1] => (item=2)
 
 PLAY [Nginx] *******************************************************************
 
 TASK [nginx : Install Nginx] ***************************************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-3]
 ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 
 TASK [nginx : Default file] ****************************************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-3]
 ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 
 TASK [nginx : Enable Nginx] ****************************************************
 ok: [sikiteeb-1]
-ok: [sikiteeb-3]
 ok: [sikiteeb-2]
+ok: [sikiteeb-3]
 
 TASK [nginx_exporter : Install Nginx Exporter] *********************************
-ok: [sikiteeb-1]
-ok: [sikiteeb-3]
 ok: [sikiteeb-2]
+ok: [sikiteeb-3]
+ok: [sikiteeb-1]
 
 TASK [nginx_exporter : Expose stub_status on Port 8080] ************************
-ok: [sikiteeb-1]
-ok: [sikiteeb-3]
 ok: [sikiteeb-2]
+ok: [sikiteeb-3]
+ok: [sikiteeb-1]
 
 TASK [nginx_exporter : Nginx-exporter args] ************************************
 ok: [sikiteeb-1]
-ok: [sikiteeb-3]
 ok: [sikiteeb-2]
+ok: [sikiteeb-3]
 
 TASK [nginx_exporter : Enable Nginx Exporter] **********************************
 ok: [sikiteeb-1]
-ok: [sikiteeb-3]
 ok: [sikiteeb-2]
+ok: [sikiteeb-3]
 
 PLAY [Influxdb] ****************************************************************
 
@@ -6540,12 +7197,12 @@ ok: [sikiteeb-3]
 PLAY [Keepalived and Haproxy] **************************************************
 
 TASK [keepalived : Install keepalived & keepalived_exporter] *******************
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 
 TASK [keepalived : Create user "keepalived_script"] ****************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 
 TASK [keepalived : keepalived.conf] ********************************************
 ok: [sikiteeb-1]
@@ -6556,12 +7213,12 @@ ok: [sikiteeb-2]
 ok: [sikiteeb-1]
 
 TASK [keepalived : Install keepalived_exporter] ********************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 
 TASK [keepalived : keepalived exporter service] ********************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 
 TASK [keepalived : keepalived exporter args] ***********************************
 ok: [sikiteeb-1]
@@ -6574,8 +7231,8 @@ ok: [sikiteeb-1] => (item=keepalived_exporter)
 ok: [sikiteeb-2] => (item=keepalived_exporter)
 
 TASK [haproxy : Install haproxy] ***********************************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 
 TASK [haproxy : /etc/haproxy/haproxy.cfg] **************************************
 ok: [sikiteeb-2]
@@ -6590,16 +7247,16 @@ ok: [sikiteeb-1]
 ok: [sikiteeb-2]
 
 TASK [haproxy : /etc/default/prometheus-haproxy-exporter] **********************
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 
 TASK [haproxy : Haproxy exporter started] **************************************
-ok: [sikiteeb-1]
 ok: [sikiteeb-2]
+ok: [sikiteeb-1]
 
 PLAY RECAP *********************************************************************
 sikiteeb-1                 : ok=68   changed=0    unreachable=0    failed=0    skipped=5    rescued=0    ignored=0   
 sikiteeb-2                 : ok=68   changed=0    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
 sikiteeb-3                 : ok=70   changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 
-Tue Jan  3 10:15:23 EET 2023
+Tue Jan  3 13:36:11 EET 2023
