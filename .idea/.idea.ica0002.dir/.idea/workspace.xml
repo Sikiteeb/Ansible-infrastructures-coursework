@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="771de464-61cf-40f3-ac3a-95a3782f8fa5" name="Changes" comment="users">
+    <list default="true" id="771de464-61cf-40f3-ac3a-95a3782f8fa5" name="Changes" comment="final">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ica0002.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ica0002.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/group_vars/all.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/group_vars/all.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hosts" beforeDir="false" afterPath="$PROJECT_DIR$/hosts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pre_exam.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/grafana/files/main.json" beforeDir="false" afterPath="$PROJECT_DIR$/roles/grafana/files/main.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/grafana/files/mysql.json" beforeDir="false" afterPath="$PROJECT_DIR$/roles/grafana/files/mysql.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/grafana/files/syslog.json" beforeDir="false" afterPath="$PROJECT_DIR$/roles/grafana/files/syslog.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/influxdb_backup/templates/influxdb-backup.j2" beforeDir="false" afterPath="$PROJECT_DIR$/roles/influxdb_backup/templates/influxdb-backup.j2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/mysql_backup/templates/mysql-backup.j2" beforeDir="false" afterPath="$PROJECT_DIR$/roles/mysql_backup/templates/mysql-backup.j2" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +71,7 @@
       <workItem from="1672559884327" duration="14263000" />
       <workItem from="1672648384147" duration="17545000" />
       <workItem from="1672676119084" duration="5871000" />
-      <workItem from="1672723707821" duration="8263000" />
+      <workItem from="1672723707821" duration="12015000" />
     </task>
     <task id="LOCAL-00001" summary="Lab 10 and a bit of 11">
       <created>1672234672408</created>
@@ -156,7 +150,21 @@
       <option name="project" value="LOCAL" />
       <updated>1672682559561</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="final">
+      <created>1672740416175</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1672740416175</updated>
+    </task>
+    <task id="LOCAL-00013" summary="final">
+      <created>1672740472668</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1672740472668</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +182,7 @@
     <MESSAGE value="exam run" />
     <MESSAGE value="backup" />
     <MESSAGE value="users" />
-    <option name="LAST_COMMIT_MESSAGE" value="users" />
+    <MESSAGE value="final" />
+    <option name="LAST_COMMIT_MESSAGE" value="final" />
   </component>
 </project>
