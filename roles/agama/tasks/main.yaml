@@ -11,7 +11,7 @@
     - https://raw.githubusercontent.com/hudolejev/agama/master/agama.py
     - https://raw.githubusercontent.com/hudolejev/agama/master/Dockerfile
 
-- name: Built agama docker image
+- name: Build agama docker image
   community.docker.docker_image:
     name: agama
     source: build

@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="771de464-61cf-40f3-ac3a-95a3782f8fa5" name="Changes" comment="exam_ready_v2">
+    <list default="true" id="771de464-61cf-40f3-ac3a-95a3782f8fa5" name="Changes" comment="fixing issues">
+      <change afterPath="$PROJECT_DIR$/roles/docker_fix/files/iptables.mangle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/docker_fix/tasks/main.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ica0002.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ica0002.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/group_vars/all.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/group_vars/all.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hosts" beforeDir="false" afterPath="$PROJECT_DIR$/hosts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre_exam.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/infra.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/agama/tasks/main.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/agama/tasks/main.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/roles/backup/templates/known_hosts.j2" beforeDir="false" afterPath="$PROJECT_DIR$/roles/backup/templates/known_hosts.j2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/docker/tasks/main.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/docker/tasks/main.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/grafana/tasks/main_apt.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/grafana/tasks/main_apt.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/roles/influxdb_backup/templates/influxdb-backup.j2" beforeDir="false" afterPath="$PROJECT_DIR$/roles/influxdb_backup/templates/influxdb-backup.j2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/mysql_backup/tasks/main.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/mysql_backup/tasks/main.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/mysql_backup/templates/.my.cnf.j2" beforeDir="false" afterPath="$PROJECT_DIR$/roles/mysql_backup/templates/.my.cnf.j2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/roles/mysql_backup/templates/mysql-backup.j2" beforeDir="false" afterPath="$PROJECT_DIR$/roles/mysql_backup/templates/mysql-backup.j2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/prometheus/templates/prometheus.j2" beforeDir="false" afterPath="$PROJECT_DIR$/roles/prometheus/templates/prometheus.j2" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +84,8 @@
       <workItem from="1672723707821" duration="24198000" />
       <workItem from="1673097516673" duration="3540000" />
       <workItem from="1673174359894" duration="698000" />
-      <workItem from="1673513315291" duration="5749000" />
+      <workItem from="1673513315291" duration="5944000" />
+      <workItem from="1673598121826" duration="9456000" />
     </task>
     <task id="LOCAL-00001" summary="Lab 10 and a bit of 11">
       <created>1672234672408</created>
@@ -194,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672760503186</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="fixing issues">
+      <created>1673533863852</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1673533863852</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +227,7 @@
     <MESSAGE value="final" />
     <MESSAGE value="exam_ready" />
     <MESSAGE value="exam_ready_v2" />
-    <option name="LAST_COMMIT_MESSAGE" value="exam_ready_v2" />
+    <MESSAGE value="fixing issues" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing issues" />
   </component>
 </project>

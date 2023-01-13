@@ -16,8 +16,10 @@
     - users
     - node_exporter
     - rsyslog
+    - docker_fix
     - docker
-      
+  tags: gl
+  
 - name: Backup
   hosts: all
   become: yes

@@ -10,7 +10,7 @@
 
 - name: Grafana Init Config
   template:
-    src: grafana.ini
+    src: grafana.ini.j2
     dest: /etc/grafana/grafana.ini
   notify: Restart Grafana
 

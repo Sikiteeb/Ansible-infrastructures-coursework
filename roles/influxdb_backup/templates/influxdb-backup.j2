@@ -1,5 +1,5 @@
-15 16 * * * backup ssh {{ github_username }}@backup.{{ fqdn }} mkdir influxdb
-15 16 * * 1-6 backup rm -rf /home/backup/influxdb/*; influxd backup -portable -database telegraf /home/backup/influxdb
-15 16 * * 1-6 backup  duplicity --no-encryption full /home/backup/influxdb/ rsync://{{ github_username }}@backup.{{ fqdn }}//home/{{ github_username }}/influxdb/
+00 14 * * * backup ssh {{ github_username }}@backup.{{ fqdn }} mkdir influxdb
+00 14 * * 1-6 backup rm -rf /home/backup/influxdb/*; influxd backup -portable -database telegraf /home/backup/influxdb
+00 14 * * 1-6 backup  duplicity --no-encryption full /home/backup/influxdb/ rsync://{{ github_username }}@backup.{{ fqdn }}//home/{{ github_username }}/influxdb/
 30 23 * * 1-6  backup  duplicity --no-encryption incremental /home/backup/influxdb/ rsync://{{ github_username }}@backup.{{ fqdn }}//home/{{ github_username }}/influxdb/
 0 0 28 * * backup duplicity remove-older-than 1M rsync://{{ github_username }}@backup.{{ fqdn }}//home/{{ github_username }}/influxdb/
