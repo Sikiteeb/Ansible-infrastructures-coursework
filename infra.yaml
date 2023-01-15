@@ -16,14 +16,13 @@
     - users
     - node_exporter
     - rsyslog
-    - docker_fix
     - docker
   tags: gl
   
 - name: Backup
   hosts: all
   become: yes
-  gather_facts: no
+  gather_facts: yes
   roles:
     - backup
   tags: ba      

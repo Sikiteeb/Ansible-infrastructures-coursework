@@ -6,7 +6,7 @@
 <h3>Definition of SLA </h3>
 This Service Level Agreement (this “SLA”) governs the backup Services. Operations and security teams may update, amend, modify or supplement this SLA from time to time. The terms and conditions of this SLA are applicable to the Managed Backup and Disaster Recovery Services only.
 
-<h3> The backup schedule in EE time zone </h3>
+<h3> The backup schedule in EE (-2H UTC) time zone </h3>
 
 <table class="GeneratedTable">
   <thead>

@@ -9,7 +9,7 @@
     src: influxdb-backup.j2
     dest: /etc/cron.d/influxdb-backup
     owner: root
-    mode: 0750
+    mode: '0744'
 
 - name: Enable Cron
   service:

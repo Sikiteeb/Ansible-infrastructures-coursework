@@ -24,7 +24,6 @@
     - Restart Bind9
     - Reconfigure rndc
   
-
 - name: Local  
   template:
     src: named.conf.local.j2
@@ -75,12 +74,12 @@
     key_name: "nsupdate.key"
     key_algorithm: "hmac-sha256"
     key_secret: "{{ dns_update_key}}"
-    server: "localhost"
-    zone: "{{ fqdn }}"
-    record: "{{ item.key }}"
+    server: "{{ hostvars[groups['dns_master'][0]]['ansible_default_ipv4']['address'] }}"
+    zone: "{{ fqdn }}."
+    record: "{{ item['subdomain'] }}.{{ fqdn }}."
     type: "A"
-    value: "{{ item.value }}"
-  loop: "{{ dns_a_records | dict2items }}"
+    value: "{{ item['ip'] }}"
+  loop: "{{ a_records }}"
   run_once: True
   when: inventory_hostname in groups ['dns_master']
 

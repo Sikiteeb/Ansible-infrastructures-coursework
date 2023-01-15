@@ -9,15 +9,6 @@
   notify:
     - Restart Nginx
     
-- name: Expose stub_status on Port 8080
-  template:
-    src: stub_status
-    dest: /etc/nginx/sites-enabled/stub_status
-  notify:
-    - Restart Nginx Exporter
-    - Restart Nginx
-    - Reload Daemons
-
 - name: Enable Nginx
   service:
     name: nginx

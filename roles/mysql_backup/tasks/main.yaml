@@ -4,23 +4,25 @@
     state: directory
     owner: "{{ backup_user }}"
 
-- name: Create MySQL user "backup" in DB
+- name: Create MySQL user "backup" 
   community.mysql.mysql_user:
     name: "{{ backup_user }}"
-    password: "{{ backup_key }}"
+    password: "{{ backup_pass }}"
     priv: "{{ mysql_database }}.*:LOCK TABLES,SELECT"
+    host: "%"
     login_unix_socket: /var/run/mysqld/mysqld.sock
   no_log: true
+  when: inventory_hostname=="sikiteeb-2"
 
 - name: .my.cnf file  
   template:
     src: .my.cnf.j2
     dest: /home/backup/.my.cnf
     owner: "{{ backup_user }}"
-    mode: 0750
+    mode: '0400'
   no_log: true
+  when: inventory_hostname == "sikiteeb-2"
     
-
 - name: MySQL backup cron
   template:
     src: mysql-backup.j2

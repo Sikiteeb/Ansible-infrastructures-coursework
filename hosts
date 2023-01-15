@@ -1,15 +1,10 @@
-sikiteeb-1 ansible_host=193.40.156.67 ansible_port=13522 ansible_ssh_user=ubuntu
-sikiteeb-2 ansible_host=193.40.156.67 ansible_port=9522 ansible_ssh_user=ubuntu
-sikiteeb-3 ansible_host=193.40.156.67 ansible_port=16922 ansible_ssh_user=ubuntu
+sikiteeb-1 ansible_host=193.40.156.67 ansible_port=9722 ansible_ssh_user=ubuntu
+sikiteeb-2 ansible_host=193.40.156.67 ansible_port=9822 ansible_ssh_user=ubuntu
+sikiteeb-3 ansible_host=193.40.156.67 ansible_port=5422 ansible_ssh_user=ubuntu
 
 [web_servers]
 sikiteeb-1
 sikiteeb-2
-
-[dns_servers]
-sikiteeb-1
-sikiteeb-2
-sikiteeb-3
 
 [dns_master]
 sikiteeb-3
