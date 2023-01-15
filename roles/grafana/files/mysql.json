@@ -24,14 +24,14 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 1,
+  "id": 2,
   "links": [],
   "liveNow": false,
   "panels": [
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "e_mCWqp4z"
+        "uid": "PBFA97CFB590B2093"
       },
       "fieldConfig": {
         "defaults": {
@@ -100,7 +100,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "e_mCWqp4z"
+            "uid": "PBFA97CFB590B2093"
           },
           "editorMode": "builder",
           "expr": "mysql_global_variables_read_only",
@@ -115,7 +115,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "e_mCWqp4z"
+        "uid": "PBFA97CFB590B2093"
       },
       "fieldConfig": {
         "defaults": {
@@ -173,7 +173,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "e_mCWqp4z"
+            "uid": "PBFA97CFB590B2093"
           },
           "editorMode": "builder",
           "expr": "mysql_slave_status_slave_sql_running",
@@ -188,7 +188,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "e_mCWqp4z"
+        "uid": "PBFA97CFB590B2093"
       },
       "fieldConfig": {
         "defaults": {
@@ -246,7 +246,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "e_mCWqp4z"
+            "uid": "PBFA97CFB590B2093"
           },
           "editorMode": "builder",
           "expr": "mysql_slave_status_slave_io_running",
@@ -261,7 +261,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "e_mCWqp4z"
+        "uid": "PBFA97CFB590B2093"
       },
       "fieldConfig": {
         "defaults": {
@@ -338,7 +338,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "e_mCWqp4z"
+            "uid": "PBFA97CFB590B2093"
           },
           "editorMode": "code",
           "expr": "rate(mysql_global_status_commands_total{command=\"select\"}[1m])",
@@ -353,7 +353,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "e_mCWqp4z"
+        "uid": "PBFA97CFB590B2093"
       },
       "fieldConfig": {
         "defaults": {
@@ -397,7 +397,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "e_mCWqp4z"
+            "uid": "PBFA97CFB590B2093"
           },
           "editorMode": "builder",
           "expr": "mysql_global_variables_server_id",

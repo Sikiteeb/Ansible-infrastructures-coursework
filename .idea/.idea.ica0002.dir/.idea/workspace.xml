@@ -1,32 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="771de464-61cf-40f3-ac3a-95a3782f8fa5" name="Changes" comment="fixing issues">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ica0002.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ica0002.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backup_sla.md" beforeDir="false" afterPath="$PROJECT_DIR$/backup_sla.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/group_vars/all.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/group_vars/all.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hosts" beforeDir="false" afterPath="$PROJECT_DIR$/hosts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infra.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/infra.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/backup/tasks/main.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/backup/tasks/main.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/bind/tasks/main.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/bind/tasks/main.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/bind/templates/db.maledetta" beforeDir="false" afterPath="$PROJECT_DIR$/roles/bind/templates/db.maledetta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/bind/templates/db.maledetta.reverse" beforeDir="false" afterPath="$PROJECT_DIR$/roles/bind/templates/db.maledetta.reverse" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/docker_fix/files/iptables.mangle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/docker_fix/tasks/main.yaml" beforeDir="false" />
+    <list default="true" id="771de464-61cf-40f3-ac3a-95a3782f8fa5" name="Changes" comment="backup issues fixed">
       <change beforePath="$PROJECT_DIR$/roles/grafana/files/main.json" beforeDir="false" afterPath="$PROJECT_DIR$/roles/grafana/files/main.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/grafana/templates/datasource.yaml.j2" beforeDir="false" afterPath="$PROJECT_DIR$/roles/grafana/templates/datasource.yaml.j2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/influxdb/templates/influxdb.conf.j2" beforeDir="false" afterPath="$PROJECT_DIR$/roles/influxdb/templates/influxdb.conf.j2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/influxdb/templates/telegraf.conf.j2" beforeDir="false" afterPath="$PROJECT_DIR$/roles/influxdb/templates/telegraf.conf.j2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/influxdb_backup/tasks/main.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/influxdb_backup/tasks/main.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/influxdb_backup/templates/influxdb-backup.j2" beforeDir="false" afterPath="$PROJECT_DIR$/roles/influxdb_backup/templates/influxdb-backup.j2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/mysql_backup/tasks/main.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/mysql_backup/tasks/main.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/mysql_backup/templates/mysql-backup.j2" beforeDir="false" afterPath="$PROJECT_DIR$/roles/mysql_backup/templates/mysql-backup.j2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/nginx/tasks/main.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/nginx/tasks/main.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/nginx/templates/stub_status" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/nginx_exporter/handlers/main.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/nginx_exporter/handlers/main.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/nginx_exporter/tasks/main.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/nginx_exporter/tasks/main.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/nginx_exporter/templates/prometheus-nginx-exporter" beforeDir="false" afterPath="$PROJECT_DIR$/roles/nginx_exporter/templates/exporter.j2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/prometheus/templates/prometheus.j2" beforeDir="false" afterPath="$PROJECT_DIR$/roles/prometheus/templates/prometheus.j2" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +75,7 @@
       <workItem from="1673513315291" duration="5944000" />
       <workItem from="1673598121826" duration="9681000" />
       <workItem from="1673682405223" duration="18316000" />
-      <workItem from="1673761938276" duration="17715000" />
+      <workItem from="1673761938276" duration="18062000" />
     </task>
     <task id="LOCAL-00001" summary="Lab 10 and a bit of 11">
       <created>1672234672408</created>
@@ -227,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673617982157</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="backup issues fixed">
+      <created>1673784935451</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1673784935451</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,6 +232,7 @@
     <MESSAGE value="exam_ready" />
     <MESSAGE value="exam_ready_v2" />
     <MESSAGE value="fixing issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing issues" />
+    <MESSAGE value="backup issues fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="backup issues fixed" />
   </component>
 </project>
