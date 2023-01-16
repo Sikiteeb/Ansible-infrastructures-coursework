@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="771de464-61cf-40f3-ac3a-95a3782f8fa5" name="Changes" comment="backup issues fixed">
+    <list default="true" id="771de464-61cf-40f3-ac3a-95a3782f8fa5" name="Changes" comment="grafana jsons">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ica0002.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ica0002.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backup_restore.md" beforeDir="false" afterPath="$PROJECT_DIR$/backup_restore.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group_vars/all.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/group_vars/all.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hosts" beforeDir="false" afterPath="$PROJECT_DIR$/hosts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/backup/tasks/main.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/backup/tasks/main.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/roles/grafana/files/main.json" beforeDir="false" afterPath="$PROJECT_DIR$/roles/grafana/files/main.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/influxdb_backup/tasks/main.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/influxdb_backup/tasks/main.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/influxdb_backup/templates/influxdb-backup.j2" beforeDir="false" afterPath="$PROJECT_DIR$/roles/influxdb_backup/templates/influxdb-backup.j2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/mysql_backup/tasks/main.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/mysql_backup/tasks/main.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/mysql_backup/templates/mysql-backup.j2" beforeDir="false" afterPath="$PROJECT_DIR$/roles/mysql_backup/templates/mysql-backup.j2" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +85,9 @@
       <workItem from="1673513315291" duration="5944000" />
       <workItem from="1673598121826" duration="9681000" />
       <workItem from="1673682405223" duration="18316000" />
-      <workItem from="1673761938276" duration="18062000" />
+      <workItem from="1673761938276" duration="26060000" />
+      <workItem from="1673880088194" duration="1139000" />
+      <workItem from="1673881237199" duration="5698000" />
     </task>
     <task id="LOCAL-00001" summary="Lab 10 and a bit of 11">
       <created>1672234672408</created>
@@ -210,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673784935451</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="grafana jsons">
+      <created>1673785266057</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1673785266057</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +252,7 @@
     <MESSAGE value="exam_ready_v2" />
     <MESSAGE value="fixing issues" />
     <MESSAGE value="backup issues fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="backup issues fixed" />
+    <MESSAGE value="grafana jsons" />
+    <option name="LAST_COMMIT_MESSAGE" value="grafana jsons" />
   </component>
 </project>

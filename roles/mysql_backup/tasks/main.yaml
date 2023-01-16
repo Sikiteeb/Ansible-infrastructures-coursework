@@ -2,11 +2,18 @@
   file:
     path: /home/backup/mysql
     state: directory
-    owner: "{{ backup_user }}"
+    owner: backup
+    
+- name: MySQL Backup restore directory
+  file:
+    path: /home/backup/mysql/restore
+    state: directory
+    owner: backup    
+       
 
 - name: Create MySQL user "backup" 
   community.mysql.mysql_user:
-    name: "{{ backup_user }}"
+    name: backup
     password: "{{ backup_pass }}"
     priv: "{{ mysql_database }}.*:LOCK TABLES,SELECT"
     host: "%"
@@ -18,7 +25,7 @@
   template:
     src: .my.cnf.j2
     dest: /home/backup/.my.cnf
-    owner: "{{ backup_user }}"
+    owner: backup
     mode: '0400'
   no_log: true
   when: inventory_hostname == "sikiteeb-2"

@@ -1,8 +1,14 @@
-- name: InfluxDB Backup directory
+- name: InfluxDB backup directory
   file:
     path: /home/backup/influxdb
     state: directory
-    owner: "{{ backup_user }}"
+    owner: backup
+    
+- name: InfluxDB backup restore directory
+  file:
+    path: /home/backup/restore/influxdb
+    state: directory
+    owner: backup   
 
 - name: InfluxDB cron
   template: 

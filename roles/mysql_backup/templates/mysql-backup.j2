@@ -1,7 +1,5 @@
-{% if inventory_hostname == mysql_backup_host %}
-00 22 * * * backup ssh {{ github_username }}@backup.{{ fqdn }} mkdir mysql
-00 22 * * *  backup  mysqldump agama > /home/backup/mysql/agama.sql
-00 22 * * 7 backup  duplicity --no-encryption full /home/backup/mysql/ rsync://{{ github_username }}@backup.{{ fqdn }}//home/{{ github_username }}/mysql/
+05 17 * * * backup ssh {{ github_username }}@backup.{{ fqdn }} mkdir mysql
+05 17 * * *  backup  mysqldump agama > /home/backup/mysql/agama.sql
+05 17 * * * backup  duplicity --no-encryption full /home/backup/mysql/ rsync://{{ github_username }}@{{ fqdn }}//home/{{ github_username }}/mysql/
 30 22 * * *  backup  duplicity --no-encryption incremental /home/backup/mysql/ rsync://{{ github_username }}@backup.{{ fqdn }}//home/{{ github_username }}/mysql/
 0 0 28 * * backup duplicity remove-older-than 1M rsync://{{ github_username }}@backup.{{ fqdn }}//home/{{ github_username }}/mysql/
-{% endif %}
