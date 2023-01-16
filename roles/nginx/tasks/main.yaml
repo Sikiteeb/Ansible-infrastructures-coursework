@@ -8,7 +8,7 @@
     dest: /etc/nginx/sites-enabled/default
   notify:
     - Restart Nginx
-    
+
 - name: Enable Nginx
   service:
     name: nginx
