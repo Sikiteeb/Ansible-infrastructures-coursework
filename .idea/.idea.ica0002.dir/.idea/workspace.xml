@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="771de464-61cf-40f3-ac3a-95a3782f8fa5" name="Changes" comment="Final edits">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ica0002.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ica0002.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/group_vars/all.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/group_vars/all.yaml" afterDir="false" />
+    <list default="true" id="771de464-61cf-40f3-ac3a-95a3782f8fa5" name="Changes" comment="Exam ready 0.2">
+      <change beforePath="$PROJECT_DIR$/backup_restore.md" beforeDir="false" afterPath="$PROJECT_DIR$/backup_restore.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backup_sla.md" beforeDir="false" afterPath="$PROJECT_DIR$/backup_sla.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hosts" beforeDir="false" afterPath="$PROJECT_DIR$/hosts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/infra.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pre_exam.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/roles/backup/tasks/main.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/backup/tasks/main.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/roles/influxdb_backup/templates/influxdb-backup.j2" beforeDir="false" afterPath="$PROJECT_DIR$/roles/influxdb_backup/templates/influxdb-backup.j2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/roles/mysql_backup/templates/mysql-backup.j2" beforeDir="false" afterPath="$PROJECT_DIR$/roles/mysql_backup/templates/mysql-backup.j2" afterDir="false" />
@@ -83,7 +85,7 @@
       <workItem from="1673761938276" duration="26060000" />
       <workItem from="1673880088194" duration="1139000" />
       <workItem from="1673881237199" duration="9202000" />
-      <workItem from="1673939406394" duration="2163000" />
+      <workItem from="1673939406394" duration="10453000" />
     </task>
     <task id="LOCAL-00001" summary="Lab 10 and a bit of 11">
       <created>1672234672408</created>
@@ -239,7 +241,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673893148282</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Exam ready 0.2">
+      <created>1673941901720</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1673941901720</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Exam ready 0.2">
+      <created>1673941911988</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1673941911988</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,6 +281,7 @@
     <MESSAGE value="grafana jsons" />
     <MESSAGE value="Backup details" />
     <MESSAGE value="Final edits" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final edits" />
+    <MESSAGE value="Exam ready 0.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Exam ready 0.2" />
   </component>
 </project>

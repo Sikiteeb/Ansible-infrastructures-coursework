@@ -12,7 +12,7 @@
     dest: /home/backup/.ssh/known_hosts
     group: backup
     owner:  backup
-    mode: 0774
+    mode: 0755
   no_log: true
   
 - name: Install Duplicity
