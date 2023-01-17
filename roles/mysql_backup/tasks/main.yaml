@@ -6,7 +6,7 @@
     
 - name: MySQL Backup restore directory
   file:
-    path: /home/backup/mysql/restore
+    path: /home/backup/restore/mysql
     state: directory
     owner: backup    
        

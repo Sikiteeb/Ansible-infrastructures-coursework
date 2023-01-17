@@ -48,8 +48,8 @@ This Service Level Agreement (this “SLA”) governs the backup Services. Opera
       <td></td>
       <td></td>
       <td></td>
-      <td><center>24:00</center></td>
       <td></td>
+      <td><center>24:00</center></td>
   </tbody>
 </table>
 
