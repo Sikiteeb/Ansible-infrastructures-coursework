@@ -59,10 +59,10 @@ backup_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEu6pFFWyuRrl4WGFPQGElYN9txwTGm2
 # DNS
 domain: maledetta
 fqdn: maledetta.xtx
-internal_network: 192.168.43.0/24
+internal_network: 192.168.42.0/24
 localhost: 127.0.0.0/8
 docker_network: 172.17.0.0/16
-reverse_domain: 43.168.192.in-addr.arpa
+reverse_domain: 42.168.192.in-addr.arpa
 stats_port: 8053
 forwarders:
   - 1.1.1.1
@@ -97,16 +97,16 @@ a_records:
 dns_record:
   - name: Sikiteeb-2
     type: A
-    ipaddress: 192.168.43.{{ hostvars['sikiteeb-2']['ansible_default_ipv4']['address'].split('.')[3] }}
+    ipaddress: 192.168.42.{{ hostvars['sikiteeb-2']['ansible_default_ipv4']['address'].split('.')[3] }}
   - name: Sikiteeb-1
     type: A
-    ipaddress: 192.168.43.{{ hostvars['sikiteeb-1']['ansible_default_ipv4']['address'].split('.')[3] }}
+    ipaddress: 192.168.42.{{ hostvars['sikiteeb-1']['ansible_default_ipv4']['address'].split('.')[3] }}
   - name: Sikiteeb-3
     type: A
-    ipaddress: 192.168.43.{{ hostvars['sikiteeb-3']['ansible_default_ipv4']['address'].split('.')[3] }}
+    ipaddress: 192.168.42.{{ hostvars['sikiteeb-3']['ansible_default_ipv4']['address'].split('.')[3] }}
   - name: backup
     type: A
-    ipaddress: 192.168.43.156    
+    ipaddress: 192.168.42.156    
   
 dns_cname_records:
   grafana: "{{ groups['grafana'][0] }}"
